@@ -14,6 +14,8 @@
 		BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */; };
 		BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */; };
 		BCBE84FC29DFCBC9004DCC7D /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE84FB29DFCBC9004DCC7D /* StartScreenViewController.swift */; };
+		BCCFBE1C29E3E1A400A0C7BB /* AdaptiveLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCFBE1B29E3E1A400A0C7BB /* AdaptiveLayoutViewController.swift */; };
+		BCCFBE1E29E42FC300A0C7BB /* PagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCFBE1D29E42FC300A0C7BB /* PagoViewController.swift */; };
 		BCFD8FE529DEF3D50049A045 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8FE429DEF3D50049A045 /* UIView+Extension.swift */; };
 		BCFD8FE729DEF4B00049A045 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8FE629DEF4B00049A045 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		BC42365029DBE5BB00CB1DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC42365229DBE5BB00CB1DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBE84FB29DFCBC9004DCC7D /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		BCCFBE1B29E3E1A400A0C7BB /* AdaptiveLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutViewController.swift; sourceTree = "<group>"; };
+		BCCFBE1D29E42FC300A0C7BB /* PagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoViewController.swift; sourceTree = "<group>"; };
 		BCFD8FE429DEF3D50049A045 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BCFD8FE629DEF4B00049A045 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,8 @@
 				BCFD8FE429DEF3D50049A045 /* UIView+Extension.swift */,
 				BCFD8FE629DEF4B00049A045 /* SignInViewController.swift */,
 				BCBE84FB29DFCBC9004DCC7D /* StartScreenViewController.swift */,
+				BCCFBE1B29E3E1A400A0C7BB /* AdaptiveLayoutViewController.swift */,
+				BCCFBE1D29E42FC300A0C7BB /* PagoViewController.swift */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -148,9 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
+				BCCFBE1E29E42FC300A0C7BB /* PagoViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
 				BCFD8FE529DEF3D50049A045 /* UIView+Extension.swift in Sources */,
 				BCBE84FC29DFCBC9004DCC7D /* StartScreenViewController.swift in Sources */,
+				BCCFBE1C29E3E1A400A0C7BB /* AdaptiveLayoutViewController.swift in Sources */,
 				BCFD8FE729DEF4B00049A045 /* SignInViewController.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
 			);
