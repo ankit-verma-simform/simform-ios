@@ -13,6 +13,12 @@
 		BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */; };
 		BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */; };
 		BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */; };
+		BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */; };
+		BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA529E68F96003437E6 /* Storyboard.swift */; };
+		BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CA729E69001003437E6 /* UILabel.storyboard */; };
+		BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA929E69041003437E6 /* UILabelVC.swift */; };
+		BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */; };
+		BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC42365029DBE5BB00CB1DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC42365229DBE5BB00CB1DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BCA52CA529E68F96003437E6 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		BCA52CA729E69001003437E6 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
+		BCA52CA929E69041003437E6 /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
+		BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonVC.swift; sourceTree = "<group>"; };
+		BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCA52CA229E68E81003437E6 /* Extensions */,
+				BCA52C9E29E68054003437E6 /* UIComponents */,
+				BCA52CA029E68397003437E6 /* Storyboards */,
 				BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */,
 				BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */,
 				BC42364829DBE5BA00CB1DC0 /* ViewController.swift */,
-				BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */,
 				BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */,
-				BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */,
 				BC42365229DBE5BB00CB1DC0 /* Info.plist */,
 			);
 			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		BCA52C9E29E68054003437E6 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				BCA52CAB29E6B95D003437E6 /* UIButton */,
+				BCA52CA129E683BE003437E6 /* UILabel */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		BCA52CA029E68397003437E6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */,
+				BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */,
+				BCA52CA529E68F96003437E6 /* Storyboard.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BCA52CA129E683BE003437E6 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				BCA52CA729E69001003437E6 /* UILabel.storyboard */,
+				BCA52CA929E69041003437E6 /* UILabelVC.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		BCA52CA229E68E81003437E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCA52CAB29E6B95D003437E6 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */,
+				BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +185,9 @@
 			files = (
 				BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */,
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
+				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
 				BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */,
+				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
+				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
+				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
+				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
 			);
