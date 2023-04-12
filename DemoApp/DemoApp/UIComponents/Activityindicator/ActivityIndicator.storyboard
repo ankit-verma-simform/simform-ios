@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity IndicatorVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ActivityIndicatorVC" id="Y6W-OH-hqX" customClass="ActivityIndicatorVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6e-5S-Hj5">
+                                <rect key="frame" x="19.666666666666657" y="773.66666666666663" width="353.66666666666674" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.333333333333371" id="pPj-ut-LPF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Item to stack"/>
+                                <connections>
+                                    <action selector="btnAddItemToStack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="clH-2S-PUw"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XmI-Lt-UXa">
+                                <rect key="frame" x="0.0" y="59" width="393" height="704.66666666666663"/>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-IY-Rbz">
+                                <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" red="0.99607843139999996" green="0.4039215686" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="K6e-5S-Hj5" secondAttribute="bottom" constant="10" id="C7p-2j-q1h"/>
+                            <constraint firstItem="K6e-5S-Hj5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Ht3-rb-yVD"/>
+                            <constraint firstItem="E0h-IY-Rbz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Jpz-aA-iem"/>
+                            <constraint firstItem="K6e-5S-Hj5" firstAttribute="top" secondItem="XmI-Lt-UXa" secondAttribute="bottom" constant="10" id="Ml1-g3-YD8"/>
+                            <constraint firstItem="K6e-5S-Hj5" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="Mpj-YL-8g0"/>
+                            <constraint firstItem="XmI-Lt-UXa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UaU-ZC-Nar"/>
+                            <constraint firstItem="XmI-Lt-UXa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gfx-4h-QcO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XmI-Lt-UXa" secondAttribute="trailing" id="o7u-Jv-dC0"/>
+                            <constraint firstItem="E0h-IY-Rbz" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="pc8-VD-3iq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="E0h-IY-Rbz" id="gxE-Q7-Oof"/>
+                        <outlet property="stackView" destination="XmI-Lt-UXa" id="qHQ-6Q-8QA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

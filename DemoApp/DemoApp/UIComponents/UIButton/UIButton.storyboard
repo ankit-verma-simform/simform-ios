@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ButtonVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UIButtonVC" id="Y6W-OH-hqX" customClass="UIButtonVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33L-A9-aoV" userLabel="ChangeColorButton">
+                                <rect key="frame" x="110.66666666666669" y="129" width="172" height="34.666666666666657"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Set color to Orange"/>
+                                <connections>
+                                    <action selector="btnChangeColorAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xqt-15-UaD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JL3-z4-Sxd">
+                                <rect key="frame" x="176.66666666666666" y="69" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Y75-cf-ViX"/>
+                                    <constraint firstAttribute="width" secondItem="JL3-z4-Sxd" secondAttribute="height" multiplier="1:1" id="gkC-cA-29e"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79z-eS-bfX">
+                                <rect key="frame" x="72.666666666666671" y="191.66666666666666" width="101.00000000000001" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="System Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHa-ph-47c">
+                                <rect key="frame" x="183.66666666666666" y="193.66666666666666" width="25.666666666666657" height="25.666666666666657"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2F-KJ-Fno">
+                                <rect key="frame" x="219.33333333333337" y="189.66666666666666" width="104" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Close Button">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button toolTip="Custom button tooltip" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bep-zV-Gig">
+                                <rect key="frame" x="68.666666666666686" y="241.66666666666666" width="256" height="110.66666666666666"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="DLD-7a-D3G"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" imagePlacement="bottom" imagePadding="6" titlePadding="12" cornerStyle="dynamic" titleAlignment="center">
+                                    <imageReference key="image" image="wind" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.069435946643352509" green="0.0066534504294395447" blue="0.99922722578048706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" cornerRadius="44" imageContentMode="scaleAspectFit" strokeWidth="5" strokeOutset="20">
+                                        <color key="backgroundColor" red="0.90421754121780396" green="0.96965056657791138" blue="0.97302085161209106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <imageReference key="image" image="arrowshape.turn.up.forward.circle.fill" catalog="system" symbolScale="small" renderingMode="hierarchical" variableValue="0.40000000000000002">
+                                            <hierarchicalColors>
+                                                <color red="0.90421754121780396" green="0.96965056657791138" blue="0.97302085161209106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color systemColor="systemGray4Color"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                        <color key="strokeColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32" scale="default" weight="heavy"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Custom">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Button">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content="Subtitle">
+                                            <attributes>
+                                                <color key="NSColor" red="0.060373581945896149" green="0.044610701501369476" blue="0.90417474508285522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="24" name="Didot-Italic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Didot-Italic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="is here">
+                                            <attributes>
+                                                <color key="NSColor" red="0.056951701641082764" green="0.036424234509468079" blue="0.014561948366463184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="24" name="Didot-Italic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" red="0.98082453012466431" green="0.97701996564865112" blue="0.93929833173751831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfd-qJ-NOc">
+                                <rect key="frame" x="32" y="602.33333333333337" width="329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Click this filled button to add one button"/>
+                                <connections>
+                                    <action selector="btnAddButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IBr-7i-tUq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-SA-6bj">
+                                <rect key="frame" x="121.66666666666669" y="409" width="150" height="31"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Explore touch events"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.0035501541569828987" green="0.99551683664321899" blue="0.9862484335899353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.086600221693515778" green="0.08399287611246109" blue="0.39338719844818115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.99965816736221313" green="0.12095480412244797" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouchDown:" destination="Y6W-OH-hqX" eventType="touchDown" id="BGE-JK-Skx"/>
+                                    <action selector="btnTouchDragEnter:" destination="Y6W-OH-hqX" eventType="touchDragEnter" id="7Sa-xM-0VN"/>
+                                    <action selector="btnTouchUpInside:forEvent:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WPV-ku-yrC"/>
+                                    <action selector="btnTouchUpOutside:" destination="Y6W-OH-hqX" eventType="touchUpOutside" id="rQ1-PZ-0yM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3j-7z-0I6">
+                                <rect key="frame" x="149.66666666666666" y="476" width="94" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Free Trial">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="33L-A9-aoV" firstAttribute="top" secondItem="JL3-z4-Sxd" secondAttribute="bottom" constant="20" id="1Vo-6x-Np6"/>
+                            <constraint firstItem="WKw-SA-6bj" firstAttribute="top" secondItem="bep-zV-Gig" secondAttribute="bottom" constant="56.666666666666686" id="89O-1G-6M4"/>
+                            <constraint firstItem="WKw-SA-6bj" firstAttribute="centerX" secondItem="bep-zV-Gig" secondAttribute="centerX" id="8Ht-VC-qNC"/>
+                            <constraint firstItem="tHa-ph-47c" firstAttribute="leading" secondItem="79z-eS-bfX" secondAttribute="trailing" constant="10" id="8Tc-Q7-XCp"/>
+                            <constraint firstItem="bep-zV-Gig" firstAttribute="centerX" secondItem="tHa-ph-47c" secondAttribute="centerX" id="Gye-D0-aqs"/>
+                            <constraint firstItem="Sfd-qJ-NOc" firstAttribute="top" secondItem="bep-zV-Gig" secondAttribute="bottom" constant="250" id="ISY-63-TUK"/>
+                            <constraint firstItem="bep-zV-Gig" firstAttribute="top" secondItem="79z-eS-bfX" secondAttribute="bottom" constant="20" id="IZ9-tI-VHN"/>
+                            <constraint firstItem="33L-A9-aoV" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Kc3-UB-sRP"/>
+                            <constraint firstItem="tHa-ph-47c" firstAttribute="centerX" secondItem="33L-A9-aoV" secondAttribute="centerX" id="MDR-j5-M1L"/>
+                            <constraint firstItem="JL3-z4-Sxd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="NHr-gk-U49"/>
+                            <constraint firstItem="Sfd-qJ-NOc" firstAttribute="centerX" secondItem="bep-zV-Gig" secondAttribute="centerX" id="Nk0-M4-mee"/>
+                            <constraint firstItem="D2F-KJ-Fno" firstAttribute="centerY" secondItem="tHa-ph-47c" secondAttribute="centerY" id="RA3-hT-cvI"/>
+                            <constraint firstItem="tHa-ph-47c" firstAttribute="top" secondItem="33L-A9-aoV" secondAttribute="bottom" constant="30" id="Zg3-TO-3On"/>
+                            <constraint firstItem="s3j-7z-0I6" firstAttribute="centerX" secondItem="WKw-SA-6bj" secondAttribute="centerX" id="dAn-Ll-BuX"/>
+                            <constraint firstItem="JL3-z4-Sxd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="gso-1Q-XeC"/>
+                            <constraint firstItem="s3j-7z-0I6" firstAttribute="top" secondItem="WKw-SA-6bj" secondAttribute="bottom" constant="36" id="kU0-f8-XfS"/>
+                            <constraint firstItem="D2F-KJ-Fno" firstAttribute="leading" secondItem="tHa-ph-47c" secondAttribute="trailing" constant="10" id="sjN-WI-3L4"/>
+                            <constraint firstItem="79z-eS-bfX" firstAttribute="centerY" secondItem="tHa-ph-47c" secondAttribute="centerY" id="uvq-BH-nK6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddButton" destination="s3j-7z-0I6" id="fSL-ZR-uM2"/>
+                        <outlet property="btnChangeColor" destination="33L-A9-aoV" id="EGO-zy-DUZ"/>
+                        <outlet property="btnFreeTrial" destination="s3j-7z-0I6" id="VSM-8u-S93"/>
+                        <outlet property="viewSquare" destination="JL3-z4-Sxd" id="jqy-cp-5sM"/>
+                        <outletCollection property="typeButtonCollection" destination="79z-eS-bfX" collectionClass="NSMutableArray" id="8Io-eR-7R5"/>
+                        <outletCollection property="typeButtonCollection" destination="D2F-KJ-Fno" collectionClass="NSMutableArray" id="PK0-ZE-Tyg"/>
+                        <outletCollection property="typeButtonCollection" destination="tHa-ph-47c" collectionClass="NSMutableArray" id="Pab-nu-afZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.forward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="wind" catalog="system" width="128" height="103"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
