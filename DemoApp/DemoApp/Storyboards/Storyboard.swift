@@ -8,4 +8,6 @@
 enum Storyboard: String {
     case uiLabel = "UILabel"
     case uiButton = "UIButton"
+    case uiTextField = "UITextField"
+    case uiTextView = "UITextView"
 }

@@ -19,6 +19,10 @@
 		BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA929E69041003437E6 /* UILabelVC.swift */; };
 		BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */; };
 		BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */; };
+		BCD732BB29E81ADD0045032D /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732BA29E81ADD0045032D /* UITextField.storyboard */; };
+		BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732BD29E81B090045032D /* UITextFieldVC.swift */; };
+		BCD732C129E824650045032D /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732C029E824650045032D /* UITextViewVC.swift */; };
+		BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732C229E8248F0045032D /* UITextView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		BCA52CA929E69041003437E6 /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
 		BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonVC.swift; sourceTree = "<group>"; };
 		BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
+		BCD732BA29E81ADD0045032D /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
+		BCD732BD29E81B090045032D /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
+		BCD732C029E824650045032D /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
+		BCD732C229E8248F0045032D /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 		BCA52C9E29E68054003437E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BCD732BF29E8244C0045032D /* UITextView */,
+				BCD732B929E81ABD0045032D /* UITextField */,
 				BCA52CAB29E6B95D003437E6 /* UIButton */,
 				BCA52CA129E683BE003437E6 /* UILabel */,
 			);
@@ -123,6 +133,24 @@
 				BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		BCD732B929E81ABD0045032D /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				BCD732BA29E81ADD0045032D /* UITextField.storyboard */,
+				BCD732BD29E81B090045032D /* UITextFieldVC.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		BCD732BF29E8244C0045032D /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				BCD732C029E824650045032D /* UITextViewVC.swift */,
+				BCD732C229E8248F0045032D /* UITextView.storyboard */,
+			);
+			path = UITextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +214,9 @@
 				BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */,
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
+				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
 				BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */,
+				BCD732BB29E81ADD0045032D /* UITextField.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +234,9 @@
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
+				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
+				BCD732C129E824650045032D /* UITextViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

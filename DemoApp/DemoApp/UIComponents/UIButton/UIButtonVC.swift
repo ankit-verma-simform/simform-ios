@@ -15,6 +15,7 @@ class UIButtonVC: UIViewController {
     // MARK: IB Outlets
     @IBOutlet weak var btnChangeColor: UIButton!
     @IBOutlet weak var viewSquare: UIView!
+    @IBOutlet weak var btnAddButton: UIButton!
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -28,7 +29,22 @@ extension UIButtonVC {
         viewSquare.backgroundColor = squareIsRed ? .orange : .red
         let colorName = squareIsRed ? "Red" : "Orange"
         btnChangeColor.setTitle("Click to set square color to \(colorName)", for: .normal)
-        btnChangeColor.
         squareIsRed = !squareIsRed
+    }
+    
+    @IBAction func btnAddButtonAction(_ sender: UIButton) {
+        // setting up button
+        let newBtn = UIButton()
+        newBtn.setTitle("This button added programmatically", for: .normal)
+        newBtn.setTitleColor(.white, for: .normal)
+        newBtn.isUserInteractionEnabled = true
+        newBtn.backgroundColor = .systemGray4
+        
+        // adding button and constraints
+        view.addSubview(newBtn)
+        newBtn.translatesAutoresizingMaskIntoConstraints = false
+        let topConstraint = newBtn.topAnchor.constraint(equalTo: sender.bottomAnchor, constant: 10)
+        let horizontalConstraint = newBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        NSLayoutConstraint.activate([horizontalConstraint, topConstraint])
     }
 }

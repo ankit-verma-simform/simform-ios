@@ -43,4 +43,14 @@ extension ViewController {
         guard let uiButtonVC = UIButtonVC.create(storyboardName: .uiButton) as? UIButtonVC else { return }
         navigate(to: uiButtonVC)
     }
+    
+    @IBAction func btnUITextFieldAction(_ sender: Any) {
+        guard let uiTextFieldVC = UITextFieldVC.create(storyboardName: .uiTextField) as? UITextFieldVC else { return }
+        navigate(to: uiTextFieldVC)
+    }
+    
+    @IBAction func btnUITextViewAction(_ sender: Any) {
+        guard let uiTextViewVC = UITextViewVC.create(storyboardName: .uiTextView) as? UITextViewVC else { return }
+        navigate(to: uiTextViewVC)
+    }
 }

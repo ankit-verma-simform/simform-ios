@@ -47,13 +47,33 @@
                                     <action selector="btnUIButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXO-Nl-VWW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yig-G6-bpm">
+                                <rect key="frame" x="142" y="223" width="109" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UITextField"/>
+                                <connections>
+                                    <action selector="btnUITextFieldAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JvC-fb-aHH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOe-aZ-WwZ">
+                                <rect key="frame" x="142" y="278" width="109" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UITextView"/>
+                                <connections>
+                                    <action selector="btnUITextViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUG-am-QKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98082453012466431" green="0.97701996564865112" blue="0.93929833173751831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Kl-jC-HyU"/>
+                            <constraint firstItem="aOe-aZ-WwZ" firstAttribute="centerX" secondItem="yig-G6-bpm" secondAttribute="centerX" id="9Rb-iy-UVg"/>
+                            <constraint firstItem="yig-G6-bpm" firstAttribute="top" secondItem="Nq4-mi-gQ9" secondAttribute="bottom" constant="20" id="Myt-Nx-35e"/>
+                            <constraint firstItem="aOe-aZ-WwZ" firstAttribute="top" secondItem="yig-G6-bpm" secondAttribute="bottom" constant="20" id="RDQ-aL-2ku"/>
                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="centerX" secondItem="Un4-CY-wXJ" secondAttribute="centerX" id="ZBr-RR-ho8"/>
                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hc4-D7-X9j"/>
+                            <constraint firstItem="yig-G6-bpm" firstAttribute="centerX" secondItem="Nq4-mi-gQ9" secondAttribute="centerX" id="tKB-Se-nc3"/>
                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="top" secondItem="Un4-CY-wXJ" secondAttribute="bottom" constant="20" id="u5D-Hu-OSd"/>
                         </constraints>
                     </view>
