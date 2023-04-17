@@ -10,4 +10,6 @@ enum Storyboard: String {
     case uiButton = "UIButton"
     case uiTextField = "UITextField"
     case uiTextView = "UITextView"
+    case uiSwitch = "UISwitch"
+    case uiSlider = "UISlider"
 }

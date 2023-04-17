@@ -13,6 +13,15 @@
 		BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */; };
 		BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */; };
 		BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */; };
+		BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505229ED26D800C0AC9D /* Roboto-Light.ttf */; };
+		BC4E506329ED26D900C0AC9D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505729ED26D900C0AC9D /* Roboto-Regular.ttf */; };
+		BC4E506429ED26D900C0AC9D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505829ED26D900C0AC9D /* Roboto-Italic.ttf */; };
+		BC4E506529ED26D900C0AC9D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505929ED26D900C0AC9D /* Roboto-Bold.ttf */; };
+		BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4E506729ED6E2400C0AC9D /* UISwitch.storyboard */; };
+		BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E506929ED6E3E00C0AC9D /* UISwitchVC.swift */; };
+		BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */; };
+		BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E506E29ED768100C0AC9D /* UISliderVC.swift */; };
+		BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */; };
 		BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */; };
 		BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA529E68F96003437E6 /* Storyboard.swift */; };
 		BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CA729E69001003437E6 /* UILabel.storyboard */; };
@@ -34,6 +43,15 @@
 		BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC42365029DBE5BB00CB1DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC42365229DBE5BB00CB1DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4E505229ED26D800C0AC9D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		BC4E505729ED26D900C0AC9D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		BC4E505829ED26D900C0AC9D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		BC4E505929ED26D900C0AC9D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		BC4E506729ED6E2400C0AC9D /* UISwitch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitch.storyboard; sourceTree = "<group>"; };
+		BC4E506929ED6E3E00C0AC9D /* UISwitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchVC.swift; sourceTree = "<group>"; };
+		BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISlider.storyboard; sourceTree = "<group>"; };
+		BC4E506E29ED768100C0AC9D /* UISliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderVC.swift; sourceTree = "<group>"; };
+		BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BCA52CA529E68F96003437E6 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		BCA52CA729E69001003437E6 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
@@ -76,6 +94,7 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC4E504D29ED268800C0AC9D /* fonts */,
 				BCA52CA229E68E81003437E6 /* Extensions */,
 				BCA52C9E29E68054003437E6 /* UIComponents */,
 				BCA52CA029E68397003437E6 /* Storyboards */,
@@ -88,9 +107,40 @@
 			path = DemoApp;
 			sourceTree = "<group>";
 		};
+		BC4E504D29ED268800C0AC9D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC4E505929ED26D900C0AC9D /* Roboto-Bold.ttf */,
+				BC4E505829ED26D900C0AC9D /* Roboto-Italic.ttf */,
+				BC4E505229ED26D800C0AC9D /* Roboto-Light.ttf */,
+				BC4E505729ED26D900C0AC9D /* Roboto-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		BC4E506629ED6DEC00C0AC9D /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				BC4E506729ED6E2400C0AC9D /* UISwitch.storyboard */,
+				BC4E506929ED6E3E00C0AC9D /* UISwitchVC.swift */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		BC4E506B29ED764F00C0AC9D /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */,
+				BC4E506E29ED768100C0AC9D /* UISliderVC.swift */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
 		BCA52C9E29E68054003437E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BC4E506B29ED764F00C0AC9D /* UISlider */,
+				BC4E506629ED6DEC00C0AC9D /* UISwitch */,
 				BCD732BF29E8244C0045032D /* UITextView */,
 				BCD732B929E81ABD0045032D /* UITextField */,
 				BCA52CAB29E6B95D003437E6 /* UIButton */,
@@ -122,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */,
+				BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,12 +262,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4E506529ED26D900C0AC9D /* Roboto-Bold.ttf in Resources */,
+				BC4E506429ED26D900C0AC9D /* Roboto-Italic.ttf in Resources */,
 				BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */,
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
+				BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
 				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
+				BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */,
 				BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */,
 				BCD732BB29E81ADD0045032D /* UITextField.storyboard in Resources */,
+				BC4E506329ED26D900C0AC9D /* Roboto-Regular.ttf in Resources */,
+				BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,10 +287,13 @@
 			files = (
 				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
 				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
+				BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
+				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
+				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
 				BCD732C129E824650045032D /* UITextViewVC.swift in Sources */,

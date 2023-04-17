@@ -53,4 +53,14 @@ extension ViewController {
         guard let uiTextViewVC = UITextViewVC.create(storyboardName: .uiTextView) as? UITextViewVC else { return }
         navigate(to: uiTextViewVC)
     }
+    
+    @IBAction func btnUISwitchAction(_ sender: Any) {
+        guard let uiSwitchVC = UISwitchVC.create(storyboardName: .uiSwitch) as? UISwitchVC else { return }
+        navigate(to: uiSwitchVC)
+    }
+    
+    @IBAction func btnUISliderAction(_ sender: Any) {
+        guard let uiSliderVC = UISliderVC.create(storyboardName: .uiSlider) as? UISliderVC else { return }
+        navigate(to: uiSliderVC)
+    }
 }

@@ -63,16 +63,36 @@
                                     <action selector="btnUITextViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUG-am-QKS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElZ-bh-7v2">
+                                <rect key="frame" x="150.66666666666666" y="333" width="92" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UISwitch"/>
+                                <connections>
+                                    <action selector="btnUISwitchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHA-Ak-BXV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hde-wU-olr">
+                                <rect key="frame" x="154.66666666666666" y="388" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UISlider"/>
+                                <connections>
+                                    <action selector="btnUISliderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7R6-I5-l2t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98082453012466431" green="0.97701996564865112" blue="0.93929833173751831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ElZ-bh-7v2" firstAttribute="centerX" secondItem="aOe-aZ-WwZ" secondAttribute="centerX" id="1Ok-Ff-K5i"/>
                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Kl-jC-HyU"/>
                             <constraint firstItem="aOe-aZ-WwZ" firstAttribute="centerX" secondItem="yig-G6-bpm" secondAttribute="centerX" id="9Rb-iy-UVg"/>
+                            <constraint firstItem="ElZ-bh-7v2" firstAttribute="top" secondItem="aOe-aZ-WwZ" secondAttribute="bottom" constant="20" id="DoU-qp-XuA"/>
                             <constraint firstItem="yig-G6-bpm" firstAttribute="top" secondItem="Nq4-mi-gQ9" secondAttribute="bottom" constant="20" id="Myt-Nx-35e"/>
                             <constraint firstItem="aOe-aZ-WwZ" firstAttribute="top" secondItem="yig-G6-bpm" secondAttribute="bottom" constant="20" id="RDQ-aL-2ku"/>
                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="centerX" secondItem="Un4-CY-wXJ" secondAttribute="centerX" id="ZBr-RR-ho8"/>
+                            <constraint firstItem="hde-wU-olr" firstAttribute="centerX" secondItem="ElZ-bh-7v2" secondAttribute="centerX" id="eSo-7G-iyB"/>
                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hc4-D7-X9j"/>
+                            <constraint firstItem="hde-wU-olr" firstAttribute="top" secondItem="ElZ-bh-7v2" secondAttribute="bottom" constant="20" id="qO6-gs-fle"/>
                             <constraint firstItem="yig-G6-bpm" firstAttribute="centerX" secondItem="Nq4-mi-gQ9" secondAttribute="centerX" id="tKB-Se-nc3"/>
                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="top" secondItem="Un4-CY-wXJ" secondAttribute="bottom" constant="20" id="u5D-Hu-OSd"/>
                         </constraints>
