@@ -63,4 +63,29 @@ extension ViewController {
         guard let uiSliderVC = UISliderVC.create(storyboardName: .uiSlider) as? UISliderVC else { return }
         navigate(to: uiSliderVC)
     }
+    
+    @IBAction func btnUIProgressViewAction(_ sender: Any) {
+        guard let uiProgressViewVC = UIProgressViewVC.create(storyboardName: .uiProgressView) as? UIProgressViewVC else { return }
+        navigate(to: uiProgressViewVC)
+    }
+    
+    @IBAction func btnUISegmentedControlAction(_ sender: Any) {
+        guard let uiSegmentedControlVC = UISegmentedControlVC.create(storyboardName: .uiSegmentedControl) as? UISegmentedControlVC else { return }
+        navigate(to: uiSegmentedControlVC)
+    }
+    
+    @IBAction func btnUIPageControlAction(_ sender: Any) {
+        guard let mainPageViewController = MainPageViewController.create(storyboardName: .uiPageViewController) as? MainPageViewController else { return }
+        navigate(to: mainPageViewController)
+    }
+    
+    @IBAction func btnUIStepperAction(_ sender: Any) {
+        guard let uiStepperVC = UIStepperVC.create(storyboardName: .uiStepper) as? UIStepperVC else { return }
+        navigate(to: uiStepperVC)
+    }
+    
+    @IBAction func btnImageViewAction(_ sender: Any) {
+        guard let imageViewVC = ImageViewVC.create(storyboardName: .imageView) as? ImageViewVC else { return }
+        navigate(to: imageViewVC)
+    }
 }

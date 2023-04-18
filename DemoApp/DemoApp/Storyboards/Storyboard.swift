@@ -12,4 +12,9 @@ enum Storyboard: String {
     case uiTextView = "UITextView"
     case uiSwitch = "UISwitch"
     case uiSlider = "UISlider"
+    case uiProgressView = "UIProgressView"
+    case uiSegmentedControl = "UISegmentedControl"
+    case uiPageViewController = "UIPageViewController"
+    case uiStepper = "UIStepper"
+    case imageView = "ImageView"
 }

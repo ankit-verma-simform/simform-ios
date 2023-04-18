@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="1" maxValue="100" maximumValueImage="pencil.line" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S8g-ZT-94k">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="1" maxValue="100" continuous="NO" maximumValueImage="pencil.line" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S8g-ZT-94k">
                                 <rect key="frame" x="57" y="423.66666666666669" width="279" height="31"/>
                                 <imageReference key="minimumValueImage" image="pencil" catalog="system" variableValue="1"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>

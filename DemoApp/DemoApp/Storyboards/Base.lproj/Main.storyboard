@@ -79,22 +79,72 @@
                                     <action selector="btnUISliderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7R6-I5-l2t"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJC-4Q-mYk">
+                                <rect key="frame" x="124.66666666666669" y="443" width="144" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UIProgressView"/>
+                                <connections>
+                                    <action selector="btnUIProgressViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rs-jb-sPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-Hg-BlC">
+                                <rect key="frame" x="104.66666666666669" y="498" width="184" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UISegmentedControl"/>
+                                <connections>
+                                    <action selector="btnUISegmentedControlAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naA-gs-xdZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0z-5g-OZQ">
+                                <rect key="frame" x="101.66666666666669" y="553" width="190" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UIPageViewController"/>
+                                <connections>
+                                    <action selector="btnUIPageControlAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sko-Ze-Hfo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-Ik-WTs">
+                                <rect key="frame" x="146" y="608" width="101" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UIStepper"/>
+                                <connections>
+                                    <action selector="btnUIStepperAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsW-FK-KZ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atY-nJ-rb2">
+                                <rect key="frame" x="143" y="663" width="107" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ImageView"/>
+                                <connections>
+                                    <action selector="btnImageViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSa-7Z-EuZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98082453012466431" green="0.97701996564865112" blue="0.93929833173751831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="atY-nJ-rb2" firstAttribute="top" secondItem="5WA-Ik-WTs" secondAttribute="bottom" constant="20" id="18b-w9-tSi"/>
                             <constraint firstItem="ElZ-bh-7v2" firstAttribute="centerX" secondItem="aOe-aZ-WwZ" secondAttribute="centerX" id="1Ok-Ff-K5i"/>
+                            <constraint firstItem="L0z-5g-OZQ" firstAttribute="centerX" secondItem="TAM-Hg-BlC" secondAttribute="centerX" id="6W4-GH-xNc"/>
                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Kl-jC-HyU"/>
                             <constraint firstItem="aOe-aZ-WwZ" firstAttribute="centerX" secondItem="yig-G6-bpm" secondAttribute="centerX" id="9Rb-iy-UVg"/>
                             <constraint firstItem="ElZ-bh-7v2" firstAttribute="top" secondItem="aOe-aZ-WwZ" secondAttribute="bottom" constant="20" id="DoU-qp-XuA"/>
+                            <constraint firstItem="5WA-Ik-WTs" firstAttribute="top" secondItem="L0z-5g-OZQ" secondAttribute="bottom" constant="20" id="Gm0-r3-xut"/>
+                            <constraint firstItem="SJC-4Q-mYk" firstAttribute="centerX" secondItem="hde-wU-olr" secondAttribute="centerX" id="Lv2-MJ-vnR"/>
                             <constraint firstItem="yig-G6-bpm" firstAttribute="top" secondItem="Nq4-mi-gQ9" secondAttribute="bottom" constant="20" id="Myt-Nx-35e"/>
                             <constraint firstItem="aOe-aZ-WwZ" firstAttribute="top" secondItem="yig-G6-bpm" secondAttribute="bottom" constant="20" id="RDQ-aL-2ku"/>
+                            <constraint firstItem="atY-nJ-rb2" firstAttribute="centerX" secondItem="5WA-Ik-WTs" secondAttribute="centerX" id="Wcm-Un-y5g"/>
                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="centerX" secondItem="Un4-CY-wXJ" secondAttribute="centerX" id="ZBr-RR-ho8"/>
                             <constraint firstItem="hde-wU-olr" firstAttribute="centerX" secondItem="ElZ-bh-7v2" secondAttribute="centerX" id="eSo-7G-iyB"/>
                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hc4-D7-X9j"/>
+                            <constraint firstItem="SJC-4Q-mYk" firstAttribute="top" secondItem="hde-wU-olr" secondAttribute="bottom" constant="20" id="jIb-aT-eTq"/>
+                            <constraint firstItem="5WA-Ik-WTs" firstAttribute="centerX" secondItem="L0z-5g-OZQ" secondAttribute="centerX" id="m9X-oq-wTe"/>
                             <constraint firstItem="hde-wU-olr" firstAttribute="top" secondItem="ElZ-bh-7v2" secondAttribute="bottom" constant="20" id="qO6-gs-fle"/>
+                            <constraint firstItem="L0z-5g-OZQ" firstAttribute="top" secondItem="TAM-Hg-BlC" secondAttribute="bottom" constant="20" id="qbZ-HY-aPr"/>
+                            <constraint firstItem="TAM-Hg-BlC" firstAttribute="centerX" secondItem="SJC-4Q-mYk" secondAttribute="centerX" id="sjs-Sh-yk5"/>
                             <constraint firstItem="yig-G6-bpm" firstAttribute="centerX" secondItem="Nq4-mi-gQ9" secondAttribute="centerX" id="tKB-Se-nc3"/>
                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="top" secondItem="Un4-CY-wXJ" secondAttribute="bottom" constant="20" id="u5D-Hu-OSd"/>
+                            <constraint firstItem="TAM-Hg-BlC" firstAttribute="top" secondItem="SJC-4Q-mYk" secondAttribute="bottom" constant="20" id="wDD-E3-iPt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X2o-9Z-SIv"/>

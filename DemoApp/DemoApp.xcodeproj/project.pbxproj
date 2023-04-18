@@ -22,6 +22,19 @@
 		BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */; };
 		BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E506E29ED768100C0AC9D /* UISliderVC.swift */; };
 		BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */; };
+		BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */; };
+		BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59940F29EE6A0500EFF4D2 /* UIProgressVC.swift */; };
+		BC59941229EE6A1400EFF4D2 /* UIProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59941129EE6A1400EFF4D2 /* UIProgressView.storyboard */; };
+		BC59941529EE714100EFF4D2 /* UISegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59941429EE714100EFF4D2 /* UISegmentedControl.storyboard */; };
+		BC59941929EE717100EFF4D2 /* UISegmentedControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59941829EE717100EFF4D2 /* UISegmentedControlVC.swift */; };
+		BC59941C29EE87B900EFF4D2 /* UIPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59941B29EE87B900EFF4D2 /* UIPageViewController.storyboard */; };
+		BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59941F29EE929C00EFF4D2 /* MainPageViewController.swift */; };
+		BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942129EE93C400EFF4D2 /* PinkViewController.swift */; };
+		BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942329EE93D100EFF4D2 /* YellowViewController.swift */; };
+		BC59942729EEB1CA00EFF4D2 /* UIStepper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59942629EEB1CA00EFF4D2 /* UIStepper.storyboard */; };
+		BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942A29EEB2CC00EFF4D2 /* UIStepperVC.swift */; };
+		BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */; };
+		BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */; };
 		BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */; };
 		BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA529E68F96003437E6 /* Storyboard.swift */; };
 		BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CA729E69001003437E6 /* UILabel.storyboard */; };
@@ -52,6 +65,19 @@
 		BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISlider.storyboard; sourceTree = "<group>"; };
 		BC4E506E29ED768100C0AC9D /* UISliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderVC.swift; sourceTree = "<group>"; };
 		BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		BC59940F29EE6A0500EFF4D2 /* UIProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressVC.swift; sourceTree = "<group>"; };
+		BC59941129EE6A1400EFF4D2 /* UIProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIProgressView.storyboard; sourceTree = "<group>"; };
+		BC59941429EE714100EFF4D2 /* UISegmentedControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISegmentedControl.storyboard; sourceTree = "<group>"; };
+		BC59941829EE717100EFF4D2 /* UISegmentedControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlVC.swift; sourceTree = "<group>"; };
+		BC59941B29EE87B900EFF4D2 /* UIPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPageViewController.storyboard; sourceTree = "<group>"; };
+		BC59941F29EE929C00EFF4D2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		BC59942129EE93C400EFF4D2 /* PinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
+		BC59942329EE93D100EFF4D2 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		BC59942629EEB1CA00EFF4D2 /* UIStepper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStepper.storyboard; sourceTree = "<group>"; };
+		BC59942A29EEB2CC00EFF4D2 /* UIStepperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStepperVC.swift; sourceTree = "<group>"; };
+		BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewVC.swift; sourceTree = "<group>"; };
+		BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
 		BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BCA52CA529E68F96003437E6 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		BCA52CA729E69001003437E6 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
@@ -136,9 +162,61 @@
 			path = UISlider;
 			sourceTree = "<group>";
 		};
+		BC59940E29EE69DD00EFF4D2 /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				BC59940F29EE6A0500EFF4D2 /* UIProgressVC.swift */,
+				BC59941129EE6A1400EFF4D2 /* UIProgressView.storyboard */,
+			);
+			path = UIProgressView;
+			sourceTree = "<group>";
+		};
+		BC59941329EE6CAB00EFF4D2 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				BC59941429EE714100EFF4D2 /* UISegmentedControl.storyboard */,
+				BC59941829EE717100EFF4D2 /* UISegmentedControlVC.swift */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
+		BC59941A29EE87AB00EFF4D2 /* UIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				BC59941B29EE87B900EFF4D2 /* UIPageViewController.storyboard */,
+				BC59941F29EE929C00EFF4D2 /* MainPageViewController.swift */,
+				BC59942129EE93C400EFF4D2 /* PinkViewController.swift */,
+				BC59942329EE93D100EFF4D2 /* YellowViewController.swift */,
+			);
+			path = UIPageControl;
+			sourceTree = "<group>";
+		};
+		BC59942529EEB1B700EFF4D2 /* UIStepper */ = {
+			isa = PBXGroup;
+			children = (
+				BC59942629EEB1CA00EFF4D2 /* UIStepper.storyboard */,
+				BC59942A29EEB2CC00EFF4D2 /* UIStepperVC.swift */,
+			);
+			path = UIStepper;
+			sourceTree = "<group>";
+		};
+		BC59942C29EEC18900EFF4D2 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */,
+				BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
 		BCA52C9E29E68054003437E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BC59942C29EEC18900EFF4D2 /* ImageView */,
+				BC59942529EEB1B700EFF4D2 /* UIStepper */,
+				BC59941A29EE87AB00EFF4D2 /* UIPageControl */,
+				BC59941329EE6CAB00EFF4D2 /* UISegmentedControl */,
+				BC59940E29EE69DD00EFF4D2 /* UIProgressView */,
 				BC4E506B29ED764F00C0AC9D /* UISlider */,
 				BC4E506629ED6DEC00C0AC9D /* UISwitch */,
 				BCD732BF29E8244C0045032D /* UITextView */,
@@ -173,6 +251,7 @@
 			children = (
 				BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */,
 				BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */,
+				BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,11 +347,16 @@
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
 				BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
+				BC59942729EEB1CA00EFF4D2 /* UIStepper.storyboard in Resources */,
 				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
 				BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */,
+				BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */,
 				BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */,
 				BCD732BB29E81ADD0045032D /* UITextField.storyboard in Resources */,
 				BC4E506329ED26D900C0AC9D /* Roboto-Regular.ttf in Resources */,
+				BC59941C29EE87B900EFF4D2 /* UIPageViewController.storyboard in Resources */,
+				BC59941229EE6A1400EFF4D2 /* UIProgressView.storyboard in Resources */,
+				BC59941529EE714100EFF4D2 /* UISegmentedControl.storyboard in Resources */,
 				BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
 			);
@@ -285,17 +369,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */,
+				BC59941929EE717100EFF4D2 /* UISegmentedControlVC.swift in Sources */,
 				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
 				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
 				BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
+				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
+				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
+				BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */,
+				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
 				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
+				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
+				BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */,
 				BCD732C129E824650045032D /* UITextViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +538,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -473,7 +565,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

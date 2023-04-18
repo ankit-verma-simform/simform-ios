@@ -17,7 +17,11 @@ class UITextViewVC: UIViewController  {
         super.viewDidLoad()
         tvNote.font = .robotoItalic()
         tvNote.delegate = self
+        tvNote.addDoneButtonOnKeyboard()
     }
+    
+    
+    
 }
 
 // MARK: Functions
@@ -28,6 +32,8 @@ extension UITextViewVC: UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         print("Finished editing")
+        tvNote.dataDetectorTypes = UIDataDetectorTypes.all
+        tvNote.isEditable = false
     }
     
     func textViewDidChange(_ textView: UITextView) {
