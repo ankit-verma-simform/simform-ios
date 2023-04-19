@@ -17,4 +17,6 @@ enum Storyboard: String {
     case uiPageViewController = "UIPageViewController"
     case uiStepper = "UIStepper"
     case imageView = "ImageView"
+    case scrollView = "ScrollView"
+    case task1 = "Task1"
 }

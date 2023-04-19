@@ -75,8 +75,8 @@ extension ViewController {
     }
     
     @IBAction func btnUIPageControlAction(_ sender: Any) {
-        guard let mainPageViewController = MainPageViewController.create(storyboardName: .uiPageViewController) as? MainPageViewController else { return }
-        navigate(to: mainPageViewController)
+        guard let containerViewController = ContainerViewController.create(storyboardName: .uiPageViewController) as? ContainerViewController else { return }
+        navigate(to: containerViewController)
     }
     
     @IBAction func btnUIStepperAction(_ sender: Any) {
@@ -87,5 +87,15 @@ extension ViewController {
     @IBAction func btnImageViewAction(_ sender: Any) {
         guard let imageViewVC = ImageViewVC.create(storyboardName: .imageView) as? ImageViewVC else { return }
         navigate(to: imageViewVC)
+    }
+    
+    @IBAction func btnScrollViewAction(_ sender: Any) {
+        guard let scrollViewVC = ScrollViewVC.create(storyboardName: .scrollView) as? ScrollViewVC else { return }
+        navigate(to: scrollViewVC)
+    }
+    
+    @IBAction func btnTask1Action(_ sender: Any) {
+        guard let task1VC = Task1VC.create(storyboardName: .task1) as? Task1VC else { return }
+        navigate(to: task1VC)
     }
 }

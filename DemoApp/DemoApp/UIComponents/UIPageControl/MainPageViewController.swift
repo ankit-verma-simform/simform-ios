@@ -16,6 +16,7 @@ class MainPageViewController: UIPageViewController {
     ]
     var isLoading: Bool = false
     var currentIndex: Int = 0
+    weak var pageControlDelegate: PageControlDelegate?
 
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -28,6 +29,7 @@ class MainPageViewController: UIPageViewController {
         if !isLoading {
             isLoading = true
             setUpControllers()
+            pageControlDelegate?.totalPages(pages: orderedViewControllers.count)
         }
     }
 }
@@ -48,18 +50,18 @@ extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewContro
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let index = orderedViewControllers.firstIndex(of: pageViewController) else {
+        guard let index = orderedViewControllers.firstIndex(of: viewController) else {
             return nil
         }
         let prevIndex = index - 1
-        guard prevIndex < orderedViewControllers.count else {
+        guard prevIndex < orderedViewControllers.count, prevIndex >= 0 else {
             return nil
         }
         return orderedViewControllers[prevIndex]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let index = orderedViewControllers.firstIndex(of: pageViewController) else {
+        guard let index = orderedViewControllers.firstIndex(of: viewController) else {
             return nil
         }
         let nextIndex = index + 1
@@ -70,9 +72,11 @@ extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewContro
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if let firstController = orderedViewControllers.first,
-           let index = orderedViewControllers.firstIndex(of: firstController) {
-            print(index)
-        }
+        guard completed,
+              let currentViewController = pageViewController.viewControllers?.first,
+              let index = orderedViewControllers.firstIndex(of: currentViewController) else { return }
+        print(index)
+        pageControlDelegate?.onCurrentIndexChanged(newIndex: index)
     }
 }
+
