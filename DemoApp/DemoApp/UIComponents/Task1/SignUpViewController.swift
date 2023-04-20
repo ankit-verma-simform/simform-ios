@@ -8,24 +8,56 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+     
     // MARK: IB Outlets
-    @IBOutlet weak var ivProfile: UIImageView!
-    @IBOutlet weak var constImgWidth: NSLayoutConstraint!
+    @IBOutlet weak var btnPickProfilePhoto: UIButton!
+    @IBOutlet weak var imgProfile: CircularImageView!
+    @IBOutlet weak var tvBio: UITextView!
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var sliderAge: UISlider!
+    @IBOutlet var lblAgeCollection: [UILabel]!
+    @IBOutlet weak var lblAge: UILabel!
+    
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        ivProfile.layer.cornerRadius = ivProfile.frame.size.height / 2
-        ivProfile.clipsToBounds = true
-//        ivProfile.maskCircle()
-        
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.constImgWidth.constant = 250
-            self.ivProfile.layoutIfNeeded()
-            self.ivProfile.layer.cornerRadius = self.ivProfile.frame.size.height / 2
-//            print("called")
+        customizeBioTextView()
+        setUpAgeSliderLabels()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        btnPickProfilePhoto.maskCircle()
+    }
+
+}
+
+// MARK: Functions
+extension SignUpViewController {
+    func customizeBioTextView() {
+        tvBio.backgroundColor = .white
+        tvBio.layer.borderWidth = 1
+        tvBio.layer.cornerRadius = 4
+        tvBio.layer.borderColor = UIColor.systemGray5.cgColor
+    }
+    
+    private func setUpAgeSliderLabels() {
+        lblAge.text = String(Int(sliderAge.value))
+        for label in lblAgeCollection {
+            switch label.tag {
+            case 1: label.text = String(Int(sliderAge.minimumValue))
+            case 2: label.text = String(Int(sliderAge.maximumValue))
+            default: continue
+            }
         }
     }
 }
+
+
+// MARK: IB Actions
+extension SignUpViewController {
+    @IBAction func sliderOnAgeChangedAction(_ sender: UISlider) {
+        lblAge.text = String(Int(sender.value))
+    }
+}
+

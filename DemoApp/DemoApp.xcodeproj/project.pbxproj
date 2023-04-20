@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC177A3D29F0206B00F1C638 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC177A3C29F0206B00F1C638 /* FormTextField.swift */; };
 		BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */; };
 		BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */; };
 		BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364829DBE5BA00CB1DC0 /* ViewController.swift */; };
@@ -55,10 +54,13 @@
 		BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732BD29E81B090045032D /* UITextFieldVC.swift */; };
 		BCD732C129E824650045032D /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732C029E824650045032D /* UITextViewVC.swift */; };
 		BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732C229E8248F0045032D /* UITextView.storyboard */; };
+		BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */; };
+		BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */; };
+		BCEF05B929F10D0800B8DA0C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */; };
+		BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC177A3C29F0206B00F1C638 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		BC42364129DBE5BA00CB1DC0 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,10 @@
 		BCD732BD29E81B090045032D /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
 		BCD732C029E824650045032D /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
 		BCD732C229E8248F0045032D /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
+		BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextField.xib; sourceTree = "<group>"; };
+		BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		BC177A3A29F0200600F1C638 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BCEF05B729F108ED00B8DA0C /* CircularImage */,
 				BC177A3B29F0203300F1C638 /* FormTextField */,
 			);
 			path = CustomComponents;
@@ -132,7 +139,8 @@
 		BC177A3B29F0203300F1C638 /* FormTextField */ = {
 			isa = PBXGroup;
 			children = (
-				BC177A3C29F0206B00F1C638 /* FormTextField.swift */,
+				BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */,
+				BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */,
 			);
 			path = FormTextField;
 			sourceTree = "<group>";
@@ -314,6 +322,7 @@
 				BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */,
 				BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */,
 				BC94E43129F013540057CB70 /* UIImageView+Extension.swift */,
+				BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +352,14 @@
 				BCD732C229E8248F0045032D /* UITextView.storyboard */,
 			);
 			path = UITextView;
+			sourceTree = "<group>";
+		};
+		BCEF05B729F108ED00B8DA0C /* CircularImage */ = {
+			isa = PBXGroup;
+			children = (
+				BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */,
+			);
+			path = CircularImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +430,7 @@
 				BC59942729EEB1CA00EFF4D2 /* UIStepper.storyboard in Resources */,
 				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
 				BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */,
+				BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */,
 				BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */,
 				BC94E42829EFF63B0057CB70 /* Task1.storyboard in Resources */,
 				BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */,
@@ -433,10 +451,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEF05B929F10D0800B8DA0C /* CircularImageView.swift in Sources */,
 				BC94E42329EFE4830057CB70 /* ScrollViewVC.swift in Sources */,
 				BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */,
 				BC59941929EE717100EFF4D2 /* UISegmentedControlVC.swift in Sources */,
-				BC177A3D29F0206B00F1C638 /* FormTextField.swift in Sources */,
+				BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */,
 				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
 				BC94E43229F013540057CB70 /* UIImageView+Extension.swift in Sources */,
 				BC94E42E29EFFF120057CB70 /* SignUpViewController.swift in Sources */,
@@ -450,6 +469,7 @@
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
+				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
 				BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */,
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
