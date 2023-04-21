@@ -8,9 +8,8 @@
 import UIKit
 
 class UISwitchVC: UIViewController {
-
     // MARK: IB Outlets
-    @IBOutlet weak var lblDarkMode: UILabel!
+    @IBOutlet private weak var lblDarkMode: UILabel!
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -20,7 +19,7 @@ class UISwitchVC: UIViewController {
 
 // MARK: IB Actions
 extension UISwitchVC {
-    @IBAction func switchToggleDarkMode(_ sender: UISwitch) {
+    @IBAction private func switchToggleDarkMode(_ sender: UISwitch) {
         print(sender.isOn)
         if sender.isOn {
             overrideUserInterfaceStyle = .dark

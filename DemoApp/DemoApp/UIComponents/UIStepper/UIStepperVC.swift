@@ -8,9 +8,8 @@
 import UIKit
 
 class UIStepperVC: UIViewController {
-
     // MARK: IB Outlets
-    @IBOutlet weak var lblStepper: UILabel!
+    @IBOutlet private weak var lblStepper: UILabel!
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -20,7 +19,7 @@ class UIStepperVC: UIViewController {
 
 // MARK: IB Actions
 extension UIStepperVC {
-    @IBAction func stepper(_ sender: UIStepper) {
+    @IBAction private func stepper(_ sender: UIStepper) {
         lblStepper.text = String(sender.value)
     }
 }

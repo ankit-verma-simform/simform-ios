@@ -8,9 +8,8 @@
 import UIKit
 
 class UISegmentedControlVC: UIViewController {
-
     // MARK: IB Outlets
-    @IBOutlet weak var scFavourite: UISegmentedControl!
+    @IBOutlet private weak var scFavourite: UISegmentedControl!
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -18,10 +17,9 @@ class UISegmentedControlVC: UIViewController {
     }
 }
 
-
 // MARK: IB Actions
 extension UISegmentedControlVC {
-    @IBAction func scFavouriteChangeAction(_ sender: UISegmentedControl) {
+    @IBAction private func scFavouriteChangeAction(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0: print("Facebook")
         case 1: print("Google")

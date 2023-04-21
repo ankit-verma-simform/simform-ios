@@ -8,9 +8,8 @@
 import UIKit
 
 class FormTextField: UIView {
-    
     // MARK: IB Outlets
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet private weak var contentView: UIView!
     
     // MARK: View Lifecycle Methods
     override init(frame: CGRect) {
@@ -30,13 +29,4 @@ class FormTextField: UIView {
         contentView.bounds = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

@@ -8,16 +8,14 @@
 import UIKit
 
 class AuthPageViewController: UIPageViewController {
-
     // MARK: Variables
-    lazy var orderedViewControllers: [UIViewController?] = [
+    lazy private var orderedViewControllers: [UIViewController?] = [
         SignUpViewController.create(storyboardName: .task1),
         LoginViewController.create(storyboardName: .task1)
     ]
-    var viewControllersLoaded = false
+    private var viewControllersLoaded = false
 
     // MARK: View Lifecycle Methods
-
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
@@ -34,19 +32,17 @@ class AuthPageViewController: UIPageViewController {
 
 // MARK: Functions
 extension AuthPageViewController {
-    func setupViewControllers() {
+    private func setupViewControllers() {
         guard let firstViewController = orderedViewControllers.first ?? nil else { return }
-        
         setViewControllers([firstViewController], direction: .forward, animated: true)
     }
 }
 
-
 // MARK: Delegate Methods
 extension AuthPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewController = pageViewController.viewControllers?.first,
               let currentIndex = orderedViewControllers.firstIndex(of: viewController) else {
             return nil
@@ -56,8 +52,9 @@ extension AuthPageViewController: UIPageViewControllerDelegate, UIPageViewContro
         return orderedViewControllers[prevIndex]
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let viewController = pageViewController.viewControllers?.first,
               let currentIndex = orderedViewControllers.firstIndex(of: viewController) else {
             return nil

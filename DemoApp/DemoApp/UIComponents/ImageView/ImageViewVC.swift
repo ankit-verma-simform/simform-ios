@@ -8,9 +8,8 @@
 import UIKit
 
 class ImageViewVC: UIViewController {
-
     // MARK: IB Outlets
-    @IBOutlet weak var ivLogo: UIImageView!
+    @IBOutlet private weak var ivLogo: UIImageView!
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -19,10 +18,9 @@ class ImageViewVC: UIViewController {
     }
 }
 
+// MARK: Functions
 extension ImageViewVC {
-    // MARK: Functions
-    func modifyImage() {
+    private func modifyImage() {
         ivLogo.layer.cornerRadius = 50
     }
 }
-

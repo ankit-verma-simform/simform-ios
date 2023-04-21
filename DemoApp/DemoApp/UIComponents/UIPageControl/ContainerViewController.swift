@@ -8,10 +8,9 @@
 import UIKit
 
 class ContainerViewController: UIViewController {
-
     // MARK: IB Outlet
-    @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var pvcContainer: UIView!
+    @IBOutlet private weak var pageControl: UIPageControl!
+    @IBOutlet private weak var pvcContainer: UIView!
     
     // MARK: View Lifecycle
     override func viewDidLoad() {

@@ -8,7 +8,6 @@
 import UIKit
 
 class CircularImageView: UIImageView {
-
     override func layoutSubviews() {
         layer.cornerRadius = frame.size.width / 2
         layer.masksToBounds = false

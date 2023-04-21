@@ -8,14 +8,13 @@
 import UIKit
 
 class MainPageViewController: UIPageViewController {
-    
     // MARK: Variables
-    lazy var orderedViewControllers = [
+    private lazy var orderedViewControllers = [
         viewControllerWith(name: "PinkViewController"),
         viewControllerWith(name: "YellowViewController")
     ]
-    var isLoading: Bool = false
-    var currentIndex: Int = 0
+    private var isLoading: Bool = false
+    private var currentIndex: Int = 0
     weak var pageControlDelegate: PageControlDelegate?
 
     // MARK: View Lifecycle Methods
@@ -36,11 +35,9 @@ class MainPageViewController: UIPageViewController {
 
 // MARK: Functions
 extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-    
-    func setUpControllers() {
+    private func setUpControllers() {
         currentIndex = 0
         let firstViewController = orderedViewControllers[currentIndex]
-        
         setViewControllers([firstViewController], direction: .forward, animated: true)
     }
     
@@ -49,7 +46,9 @@ extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewContro
             .instantiateViewController(withIdentifier: name)
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let index = orderedViewControllers.firstIndex(of: viewController) else {
             return nil
         }
@@ -60,7 +59,9 @@ extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewContro
         return orderedViewControllers[prevIndex]
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let index = orderedViewControllers.firstIndex(of: viewController) else {
             return nil
         }
@@ -71,12 +72,16 @@ extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewContro
         return orderedViewControllers[nextIndex]
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        didFinishAnimating finished: Bool,
+        previousViewControllers: [UIViewController],
+        transitionCompleted completed: Bool) {
         guard completed,
               let currentViewController = pageViewController.viewControllers?.first,
-              let index = orderedViewControllers.firstIndex(of: currentViewController) else { return }
-        print(index)
+              let index = orderedViewControllers.firstIndex(of: currentViewController) else {
+            return
+        }
         pageControlDelegate?.onCurrentIndexChanged(newIndex: index)
     }
 }
-

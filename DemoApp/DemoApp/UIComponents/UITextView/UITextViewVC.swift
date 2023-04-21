@@ -8,9 +8,8 @@
 import UIKit
 
 class UITextViewVC: UIViewController  {
-
     // MARK: IB Outlets
-    @IBOutlet weak var tvNote: UITextView!
+    @IBOutlet private weak var tvNote: UITextView!
     
     // MARK: View lifecycle methods
     override func viewDidLoad() {
@@ -19,9 +18,6 @@ class UITextViewVC: UIViewController  {
         tvNote.delegate = self
         tvNote.addDoneButtonOnKeyboard()
     }
-    
-    
-    
 }
 
 // MARK: Functions
@@ -40,7 +36,10 @@ extension UITextViewVC: UITextViewDelegate {
         print("Text changed")
     }
     
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange) -> Bool {
+    func textView(
+        _ textView: UITextView,
+        shouldInteractWith URL: URL,
+        in characterRange: NSRange) -> Bool {
         if URL.absoluteString.contains("google") {
             return false
         }

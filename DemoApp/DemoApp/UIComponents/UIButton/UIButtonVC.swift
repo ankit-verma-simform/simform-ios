@@ -8,51 +8,44 @@
 import UIKit
 
 class UIButtonVC: UIViewController {
-    
     // MARK: Variables
-    var squareIsRed: Bool = true
+    private var squareIsRed: Bool = true
     
     // MARK: IB Outlets
-    @IBOutlet weak var btnChangeColor: UIButton!
-    @IBOutlet weak var viewSquare: UIView!
-    @IBOutlet weak var btnAddButton: UIButton!
-    @IBOutlet weak var btnFreeTrial: UIButton!
+    @IBOutlet private weak var btnChangeColor: UIButton!
+    @IBOutlet private weak var viewSquare: UIView!
+    @IBOutlet private weak var btnAddButton: UIButton!
+    @IBOutlet private weak var btnFreeTrial: UIButton!
     
     // MARK: IB OutletCollection
-    @IBOutlet var typeButtonCollection: [UIButton]!
+    @IBOutlet private var typeButtonCollection: [UIButton]!
     
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         for button in typeButtonCollection {
             button.setTitleColor(.magenta, for: .normal)
         }
-        
         btnFreeTrial.configuration = .freeTrial()
-        btnFreeTrial.configurationUpdateHandler = { button in
-            print("Config changed! \(button.state == .highlighted)")
-        }
     }
 }
 
 // MARK: IB Actions
 extension UIButtonVC {
-    @IBAction func btnChangeColorAction(_ sender: Any) {
+    @IBAction private func btnChangeColorAction(_ sender: Any) {
         viewSquare.backgroundColor = squareIsRed ? .orange : .red
         let colorName = squareIsRed ? "Red" : "Orange"
         btnChangeColor.setTitle("Click to set square color to \(colorName)", for: .normal)
         squareIsRed = !squareIsRed
     }
     
-    @IBAction func btnAddButtonAction(_ sender: UIButton) {
+    @IBAction private func btnAddButtonAction(_ sender: UIButton) {
         // setting up button
         let newBtn = UIButton()
         newBtn.setTitle("This button added programmatically", for: .normal)
         newBtn.setTitleColor(.white, for: .normal)
         newBtn.isUserInteractionEnabled = true
         newBtn.backgroundColor = .systemGray4
-        
         // adding button and constraints
         view.addSubview(newBtn)
         newBtn.translatesAutoresizingMaskIntoConstraints = false
@@ -61,10 +54,7 @@ extension UIButtonVC {
         NSLayoutConstraint.activate([horizontalConstraint, topConstraint])
     }
     
-    @IBAction func btnTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
-        print(event.subtype.rawValue)
-        print(event.allTouches ?? "")
-        print(event)
+    @IBAction private func btnTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
         switch event.type {
         case .hover: print("Hover state")
         case .motion: print("Device is moving")

@@ -35,6 +35,8 @@
 		BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942A29EEB2CC00EFF4D2 /* UIStepperVC.swift */; };
 		BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */; };
 		BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */; };
+		BC6B43B429F244C6007607C4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B43B329F244C6007607C4 /* Validator.swift */; };
+		BC7F3C7F29F2A56A001ABCE7 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = BC7F3C7E29F2A56A001ABCE7 /* SPIndicator */; };
 		BC94E42029EFAC670057CB70 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E41F29EFAC670057CB70 /* ContainerViewController.swift */; };
 		BC94E42329EFE4830057CB70 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E42229EFE4830057CB70 /* ScrollViewVC.swift */; };
 		BC94E42529EFE4920057CB70 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC94E42429EFE4920057CB70 /* ScrollView.storyboard */; };
@@ -43,7 +45,6 @@
 		BC94E42C29EFFEB50057CB70 /* AuthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E42B29EFFEB50057CB70 /* AuthPageViewController.swift */; };
 		BC94E42E29EFFF120057CB70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E42D29EFFF120057CB70 /* SignUpViewController.swift */; };
 		BC94E43029F004170057CB70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E42F29F004170057CB70 /* LoginViewController.swift */; };
-		BC94E43229F013540057CB70 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E43129F013540057CB70 /* UIImageView+Extension.swift */; };
 		BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */; };
 		BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA529E68F96003437E6 /* Storyboard.swift */; };
 		BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CA729E69001003437E6 /* UILabel.storyboard */; };
@@ -91,6 +92,8 @@
 		BC59942A29EEB2CC00EFF4D2 /* UIStepperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStepperVC.swift; sourceTree = "<group>"; };
 		BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewVC.swift; sourceTree = "<group>"; };
 		BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
+		BC6B43B329F244C6007607C4 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		BC6B43B529F25B43007607C4 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
 		BC94E41F29EFAC670057CB70 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		BC94E42229EFE4830057CB70 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		BC94E42429EFE4920057CB70 /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
@@ -99,7 +102,6 @@
 		BC94E42B29EFFEB50057CB70 /* AuthPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPageViewController.swift; sourceTree = "<group>"; };
 		BC94E42D29EFFF120057CB70 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BC94E42F29F004170057CB70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BC94E43129F013540057CB70 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BCA52CA529E68F96003437E6 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		BCA52CA729E69001003437E6 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7F3C7F29F2A56A001ABCE7 /* SPIndicator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +167,8 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC6B43B529F25B43007607C4 /* DemoApp.entitlements */,
+				BC6B43B229F2448E007607C4 /* Utils */,
 				BC177A3A29F0200600F1C638 /* CustomComponents */,
 				BC4E504D29ED268800C0AC9D /* fonts */,
 				BCA52CA229E68E81003437E6 /* Extensions */,
@@ -255,6 +260,14 @@
 			path = ImageView;
 			sourceTree = "<group>";
 		};
+		BC6B43B229F2448E007607C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC6B43B329F244C6007607C4 /* Validator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BC94E42129EFE4670057CB70 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,7 +334,6 @@
 				BCA52CA329E68EAC003437E6 /* UIViewController+Extension.swift */,
 				BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */,
 				BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */,
-				BC94E43129F013540057CB70 /* UIImageView+Extension.swift */,
 				BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */,
 			);
 			path = Extensions;
@@ -378,6 +390,9 @@
 			dependencies = (
 			);
 			name = DemoApp;
+			packageProductDependencies = (
+				BC7F3C7E29F2A56A001ABCE7 /* SPIndicator */,
+			);
 			productName = DemoApp;
 			productReference = BC42364129DBE5BA00CB1DC0 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -406,6 +421,9 @@
 				Base,
 			);
 			mainGroup = BC42363829DBE5BA00CB1DC0;
+			packageReferences = (
+				BC7F3C7D29F2A56A001ABCE7 /* XCRemoteSwiftPackageReference "SPIndicator" */,
+			);
 			productRefGroup = BC42364229DBE5BA00CB1DC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -457,7 +475,6 @@
 				BC59941929EE717100EFF4D2 /* UISegmentedControlVC.swift in Sources */,
 				BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */,
 				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
-				BC94E43229F013540057CB70 /* UIImageView+Extension.swift in Sources */,
 				BC94E42E29EFFF120057CB70 /* SignUpViewController.swift in Sources */,
 				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
 				BC94E42C29EFFEB50057CB70 /* AuthPageViewController.swift in Sources */,
@@ -467,6 +484,7 @@
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
+				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
 				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
@@ -625,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -652,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -696,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC7F3C7D29F2A56A001ABCE7 /* XCRemoteSwiftPackageReference "SPIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPIndicator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC7F3C7E29F2A56A001ABCE7 /* SPIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC7F3C7D29F2A56A001ABCE7 /* XCRemoteSwiftPackageReference "SPIndicator" */;
+			productName = SPIndicator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC42363929DBE5BA00CB1DC0 /* Project object */;
 }

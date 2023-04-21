@@ -8,9 +8,8 @@
 import UIKit
 
 class UITextFieldVC: UIViewController {
-    
     // MARK: IB Outlets
-    @IBOutlet weak var tfEnterPassword: UITextField!
+    @IBOutlet private weak var tfEnterPassword: UITextField!
 
     // MARK: View Lifecycle Methods
     override func viewDidLoad() {
@@ -18,29 +17,25 @@ class UITextFieldVC: UIViewController {
     }
 }
 
-
 // MARK: UI Actions
 extension UITextFieldVC {
-    
-    @IBAction func tfCheckUserInputAction(_ sender: UITextField) {
+    @IBAction private func tfCheckUserInputAction(_ sender: UITextField) {
         guard let newText = sender.text else {
             return
         }
-        
         sender.backgroundColor = .systemBackground
         sender.layer.borderWidth = 1
-     
-        if newText.isEmpty { return }
-        
+        if newText.isEmpty {
+            return
+        }
         if newText.count < 8 {
             sender.layer.borderColor = UIColor.red.cgColor
         } else {
             sender.layer.borderColor = UIColor.green.cgColor
         }
-        print(sender.text ?? "")
     }
     
-    @IBAction func btnToggleShowPassword(_ sender: UIButton) {
+    @IBAction private func btnToggleShowPassword(_ sender: UIButton) {
         tfEnterPassword.isSecureTextEntry = !tfEnterPassword.isSecureTextEntry
         if tfEnterPassword.isSecureTextEntry {
             sender.setImage(UIImage(systemName: "eye.slash.fill"), for: .normal)
