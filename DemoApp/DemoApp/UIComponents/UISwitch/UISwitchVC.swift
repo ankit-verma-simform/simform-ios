@@ -8,16 +8,16 @@
 import UIKit
 
 class UISwitchVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var lblDarkMode: UILabel!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension UISwitchVC {
     @IBAction private func switchToggleDarkMode(_ sender: UISwitch) {
         print(sender.isOn)

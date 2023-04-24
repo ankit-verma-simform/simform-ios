@@ -8,11 +8,11 @@
 import UIKit
 
 class UILabelVC: UIViewController {
-    // MARK: Outlets
+    // MARK: - Outlets
     @IBOutlet private weak var lblProgrammed: UILabel!
     @IBOutlet private weak var lblAttributed: UILabel!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         modifyLabelProperties()
@@ -20,7 +20,7 @@ class UILabelVC: UIViewController {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension UILabelVC {
     private func modifyLabelProperties() {
         let customText = """

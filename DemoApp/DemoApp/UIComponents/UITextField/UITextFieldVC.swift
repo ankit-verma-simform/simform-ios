@@ -8,16 +8,16 @@
 import UIKit
 
 class UITextFieldVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var tfEnterPassword: UITextField!
 
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-// MARK: UI Actions
+// MARK: - UI Actions
 extension UITextFieldVC {
     @IBAction private func tfCheckUserInputAction(_ sender: UITextField) {
         guard let newText = sender.text else {

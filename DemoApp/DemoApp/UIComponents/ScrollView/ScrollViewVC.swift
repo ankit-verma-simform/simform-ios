@@ -8,17 +8,17 @@
 import UIKit
 
 class ScrollViewVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var scrollView: UIScrollView!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
     }
 }
 
-// MARK: Delegate Methods for UIScrollView
+// MARK: - Delegate Methods for UIScrollView
 extension ScrollViewVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("user scrolled the screen")

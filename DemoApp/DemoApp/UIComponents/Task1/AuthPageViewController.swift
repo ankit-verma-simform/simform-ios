@@ -8,14 +8,14 @@
 import UIKit
 
 class AuthPageViewController: UIPageViewController {
-    // MARK: Variables
+    // MARK: - Variables
     lazy private var orderedViewControllers: [UIViewController?] = [
         SignUpViewController.create(storyboardName: .task1),
         LoginViewController.create(storyboardName: .task1)
     ]
     private var viewControllersLoaded = false
 
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
@@ -30,7 +30,7 @@ class AuthPageViewController: UIPageViewController {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension AuthPageViewController {
     private func setupViewControllers() {
         guard let firstViewController = orderedViewControllers.first ?? nil else { return }
@@ -38,7 +38,7 @@ extension AuthPageViewController {
     }
 }
 
-// MARK: Delegate Methods
+// MARK: - Delegate Methods
 extension AuthPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     func pageViewController(
         _ pageViewController: UIPageViewController,

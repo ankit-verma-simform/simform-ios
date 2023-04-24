@@ -8,16 +8,16 @@
 import UIKit
 
 class UISliderVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var lblSlider: UILabel!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension UISliderVC {
     @IBAction private func slider(_ sender: UISlider) {
         lblSlider.text = String(Int(sender.value))

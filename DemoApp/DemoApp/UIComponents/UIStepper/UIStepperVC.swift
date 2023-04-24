@@ -8,16 +8,16 @@
 import UIKit
 
 class UIStepperVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var lblStepper: UILabel!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension UIStepperVC {
     @IBAction private func stepper(_ sender: UIStepper) {
         lblStepper.text = String(sender.value)

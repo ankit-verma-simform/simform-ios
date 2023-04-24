@@ -8,19 +8,19 @@
 import UIKit
 
 class UIButtonVC: UIViewController {
-    // MARK: Variables
+    // MARK: - Variables
     private var squareIsRed: Bool = true
     
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var btnChangeColor: UIButton!
     @IBOutlet private weak var viewSquare: UIView!
     @IBOutlet private weak var btnAddButton: UIButton!
     @IBOutlet private weak var btnFreeTrial: UIButton!
     
-    // MARK: IB OutletCollection
+    // MARK: - IB OutletCollection
     @IBOutlet private var typeButtonCollection: [UIButton]!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         for button in typeButtonCollection {
@@ -30,7 +30,7 @@ class UIButtonVC: UIViewController {
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension UIButtonVC {
     @IBAction private func btnChangeColorAction(_ sender: Any) {
         viewSquare.backgroundColor = squareIsRed ? .orange : .red
@@ -81,7 +81,7 @@ extension UIButtonVC {
     }
 }
 
-// MARK: Extensions
+// MARK: - Extensions
 extension UIButton.Configuration {
     static func freeTrial() -> UIButton.Configuration {
         var config: UIButton.Configuration = .tinted()

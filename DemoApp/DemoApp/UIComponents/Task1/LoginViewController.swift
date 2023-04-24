@@ -9,15 +9,15 @@ import UIKit
 import SPIndicator
 
 class LoginViewController: UIViewController {
-    // MARK: Variables
+    // MARK: - Variables
     private var validFormDetails = false
     
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var tfEmail: UITextField!
     @IBOutlet private var tfPassword: UITextField!
     @IBOutlet private weak var scrollView: UIScrollView!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAllDelegates()
@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension LoginViewController {
     private func setupAllDelegates() {
         tfEmail.delegate = self
@@ -81,7 +81,7 @@ extension LoginViewController {
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension LoginViewController {
     @IBAction func btnOnLogInAction(_ sender: UIButton) {
         validateAllFormDetails()
@@ -100,7 +100,7 @@ extension LoginViewController {
     }
 }
 
-// MARK: Delegate Methods for UITextField
+// MARK: - Delegate Methods for UITextField
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // link keyboard return to next textfields

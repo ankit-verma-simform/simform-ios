@@ -8,7 +8,7 @@
 import UIKit
 
 class MainPageViewController: UIPageViewController {
-    // MARK: Variables
+    // MARK: - Variables
     private lazy var orderedViewControllers = [
         viewControllerWith(name: "PinkViewController"),
         viewControllerWith(name: "YellowViewController")
@@ -17,7 +17,7 @@ class MainPageViewController: UIPageViewController {
     private var currentIndex: Int = 0
     weak var pageControlDelegate: PageControlDelegate?
 
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -33,7 +33,7 @@ class MainPageViewController: UIPageViewController {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension MainPageViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     private func setUpControllers() {
         currentIndex = 0

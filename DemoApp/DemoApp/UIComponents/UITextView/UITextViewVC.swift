@@ -8,10 +8,10 @@
 import UIKit
 
 class UITextViewVC: UIViewController  {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var tvNote: UITextView!
     
-    // MARK: View lifecycle methods
+    // MARK: - View lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tvNote.font = .robotoItalic()
@@ -20,7 +20,7 @@ class UITextViewVC: UIViewController  {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension UITextViewVC: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         print("Begin editing")

@@ -8,10 +8,10 @@
 import UIKit
 
 class UIProgressViewVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var pvLoading: UIProgressView!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         pvLoading.progress = 0.0
@@ -22,7 +22,7 @@ class UIProgressViewVC: UIViewController {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension UIProgressViewVC {
     private func progressLoading() {
         while pvLoading.progress < 1 {

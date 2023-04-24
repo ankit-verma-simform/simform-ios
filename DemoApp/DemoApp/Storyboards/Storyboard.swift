@@ -19,4 +19,5 @@ enum Storyboard: String {
     case imageView = "ImageView"
     case scrollView = "ScrollView"
     case task1 = "Task1"
+    case tableView = "TableView"
 }

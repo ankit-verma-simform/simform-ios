@@ -8,10 +8,10 @@
 import UIKit
 
 class FormTextField: UIView {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var contentView: UIView!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

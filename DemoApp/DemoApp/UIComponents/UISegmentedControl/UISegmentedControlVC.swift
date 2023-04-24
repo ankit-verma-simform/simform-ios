@@ -8,16 +8,16 @@
 import UIKit
 
 class UISegmentedControlVC: UIViewController {
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var scFavourite: UISegmentedControl!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension UISegmentedControlVC {
     @IBAction private func scFavouriteChangeAction(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {

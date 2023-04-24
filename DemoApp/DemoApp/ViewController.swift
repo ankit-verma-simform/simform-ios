@@ -8,13 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // MARK: View lifecycle Methods
+    // MARK: - View lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension ViewController {
     @IBAction private func btnUILabelAction(_ sender: Any) {
         guard let uiLabelVC = UILabelVC
@@ -118,5 +118,13 @@ extension ViewController {
             return
         }
         navigate(to: task1VC)
+    }
+    
+    @IBAction private func btnTableViewAction(_ sender: Any) {
+        guard let tableViewVC = TableViewVC
+            .create(storyboardName: .tableView) as? TableViewVC else {
+            return
+        }
+        navigate(to: tableViewVC)
     }
 }

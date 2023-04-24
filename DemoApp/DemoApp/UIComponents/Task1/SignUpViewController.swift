@@ -9,10 +9,10 @@ import UIKit
 import SPIndicator
 
 class SignUpViewController: UIViewController {
-    // MARK: Variables
-    var validFormDetails = false
+    // MARK: - Variables
+    private var validFormDetails = false
 
-    // MARK: IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet private weak var btnPickProfilePhoto: UIButton!
     @IBOutlet private weak var imgProfile: CircularImageView!
     @IBOutlet private weak var tvBio: UITextView!
@@ -24,7 +24,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet private weak var scGender: UISegmentedControl!
     @IBOutlet private weak var scrollView: UIScrollView!
     
-    // MARK: View Lifecycle Methods
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeBioTextView()
@@ -47,7 +47,7 @@ class SignUpViewController: UIViewController {
     }
 }
 
-// MARK: IB Actions
+// MARK: - IB Actions
 extension SignUpViewController {
     @IBAction private func sliderOnAgeChangedAction(_ sender: UISlider) {
         lblAge.text = String(Int(sender.value))
@@ -78,7 +78,7 @@ extension SignUpViewController {
     }
 }
 
-// MARK: Functions
+// MARK: - Functions
 extension SignUpViewController {
     private func customizeBioTextView() {
         tvBio.backgroundColor = .white
@@ -133,7 +133,7 @@ extension SignUpViewController {
     }
 }
 
-// MARK: Delegate Methods for UITextField
+// MARK: - Delegate Methods for UITextField
 extension SignUpViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // link keyboard return to next textfields
@@ -183,7 +183,7 @@ extension SignUpViewController: UITextFieldDelegate {
     }
 }
 
-// MARK: Delegate Methods for UIImagePicker
+// MARK: - Delegate Methods for UIImagePicker
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(
         _ picker: UIImagePickerController,
