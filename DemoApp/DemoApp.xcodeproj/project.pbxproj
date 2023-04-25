@@ -36,6 +36,12 @@
 		BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */; };
 		BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */; };
 		BC6B43B429F244C6007607C4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B43B329F244C6007607C4 /* Validator.swift */; };
+		BC70743229F7FE8A00F443FB /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70743129F7FE8A00F443FB /* Friend.swift */; };
+		BC70743729F8038D00F443FB /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70743529F8038D00F443FB /* FriendTableViewCell.swift */; };
+		BC70743829F8038D00F443FB /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70743629F8038D00F443FB /* FriendTableViewCell.xib */; };
+		BC7C1EC929F78481009A8228 /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1EC829F78481009A8228 /* AddFriendVC.swift */; };
+		BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */; };
+		BC7C1ECD29F7B4AF009A8228 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */; };
 		BC7F3C7F29F2A56A001ABCE7 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = BC7F3C7E29F2A56A001ABCE7 /* SPIndicator */; };
 		BC94E42029EFAC670057CB70 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E41F29EFAC670057CB70 /* ContainerViewController.swift */; };
 		BC94E42329EFE4830057CB70 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E42229EFE4830057CB70 /* ScrollViewVC.swift */; };
@@ -102,6 +108,12 @@
 		BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
 		BC6B43B329F244C6007607C4 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		BC6B43B529F25B43007607C4 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
+		BC70743129F7FE8A00F443FB /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		BC70743529F8038D00F443FB /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		BC70743629F8038D00F443FB /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		BC7C1EC829F78481009A8228 /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
+		BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListVC.swift; sourceTree = "<group>"; };
+		BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		BC94E41F29EFAC670057CB70 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		BC94E42229EFE4830057CB70 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		BC94E42429EFE4920057CB70 /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
@@ -183,6 +195,7 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC70743029F7FE6B00F443FB /* Models */,
 				BC6B43B529F25B43007607C4 /* DemoApp.entitlements */,
 				BC6B43B229F2448E007607C4 /* Utils */,
 				BC177A3A29F0200600F1C638 /* CustomComponents */,
@@ -280,8 +293,36 @@
 			isa = PBXGroup;
 			children = (
 				BC6B43B329F244C6007607C4 /* Validator.swift */,
+				BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC70742F29F7FB6E00F443FB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC70743529F8038D00F443FB /* FriendTableViewCell.swift */,
+				BC70743629F8038D00F443FB /* FriendTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC70743029F7FE6B00F443FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC70743129F7FE8A00F443FB /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC7C1EC729F78447009A8228 /* FriendsList */ = {
+			isa = PBXGroup;
+			children = (
+				BC70742F29F7FB6E00F443FB /* Cell */,
+				BC7C1EC829F78481009A8228 /* AddFriendVC.swift */,
+				BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */,
+			);
+			path = FriendsList;
 			sourceTree = "<group>";
 		};
 		BC94E42129EFE4670057CB70 /* ScrollView */ = {
@@ -308,6 +349,7 @@
 		BC965EE129F646C400945631 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				BC7C1EC729F78447009A8228 /* FriendsList */,
 				BC965EF229F6AF1F00945631 /* SessionPractice */,
 				BC965EE229F646ED00945631 /* TableView.storyboard */,
 				BC965EE429F6471A00945631 /* TableViewVC.swift */,
@@ -498,6 +540,7 @@
 				BC4E506329ED26D900C0AC9D /* Roboto-Regular.ttf in Resources */,
 				BC59941C29EE87B900EFF4D2 /* UIPageViewController.storyboard in Resources */,
 				BC59941229EE6A1400EFF4D2 /* UIProgressView.storyboard in Resources */,
+				BC70743829F8038D00F443FB /* FriendTableViewCell.xib in Resources */,
 				BC59941529EE714100EFF4D2 /* UISegmentedControl.storyboard in Resources */,
 				BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
@@ -513,11 +556,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEF05B929F10D0800B8DA0C /* CircularImageView.swift in Sources */,
+				BC7C1ECD29F7B4AF009A8228 /* KeyboardHandler.swift in Sources */,
 				BC94E42329EFE4830057CB70 /* ScrollViewVC.swift in Sources */,
 				BC965EEA29F65CEE00945631 /* IndexTableViewCell.swift in Sources */,
 				BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */,
 				BC59941929EE717100EFF4D2 /* UISegmentedControlVC.swift in Sources */,
 				BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */,
+				BC70743729F8038D00F443FB /* FriendTableViewCell.swift in Sources */,
 				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
 				BC94E42E29EFFF120057CB70 /* SignUpViewController.swift in Sources */,
 				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
@@ -526,6 +571,7 @@
 				BC965EEE29F67F7700945631 /* Multiple5TableViewCell.swift in Sources */,
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
+				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
@@ -534,6 +580,7 @@
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
+				BC70743229F7FE8A00F443FB /* Friend.swift in Sources */,
 				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
 				BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */,
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
@@ -542,6 +589,7 @@
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BC965EE529F6471A00945631 /* TableViewVC.swift in Sources */,
 				BC94E42029EFAC670057CB70 /* ContainerViewController.swift in Sources */,
+				BC7C1EC929F78481009A8228 /* AddFriendVC.swift in Sources */,
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
 				BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */,

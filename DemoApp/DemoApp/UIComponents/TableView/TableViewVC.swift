@@ -23,4 +23,12 @@ extension TableViewVC {
         }
         navigate(to: viewController)
     }
+    
+    @IBAction private func navigateToFriendsList(_ sender: UIButton) {
+        guard let viewController = FriendsListVC
+            .create(storyboardName: .tableView) as? FriendsListVC else {
+            return
+        }
+        navigate(to: viewController)
+    }
 }
