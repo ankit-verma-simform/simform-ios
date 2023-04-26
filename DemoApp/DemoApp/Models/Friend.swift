@@ -9,14 +9,14 @@ import UIKit
 
 struct Friend {
     var image: UIImage?
-    var firstName: String?
-    var lastName: String?
-    var age: Int?
+    var firstName: String = ""
+    var lastName: String = ""
+    var age: Int = 0
     
     func validEntries() -> Bool {
         return image != nil
-        && firstName != nil
-        && lastName != nil
-        && (age ?? 0) > 0
+        && firstName.isNotEmpty
+        && lastName.isNotEmpty
+        && age > 0
     }
 }

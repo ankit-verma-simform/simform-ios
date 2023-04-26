@@ -10,7 +10,7 @@ import SPIndicator
 
 // MARK: - Protocol for Sending Friend
 protocol FriendDelegate: AnyObject {
-    func friend(onFriendAdded friend: Friend)
+    func onFriendAdded(_ friend: Friend)
 }
 
 class AddFriendVC: UIViewController {
@@ -99,10 +99,10 @@ extension AddFriendVC {
 extension AddFriendVC {
     @IBAction private func onAgeChange(_ sender: UISlider) {
         friend.age = Int(sender.value)
-        lblAgeInYears.text = String(friend.age ?? 0)
+        lblAgeInYears.text = String(friend.age)
     }
     
-    @IBAction func addFriend(_ sender: UIButton) {
+    @IBAction private func addFriend(_ sender: UIButton) {
         guard friend.validEntries() else {
             SPIndicator.present(
                 title: "Error",
@@ -111,7 +111,7 @@ extension AddFriendVC {
             return
         }
               
-        delegate?.friend(onFriendAdded: friend)
+        delegate?.onFriendAdded(friend)
         SPIndicator.present(
             title: "Success",
             message: "Friend added successfully!",
@@ -119,7 +119,7 @@ extension AddFriendVC {
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func pickProfilePhoto(_ sender: UIButton) {
+    @IBAction private func pickProfilePhoto(_ sender: UIButton) {
         let picker = UIImagePickerController()
         picker.delegate = self
         present(picker, animated: true)
@@ -131,7 +131,8 @@ extension AddFriendVC: UIImagePickerControllerDelegate,
                        UINavigationControllerDelegate {
     func imagePickerController(
         _ picker: UIImagePickerController,
-        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
+    ) {
         guard let image = info[.originalImage] as? UIImage else { return }
         imgProfile.image = image
         picker.dismiss(animated: true)
@@ -144,9 +145,9 @@ extension AddFriendVC: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         switch textField {
         case tfFirstName:
-            friend.firstName = textField.text
+            friend.firstName = textField.text ?? ""
         case tfLastName:
-            friend.lastName = textField.text
+            friend.lastName = textField.text ?? ""
         default:
             break
         }
@@ -162,5 +163,15 @@ extension AddFriendVC: UITextFieldDelegate {
             break
         }
         return true
+    }
+    
+    func textField(
+        _ textField: UITextField,
+        shouldChangeCharactersIn range: NSRange,
+        replacementString string: String
+    ) -> Bool {
+        return string.isEmpty // backspace is pressed
+        || range.lowerBound == 0 // is first word
+        || string.contains(/^[a-z]+$/) // lowercase word
     }
 }

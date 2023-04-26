@@ -16,20 +16,15 @@ class FriendTableViewCell: UITableViewCell {
     // MARK: - View Lifecycle Methods
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
     }
 }
 
 // MARK: - Functions
 extension FriendTableViewCell {
     func config(_ friend: Friend) {
-        guard let firstName = friend.firstName,
-              let lastName = friend.lastName,
-              let image = friend.image,
-              let age = friend.age else {
-            return
-        }
-        lblName.text = firstName + " " + lastName
-        lblAge.text = String(age)
-        imgProfile.image = image
+        lblName.text = friend.firstName + " " + friend.lastName
+        lblAge.text = String(friend.age)
+        imgProfile.image = friend.image
     }
 }

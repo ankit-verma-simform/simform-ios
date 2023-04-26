@@ -8,9 +8,27 @@
 import UIKit
 
 class FriendsListVC: UIViewController {
-    
     // MARK: - Variables
-    private var dictFriends: [Character: [Friend]] = [:]
+    private var sortedKeysDictFriends: [Character] = []
+    private var dictFriends: [Character: [Friend]] = [:] {
+        didSet {
+            sortedKeysDictFriends = dictFriends.keys.sorted()
+        }
+    }
+//     [
+//        "a": [
+//            Friend(image: UIImage(named: "defaultPerson"), firstName: "Aman", lastName: "Rathod", age: 22),
+//            Friend(image: UIImage(named: "defaultPerson"), firstName: "Ankit", lastName: "Verma", age: 22),
+//            Friend(image: UIImage(named: "defaultPerson"), firstName: "Ashray", lastName: "Patel", age: 22),
+//        ],
+//        "p": [
+//            Friend(image: UIImage(named: "defaultPerson"), firstName: "Paresh", lastName: "Jain", age: 22),
+//            Friend(image: UIImage(named: "defaultPerson"), firstName: "Parth", lastName: "Patel", age: 22),
+//        ],
+//        "d": [
+//            Friend(image: UIImage(named: "defaultPerson"), firstName: "Dev", lastName: "Mehta", age: 22),
+//        ]
+//    ]
     
     // MARK: - IB Outlets
     @IBOutlet weak var tblFriends: UITableView!
@@ -25,14 +43,28 @@ class FriendsListVC: UIViewController {
 // MARK: - Functions
 extension FriendsListVC {
     private func initialSetup() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
+        setupNavBarItems()
+        tblFriends.register(UINib(nibName: "FriendTableViewCell", bundle: nil),
+                            forCellReuseIdentifier: "FriendTableViewCell")
+        title = "Friends List"
+    }
+    
+    private func setupNavBarItems() {
+        let deleteFriends = UIBarButtonItem(
+            barButtonSystemItem: .trash,
+            target: self,
+            action: #selector(deleteFriendsFromList)
+        )
+        let addFriend = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
             action: #selector(gotoAddFriendScreen)
         )
-        tblFriends.register(UINib(nibName: "FriendTableViewCell", bundle: nil),
-                            forCellReuseIdentifier: "FriendTableViewCell")
-        title = "Friends List"
+        navigationItem.rightBarButtonItems = [addFriend, deleteFriends]
+    }
+    
+    @objc private func deleteFriendsFromList(sender: Any?) {
+        // TODO: complete delete logic, hide/show delete icon on select
     }
     
     @objc private func gotoAddFriendScreen(sender: Any?) {
@@ -45,12 +77,12 @@ extension FriendsListVC {
     }
     
     private func addFriend(_ friend: Friend) {
-        guard let firstChar = friend.firstName?.lowercased().first else {
+        guard let firstChar = friend.firstName.lowercased().first else {
             return
         }
         var friendsGroup = dictFriends[firstChar] ?? []
         friendsGroup.append(friend)
-        dictFriends[firstChar] = friendsGroup
+        dictFriends[firstChar] = friendsGroup.sorted(by: { $0.firstName < $1.firstName })
     }
 }
 
@@ -61,7 +93,7 @@ extension FriendsListVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dictFriends[dictFriends.keys.sorted()[section]]?.count ?? 0
+        return dictFriends[sortedKeysDictFriends[section]]?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,8 +101,7 @@ extension FriendsListVC: UITableViewDataSource {
             withIdentifier: "FriendTableViewCell", for: indexPath) as? FriendTableViewCell else {
             return UITableViewCell()
         }
-        guard let friend = dictFriends[
-            dictFriends.keys.sorted()[indexPath.section]]?[indexPath.row] else {
+        guard let friend = dictFriends[sortedKeysDictFriends[indexPath.section]]?[indexPath.row] else {
             return UITableViewCell()
         }
         cell.config(friend)
@@ -80,20 +111,31 @@ extension FriendsListVC: UITableViewDataSource {
 
 // MARK: - Delegate Methods for UITableViewDelegate
 extension FriendsListVC: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return String(dictFriends.keys.sorted()[section].uppercased())
-    }
+    func tableView(
+        _ tableView: UITableView,
+        titleForHeaderInSection section: Int) -> String? {
+            return String(sortedKeysDictFriends[section].uppercased())
+        }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 127
-    }
+    func tableView(
+        _ tableView: UITableView,
+        heightForRowAt indexPath: IndexPath) -> CGFloat {
+            UITableView.automaticDimension
+        }
+    
+    func tableView(
+        _ tableView: UITableView,
+        estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+            UITableView.automaticDimension
+        }
 }
 
-// MARK: - Delegate Method for FriendSendable
+// MARK: - Delegate Method for FriendDelegate
 extension FriendsListVC: FriendDelegate {
-    func friend(onFriendAdded friend: Friend) {
-        print(friend)
-        addFriend(friend)
+    func onFriendAdded(_ friend: Friend) {
+        for _ in 1...30 {
+            addFriend(friend)
+        }
         tblFriends.reloadData()
     }
 }
