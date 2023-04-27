@@ -88,6 +88,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imgProfile" destination="kNo-Yw-sPJ" id="4fj-87-mD7"/>
+                <outlet property="imgSelected" destination="Cj3-dA-t2f" id="BTg-K7-7bx"/>
                 <outlet property="lblAge" destination="mvk-UM-eah" id="6hN-UO-rnm"/>
                 <outlet property="lblName" destination="tvl-VW-Ild" id="n1l-73-r1O"/>
             </connections>

@@ -65,6 +65,9 @@
 		BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CA929E69041003437E6 /* UILabelVC.swift */; };
 		BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */; };
 		BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */; };
+		BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */; };
+		BCC57CE129FA9072003EFE6D /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC57CE029FA9072003EFE6D /* SectionHeader.xib */; };
+		BCC57CE329FA9110003EFE6D /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC57CE229FA9110003EFE6D /* SectionHeader.swift */; };
 		BCD732BB29E81ADD0045032D /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732BA29E81ADD0045032D /* UITextField.storyboard */; };
 		BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732BD29E81B090045032D /* UITextFieldVC.swift */; };
 		BCD732C129E824650045032D /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732C029E824650045032D /* UITextViewVC.swift */; };
@@ -136,6 +139,9 @@
 		BCA52CA929E69041003437E6 /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
 		BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonVC.swift; sourceTree = "<group>"; };
 		BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
+		BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extension.swift"; sourceTree = "<group>"; };
+		BCC57CE029FA9072003EFE6D /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
+		BCC57CE229FA9110003EFE6D /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		BCD732BA29E81ADD0045032D /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		BCD732BD29E81B090045032D /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
 		BCD732C029E824650045032D /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
@@ -303,6 +309,8 @@
 			children = (
 				BC70743529F8038D00F443FB /* FriendTableViewCell.swift */,
 				BC70743629F8038D00F443FB /* FriendTableViewCell.xib */,
+				BCC57CE029FA9072003EFE6D /* SectionHeader.xib */,
+				BCC57CE229FA9110003EFE6D /* SectionHeader.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -417,6 +425,7 @@
 				BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */,
 				BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */,
 				BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */,
+				BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -522,6 +531,7 @@
 			files = (
 				BC4E506529ED26D900C0AC9D /* Roboto-Bold.ttf in Resources */,
 				BC94E42529EFE4920057CB70 /* ScrollView.storyboard in Resources */,
+				BCC57CE129FA9072003EFE6D /* SectionHeader.xib in Resources */,
 				BC4E506429ED26D900C0AC9D /* Roboto-Italic.ttf in Resources */,
 				BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */,
 				BC965EE329F646ED00945631 /* TableView.storyboard in Resources */,
@@ -573,6 +583,7 @@
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
 				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
+				BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
@@ -592,6 +603,7 @@
 				BC7C1EC929F78481009A8228 /* AddFriendVC.swift in Sources */,
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
+				BCC57CE329FA9110003EFE6D /* SectionHeader.swift in Sources */,
 				BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */,
 				BC94E43029F004170057CB70 /* LoginViewController.swift in Sources */,
 				BCD732C129E824650045032D /* UITextViewVC.swift in Sources */,

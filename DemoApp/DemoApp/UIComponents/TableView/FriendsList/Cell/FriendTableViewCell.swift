@@ -12,6 +12,7 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblAge: UILabel!
     @IBOutlet weak var imgProfile: CircularImageView!
+    @IBOutlet weak var imgSelected: UIImageView!
     
     // MARK: - View Lifecycle Methods
     override func awakeFromNib() {
@@ -26,5 +27,10 @@ extension FriendTableViewCell {
         lblName.text = friend.firstName + " " + friend.lastName
         lblAge.text = String(friend.age)
         imgProfile.image = friend.image
+        if friend.isSelected {
+            imgSelected.image = UIImage(systemName: "checkmark.seal.fill")
+        } else {
+            imgSelected.image = nil
+        }
     }
 }

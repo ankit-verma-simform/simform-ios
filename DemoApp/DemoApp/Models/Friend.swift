@@ -9,9 +9,10 @@ import UIKit
 
 struct Friend {
     var image: UIImage?
-    var firstName: String = ""
-    var lastName: String = ""
-    var age: Int = 0
+    var firstName = ""
+    var lastName = ""
+    var age = 0
+    var isSelected = false
     
     func validEntries() -> Bool {
         return image != nil
