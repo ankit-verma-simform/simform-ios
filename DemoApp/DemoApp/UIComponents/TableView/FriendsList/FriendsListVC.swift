@@ -31,7 +31,7 @@ class FriendsListVC: UIViewController {
             Friend(image: UIImage(named: "defaultPerson"), firstName: "Dev", lastName: "Mehta", age: 22),
         ]
     ]
-    var deleteFriends: UIBarButtonItem = UIBarButtonItem()
+    private var deleteFriends: UIBarButtonItem = UIBarButtonItem()
     
     // MARK: - IB Outlets
     @IBOutlet weak var tblFriends: UITableView!
@@ -44,6 +44,7 @@ class FriendsListVC: UIViewController {
         }
         initialSetup()
         dictFriends = dummyFriends
+        tblFriends.sectionIndexTrackingBackgroundColor = .red
     }
 }
 
@@ -53,6 +54,8 @@ extension FriendsListVC {
         setupNavBarItems()
         tblFriends.register(UINib(nibName: "FriendTableViewCell", bundle: nil),
                             forCellReuseIdentifier: "FriendTableViewCell")
+        tblFriends.register(UINib(nibName: "SectionHeaderView", bundle: nil),
+                            forHeaderFooterViewReuseIdentifier: "SectionHeaderView")
         tblFriends.contentInsetAdjustmentBehavior = .never
         title = "Friends List"
     }
@@ -92,7 +95,9 @@ extension FriendsListVC {
                 tblFriends.reloadData()
                 return
             }
+            tblFriends.beginUpdates()
             tblFriends.deleteRows(at: indexPaths, with: .none)
+            tblFriends.endUpdates()
         }
         deleteFriends.isHidden = true
     }
@@ -117,15 +122,19 @@ extension FriendsListVC {
     }
     
     private func deSelectAllFriends() {
-        tblFriends.indexPathsForSelectedRows?.forEach({ indexPath in
-            dictFriends[sortedKeysDictFriends[indexPath.section]]?[indexPath.row].isSelected = false
-            tblFriends.reloadRows(at: [indexPath], with: .none)
-        })
+        dictFriends.forEach { (section, rows) in
+            dictFriends[section] = rows.map {
+                var friend = $0
+                friend.isSelected = false
+                return friend
+            }
+        }
+        tblFriends.reloadData()
         deleteFriends.isHidden = true
     }
 }
 
-// MARK: - Delegate Methods for UITableViewDataSource
+// MARK: - UITableViewDataSource Delegate Methods
 extension FriendsListVC: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return dictFriends.keys.count
@@ -148,13 +157,8 @@ extension FriendsListVC: UITableViewDataSource {
     }
 }
 
-// MARK: - Delegate Methods for UITableViewDelegate
+// MARK: - UITableView Delegate Methods
 extension FriendsListVC: UITableViewDelegate {
-    func tableView(
-        _ tableView: UITableView,
-        titleForHeaderInSection section: Int) -> String? {
-            return String(sortedKeysDictFriends[section].uppercased())
-        }
     
     func tableView(
         _ tableView: UITableView,
@@ -169,42 +173,40 @@ extension FriendsListVC: UITableViewDelegate {
         }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let currentState = dictFriends[sortedKeysDictFriends[indexPath.section]]?[indexPath.row].isSelected else {
+        guard let currentState = dictFriends[
+            sortedKeysDictFriends[indexPath.section]]?[indexPath.row
+            ].isSelected else {
             return
         }
-        tableView.setEditing(true, animated: true)
         dictFriends[sortedKeysDictFriends[indexPath.section]]?[indexPath.row].isSelected = !currentState
-        tableView.reloadRows(at: [indexPath], with: .fade)
-        tableView.setEditing(false, animated: true)
-        deleteFriends.isHidden = false
+        tableView.reloadRows(at: [indexPath], with: .none)
+        for (_, rows) in dictFriends {
+            if rows.contains(where: { $0.isSelected }) {
+                deleteFriends.isHidden = false
+                return
+            }
+        }
+        deleteFriends.isHidden = true
     }
     
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        dictFriends[sortedKeysDictFriends[indexPath.section]]?[indexPath.row].isSelected = false
-//        tableView.reloadRows(at: [indexPath], with: .fade)
-//    }
-//
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let header = SectionHeader(frame: CGRect(x: 0, y: 0, width: tblFriends.frame.width, height: 50))
-//        header.lblTitle.text = String(sortedKeysDictFriends[section].uppercased())
-//        return header
-//    }
-//
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 50
-//    }
-//
-//    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-//        return 50
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let header = tblFriends.dequeueReusableHeaderFooterView(
+            withIdentifier: "SectionHeaderView") as? SectionHeaderView else {
+            return UIView()
+        }
+        header.config(sectionTitle: String(sortedKeysDictFriends[section].uppercased()))
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100
+    }
 }
 
-// MARK: - Delegate Method for FriendDelegate
+// MARK: - Friend Delegate Method
 extension FriendsListVC: FriendDelegate {
     func onFriendAdded(_ friend: Friend) {
-//        for _ in 1...30 {
-            addFriend(friend)
-//        }
+        addFriend(friend)
         tblFriends.reloadData()
     }
 }

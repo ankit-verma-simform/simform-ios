@@ -127,4 +127,12 @@ extension ViewController {
         }
         navigate(to: tableViewVC)
     }
+
+    @IBAction private func btnCollectionViewAction(_ sender: Any) {
+        guard let collectionViewVC = CollectionViewVC
+            .create(storyboardName: .collectionView) as? CollectionViewVC else {
+            return
+        }
+        navigate(to: collectionViewVC)
+    }
 }

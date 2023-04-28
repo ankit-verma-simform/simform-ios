@@ -150,10 +150,19 @@
                                                     <action selector="btnTableViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wh-m8-ZIg"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-Af-P50">
+                                                <rect key="frame" x="236" y="129.33333333333334" width="137" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="CollectionView"/>
+                                                <connections>
+                                                    <action selector="btnCollectionViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wP-pk-Udj"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L0z-5g-OZQ" secondAttribute="trailing" constant="20" symbolic="YES" id="1cF-zj-veb"/>
+                                            <constraint firstItem="1kd-Af-P50" firstAttribute="trailing" secondItem="yKt-JI-BQw" secondAttribute="trailing" id="2JH-eM-N6R"/>
                                             <constraint firstItem="TAM-Hg-BlC" firstAttribute="top" secondItem="SJC-4Q-mYk" secondAttribute="bottom" constant="20" id="2aA-6I-QII"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hde-wU-olr" secondAttribute="trailing" constant="20" symbolic="YES" id="2g0-6u-9D9"/>
                                             <constraint firstItem="Un4-CY-wXJ" firstAttribute="top" secondItem="6qu-hX-shR" secondAttribute="top" constant="20" id="5Jm-Nf-Ded"/>
@@ -183,6 +192,7 @@
                                             <constraint firstItem="yKt-JI-BQw" firstAttribute="trailing" secondItem="gYV-Lj-OyT" secondAttribute="trailing" id="gOB-Hh-9d4"/>
                                             <constraint firstItem="5WA-Ik-WTs" firstAttribute="top" secondItem="L0z-5g-OZQ" secondAttribute="bottom" constant="20" id="hzs-M6-xgN"/>
                                             <constraint firstItem="Nq4-mi-gQ9" firstAttribute="leading" secondItem="Un4-CY-wXJ" secondAttribute="leading" id="i5j-0h-Phs"/>
+                                            <constraint firstItem="1kd-Af-P50" firstAttribute="centerY" secondItem="yig-G6-bpm" secondAttribute="centerY" id="jB9-fZ-B9J"/>
                                             <constraint firstItem="aOe-aZ-WwZ" firstAttribute="top" secondItem="yig-G6-bpm" secondAttribute="bottom" constant="20" id="lAL-jn-pKg"/>
                                             <constraint firstItem="L0z-5g-OZQ" firstAttribute="leading" secondItem="TAM-Hg-BlC" secondAttribute="leading" id="lh1-e3-yRQ"/>
                                             <constraint firstAttribute="trailing" secondItem="gYV-Lj-OyT" secondAttribute="trailing" constant="20" id="m2C-Tk-egt"/>

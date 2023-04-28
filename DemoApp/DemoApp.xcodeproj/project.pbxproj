@@ -39,6 +39,12 @@
 		BC70743229F7FE8A00F443FB /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70743129F7FE8A00F443FB /* Friend.swift */; };
 		BC70743729F8038D00F443FB /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC70743529F8038D00F443FB /* FriendTableViewCell.swift */; };
 		BC70743829F8038D00F443FB /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC70743629F8038D00F443FB /* FriendTableViewCell.xib */; };
+		BC78C3B829FB8E2500EBAA40 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78C3B729FB8E2500EBAA40 /* SectionHeaderView.swift */; };
+		BC78C3BA29FB8E3E00EBAA40 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC78C3B929FB8E3E00EBAA40 /* SectionHeaderView.xib */; };
+		BC78C3BD29FBD2CB00EBAA40 /* CollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC78C3BC29FBD2CB00EBAA40 /* CollectionView.storyboard */; };
+		BC78C3BF29FBD31D00EBAA40 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78C3BE29FBD31D00EBAA40 /* CollectionViewVC.swift */; };
+		BC78C3C329FBEC0F00EBAA40 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78C3C229FBEC0F00EBAA40 /* MyCollectionViewCell.swift */; };
+		BC78C3C529FBF43C00EBAA40 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78C3C429FBF43C00EBAA40 /* Movie.swift */; };
 		BC7C1EC929F78481009A8228 /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1EC829F78481009A8228 /* AddFriendVC.swift */; };
 		BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */; };
 		BC7C1ECD29F7B4AF009A8228 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */; };
@@ -66,8 +72,6 @@
 		BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */; };
 		BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */; };
 		BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */; };
-		BCC57CE129FA9072003EFE6D /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC57CE029FA9072003EFE6D /* SectionHeader.xib */; };
-		BCC57CE329FA9110003EFE6D /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC57CE229FA9110003EFE6D /* SectionHeader.swift */; };
 		BCD732BB29E81ADD0045032D /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732BA29E81ADD0045032D /* UITextField.storyboard */; };
 		BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732BD29E81B090045032D /* UITextFieldVC.swift */; };
 		BCD732C129E824650045032D /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732C029E824650045032D /* UITextViewVC.swift */; };
@@ -114,6 +118,12 @@
 		BC70743129F7FE8A00F443FB /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		BC70743529F8038D00F443FB /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		BC70743629F8038D00F443FB /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		BC78C3B729FB8E2500EBAA40 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		BC78C3B929FB8E3E00EBAA40 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		BC78C3BC29FBD2CB00EBAA40 /* CollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionView.storyboard; sourceTree = "<group>"; };
+		BC78C3BE29FBD31D00EBAA40 /* CollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
+		BC78C3C229FBEC0F00EBAA40 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC78C3C429FBF43C00EBAA40 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		BC7C1EC829F78481009A8228 /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
 		BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListVC.swift; sourceTree = "<group>"; };
 		BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
@@ -140,8 +150,6 @@
 		BCA52CAC29E6B976003437E6 /* UIButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonVC.swift; sourceTree = "<group>"; };
 		BCA52CAE29E6B99F003437E6 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
 		BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extension.swift"; sourceTree = "<group>"; };
-		BCC57CE029FA9072003EFE6D /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
-		BCC57CE229FA9110003EFE6D /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		BCD732BA29E81ADD0045032D /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		BCD732BD29E81B090045032D /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
 		BCD732C029E824650045032D /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
@@ -309,8 +317,8 @@
 			children = (
 				BC70743529F8038D00F443FB /* FriendTableViewCell.swift */,
 				BC70743629F8038D00F443FB /* FriendTableViewCell.xib */,
-				BCC57CE029FA9072003EFE6D /* SectionHeader.xib */,
-				BCC57CE229FA9110003EFE6D /* SectionHeader.swift */,
+				BC78C3B729FB8E2500EBAA40 /* SectionHeaderView.swift */,
+				BC78C3B929FB8E3E00EBAA40 /* SectionHeaderView.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -319,8 +327,19 @@
 			isa = PBXGroup;
 			children = (
 				BC70743129F7FE8A00F443FB /* Friend.swift */,
+				BC78C3C429FBF43C00EBAA40 /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BC78C3BB29FBD2B700EBAA40 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BC78C3BC29FBD2CB00EBAA40 /* CollectionView.storyboard */,
+				BC78C3BE29FBD31D00EBAA40 /* CollectionViewVC.swift */,
+				BC78C3C229FBEC0F00EBAA40 /* MyCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		BC7C1EC729F78447009A8228 /* FriendsList */ = {
@@ -381,6 +400,7 @@
 		BCA52C9E29E68054003437E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BC78C3BB29FBD2B700EBAA40 /* CollectionView */,
 				BC965EE129F646C400945631 /* TableView */,
 				BC94E42629EFF6130057CB70 /* Task1 */,
 				BC94E42129EFE4670057CB70 /* ScrollView */,
@@ -531,16 +551,17 @@
 			files = (
 				BC4E506529ED26D900C0AC9D /* Roboto-Bold.ttf in Resources */,
 				BC94E42529EFE4920057CB70 /* ScrollView.storyboard in Resources */,
-				BCC57CE129FA9072003EFE6D /* SectionHeader.xib in Resources */,
 				BC4E506429ED26D900C0AC9D /* Roboto-Italic.ttf in Resources */,
 				BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */,
 				BC965EE329F646ED00945631 /* TableView.storyboard in Resources */,
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
 				BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */,
+				BC78C3BA29FB8E3E00EBAA40 /* SectionHeaderView.xib in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
 				BC59942729EEB1CA00EFF4D2 /* UIStepper.storyboard in Resources */,
 				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
 				BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */,
+				BC78C3BD29FBD2CB00EBAA40 /* CollectionView.storyboard in Resources */,
 				BC965EEB29F65CEE00945631 /* IndexTableViewCell.xib in Resources */,
 				BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */,
 				BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */,
@@ -587,10 +608,14 @@
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
+				BC78C3C329FBEC0F00EBAA40 /* MyCollectionViewCell.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
+				BC78C3BF29FBD31D00EBAA40 /* CollectionViewVC.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
+				BC78C3B829FB8E2500EBAA40 /* SectionHeaderView.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
+				BC78C3C529FBF43C00EBAA40 /* Movie.swift in Sources */,
 				BC70743229F7FE8A00F443FB /* Friend.swift in Sources */,
 				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
 				BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */,
@@ -603,7 +628,6 @@
 				BC7C1EC929F78481009A8228 /* AddFriendVC.swift in Sources */,
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
-				BCC57CE329FA9110003EFE6D /* SectionHeader.swift in Sources */,
 				BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */,
 				BC94E43029F004170057CB70 /* LoginViewController.swift in Sources */,
 				BCD732C129E824650045032D /* UITextViewVC.swift in Sources */,
