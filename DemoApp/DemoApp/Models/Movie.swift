@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 struct Movie {
     let title: String
     let image: UIImage

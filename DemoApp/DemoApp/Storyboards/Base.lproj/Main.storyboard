@@ -158,6 +158,14 @@
                                                     <action selector="btnCollectionViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wP-pk-Udj"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-ma-qHv">
+                                                <rect key="frame" x="262" y="184.33333333333334" width="111" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="OTTScreen"/>
+                                                <connections>
+                                                    <action selector="btnOTTAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ec-41-EYK"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -188,6 +196,7 @@
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5WA-Ik-WTs" secondAttribute="trailing" constant="20" symbolic="YES" id="aqH-A4-RAS"/>
                                             <constraint firstItem="yig-G6-bpm" firstAttribute="top" secondItem="Nq4-mi-gQ9" secondAttribute="bottom" constant="20" id="bCX-qh-Scp"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAM-Hg-BlC" secondAttribute="trailing" constant="20" symbolic="YES" id="eHf-aE-4SW"/>
+                                            <constraint firstItem="FYj-ma-qHv" firstAttribute="trailing" secondItem="1kd-Af-P50" secondAttribute="trailing" id="eXK-Cj-cqA"/>
                                             <constraint firstItem="gYV-Lj-OyT" firstAttribute="centerY" secondItem="Un4-CY-wXJ" secondAttribute="centerY" id="g0c-XX-RBR"/>
                                             <constraint firstItem="yKt-JI-BQw" firstAttribute="trailing" secondItem="gYV-Lj-OyT" secondAttribute="trailing" id="gOB-Hh-9d4"/>
                                             <constraint firstItem="5WA-Ik-WTs" firstAttribute="top" secondItem="L0z-5g-OZQ" secondAttribute="bottom" constant="20" id="hzs-M6-xgN"/>
@@ -197,6 +206,7 @@
                                             <constraint firstItem="L0z-5g-OZQ" firstAttribute="leading" secondItem="TAM-Hg-BlC" secondAttribute="leading" id="lh1-e3-yRQ"/>
                                             <constraint firstAttribute="trailing" secondItem="gYV-Lj-OyT" secondAttribute="trailing" constant="20" id="m2C-Tk-egt"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ElZ-bh-7v2" secondAttribute="trailing" constant="20" symbolic="YES" id="oqB-kN-LJS"/>
+                                            <constraint firstItem="FYj-ma-qHv" firstAttribute="centerY" secondItem="aOe-aZ-WwZ" secondAttribute="centerY" id="pDg-Z3-Qko"/>
                                             <constraint firstItem="yKt-JI-BQw" firstAttribute="centerY" secondItem="Nq4-mi-gQ9" secondAttribute="centerY" id="rQ4-82-bST"/>
                                             <constraint firstItem="atY-nJ-rb2" firstAttribute="leading" secondItem="5WA-Ik-WTs" secondAttribute="leading" id="sN8-mD-Sn0"/>
                                             <constraint firstItem="hde-wU-olr" firstAttribute="leading" secondItem="ElZ-bh-7v2" secondAttribute="leading" id="v1n-o1-6ft"/>

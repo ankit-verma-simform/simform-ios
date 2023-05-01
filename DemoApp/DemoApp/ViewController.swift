@@ -135,4 +135,12 @@ extension ViewController {
         }
         navigate(to: collectionViewVC)
     }
+
+    @IBAction private func btnOTTAction(_ sender: Any) {
+        guard let ottScreenVC = OTTViewController
+            .create(storyboardName: .ottScreen) as? OTTViewController else {
+            return
+        }
+        navigate(to: ottScreenVC)
+    }
 }

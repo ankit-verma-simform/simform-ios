@@ -8,49 +8,56 @@
 import UIKit
 
 class CollectionViewVC: UIViewController {
+    // MARK: - IB Outlets
+    @IBOutlet private weak var movieCollectionView: UICollectionView!
     
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.allowsSelection = true
-        collectionView.allowsFocus = true
-        collectionView.allowsMultipleSelection = true
-        collectionView.delegate = self
+        movieCollectionView.delegate = self
+        movieCollectionView.dataSource = self
+        movieCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
 }
 
+// MARK: - Datasource Methods
 extension CollectionViewVC: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        movies.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as? MyCollectionViewCell else {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "MovieCollectionViewCell", for: indexPath) as? MovieCollectionViewCell else {
             return UICollectionViewCell()
         }
-        //cell.lblTitle.text = String(indexPath.description)
+        cell.setup(movie: movies[indexPath.row])
         return cell
     }
 }
 
+// MARK: - UI Collection View Delegate Methods
 extension CollectionViewVC: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected: \(indexPath)")
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        print("Movie selected: \(indexPath)")
     }
 }
 
+// MARK: - UI Collection View Delegate FlowLayout Methods
 extension CollectionViewVC: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSizeMake(view.frame.width / 2 - 2, 300)
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
     }
 }
