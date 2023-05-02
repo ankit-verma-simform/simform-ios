@@ -30,7 +30,8 @@ extension CollectionViewVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: "MovieCollectionViewCell", for: indexPath) as? MovieCollectionViewCell else {
+            withReuseIdentifier: "MovieCollectionViewCell",
+            for: indexPath) as? MovieCollectionViewCell else {
             return UICollectionViewCell()
         }
         cell.setup(movie: movies[indexPath.row])
@@ -52,9 +53,9 @@ extension CollectionViewVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSizeMake(view.frame.width / 2 - 2, 300)
+        return CGSizeMake(view.frame.width / 2, 300)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

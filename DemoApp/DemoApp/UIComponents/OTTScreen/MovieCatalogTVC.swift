@@ -35,6 +35,7 @@ extension MovieCatalogTVC {
     func configure(with movieCatalog: MovieCatalog) {
         self.lblMoveCatalogTitle.text = movieCatalog.title ?? ""
         self.movies = movieCatalog.movies ?? []
+        collectionMovieCatalog.reloadData()
     }
     
     static func nib() -> UINib {
@@ -71,13 +72,20 @@ extension MovieCatalogTVC: UICollectionViewDelegate {
         print(movies[indexPath.row])
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 300, height: 300)
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width / 3,
+                      height: collectionView.frame.size.height)
     }
 }
 
 extension MovieCatalogTVC: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
 }

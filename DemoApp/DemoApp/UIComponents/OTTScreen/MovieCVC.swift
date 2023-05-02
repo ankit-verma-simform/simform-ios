@@ -13,7 +13,6 @@ class MovieCVC: UICollectionViewCell {
     static let identifier = "MovieCVC"
 
     // MARK: - IB Outlets
-    @IBOutlet private weak var lblMovieTitle: UILabel!
     @IBOutlet private weak var imgMovie: UIImageView!
     
     // MARK: - View Lifecycle Methods
@@ -30,12 +29,12 @@ extension MovieCVC {
     
     func configure(with movie: MovieItem) {
         print(movie)
-        lblMovieTitle.text = movie.title
         if let validMoviePosterUrl = movie.poster {
             imgMovie.sd_setImage(with: URL(string: validMoviePosterUrl),
                                  placeholderImage: UIImage(named: "placeholder"))
         } else {
             imgMovie.image = UIImage(named: "placeholder")
         }
+        imgMovie.layer.cornerRadius = 20
     }
 }
