@@ -90,7 +90,9 @@ extension MovieHeaderView: UICollectionViewDelegate {
 
 // MARK: - UICollectionView Delegate FlowLayout Methods
 extension MovieHeaderView: UICollectionViewDelegateFlowLayout {
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(movieHeaderCollection
+            .indexPathsForVisibleItems[0].row)
         moviePageControl.currentPage = movieHeaderCollection
             .indexPathsForVisibleItems[0].row
     }

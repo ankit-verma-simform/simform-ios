@@ -7,9 +7,9 @@
 
 import UIKit
 
-class MovieCatalogTVC: UITableViewCell {
+class MovieCatalogTVCell: UITableViewCell {
     // MARK: - Variables
-    static let identifier = "MovieCatalogTVC"
+    static let identifier = "MovieCatalogTVCell"
     private var movies: Movies = []
     
     // MARK: - IB Outlets
@@ -24,12 +24,12 @@ class MovieCatalogTVC: UITableViewCell {
 }
 
 // MARK: - Functions
-extension MovieCatalogTVC {
+extension MovieCatalogTVCell {
     private func initialSetup() {
         collectionMovieCatalog.dataSource = self
         collectionMovieCatalog.delegate = self
-        collectionMovieCatalog.register(MovieCVC.nib(),
-                                        forCellWithReuseIdentifier: MovieCVC.identifier)
+        collectionMovieCatalog.register(MovieCVCell.nib(),
+                                        forCellWithReuseIdentifier: MovieCVCell.identifier)
     }
     
     func configure(with movieCatalog: MovieCatalog) {
@@ -39,12 +39,12 @@ extension MovieCatalogTVC {
     }
     
     static func nib() -> UINib {
-        return UINib(nibName: "MovieCatalogTVC", bundle: nil)
+        return UINib(nibName: "MovieCatalogTVCell", bundle: nil)
     }
 }
 
 // MARK: - UICollectionView DataSource Methods
-extension MovieCatalogTVC: UICollectionViewDataSource {
+extension MovieCatalogTVCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return movies.count
@@ -54,8 +54,8 @@ extension MovieCatalogTVC: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: MovieCVC.identifier,
-                for: indexPath) as? MovieCVC else {
+                withReuseIdentifier: MovieCVCell.identifier,
+                for: indexPath) as? MovieCVCell else {
                 return UICollectionViewCell()
             }
             cell.configure(with: movies[indexPath.row])
@@ -64,7 +64,7 @@ extension MovieCatalogTVC: UICollectionViewDataSource {
 }
 
 // MARK: - UICollectionView Delegate Methods
-extension MovieCatalogTVC: UICollectionViewDelegate {
+extension MovieCatalogTVCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
@@ -81,7 +81,7 @@ extension MovieCatalogTVC: UICollectionViewDelegate {
     }
 }
 
-extension MovieCatalogTVC: UICollectionViewDelegateFlowLayout {
+extension MovieCatalogTVCell: UICollectionViewDelegateFlowLayout {
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,

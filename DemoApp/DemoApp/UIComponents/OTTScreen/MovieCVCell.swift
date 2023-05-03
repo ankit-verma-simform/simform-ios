@@ -8,9 +8,9 @@
 import UIKit
 import SDWebImage
 
-class MovieCVC: UICollectionViewCell {
+class MovieCVCell: UICollectionViewCell {
     // MARK: - Variables
-    static let identifier = "MovieCVC"
+    static let identifier = "MovieCVCell"
 
     // MARK: - IB Outlets
     @IBOutlet private weak var imgMovie: UIImageView!
@@ -22,18 +22,18 @@ class MovieCVC: UICollectionViewCell {
 }
 
 // MARK: - Functions
-extension MovieCVC {
+extension MovieCVCell {
     static func nib() -> UINib {
-        return UINib(nibName: "MovieCVC", bundle: nil)
+        return UINib(nibName: "MovieCVCell", bundle: nil)
     }
     
     func configure(with movie: MovieItem) {
         print(movie)
         if let validMoviePosterUrl = movie.poster {
             imgMovie.sd_setImage(with: URL(string: validMoviePosterUrl),
-                                 placeholderImage: UIImage(named: "placeholder"))
+                                 placeholderImage: UIImage(named: UIImage.placeholder))
         } else {
-            imgMovie.image = UIImage(named: "placeholder")
+            imgMovie.image = UIImage(named: UIImage.placeholder)
         }
         imgMovie.layer.cornerRadius = 20
     }

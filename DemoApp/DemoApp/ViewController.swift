@@ -143,4 +143,20 @@ extension ViewController {
         }
         navigate(to: ottScreenVC)
     }
+
+    @IBAction private func btnStackViewAction(_ sender: Any) {
+        guard let stackViewVC = StackViewVC
+            .create(storyboardName: .stackView) as? StackViewVC else {
+            return
+        }
+        navigate(to: stackViewVC)
+    }
+
+    @IBAction private func btnActivityIndicatorAction(_ sender: Any) {
+        guard let activityIndicatorVC = ActivityIndicatorVC
+            .create(storyboardName: .activityIndicator) as? ActivityIndicatorVC else {
+            return
+        }
+        navigate(to: activityIndicatorVC)
+    }
 }

@@ -31,8 +31,8 @@ extension OTTViewController {
     private func initialSetup() {
         tvMovieCatalog.dataSource = self
         tvMovieCatalog.delegate = self
-        tvMovieCatalog.register(MovieCatalogTVC.nib(),
-                                forCellReuseIdentifier: MovieCatalogTVC.identifier)
+        tvMovieCatalog.register(MovieCatalogTVCell.nib(),
+                                forCellReuseIdentifier: MovieCatalogTVCell.identifier)
         let cell = MovieHeaderView(frame: CGRect(x: 0, y: 0,
                                                  width: tvMovieCatalog.frame.size.width,
                                                  height: 250))
@@ -79,7 +79,7 @@ extension OTTViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: MovieCatalogTVC.identifier) as? MovieCatalogTVC else {
+            withIdentifier: MovieCatalogTVCell.identifier) as? MovieCatalogTVCell else {
             return UITableViewCell()
         }
         cell.configure(with: movieCatalogs[indexPath.row])
