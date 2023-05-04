@@ -19,7 +19,7 @@ extension ViewController {
     @IBAction private func btnUILabelAction(_ sender: Any) {
         guard let uiLabelVC = UILabelVC
             .create(storyboardName: .uiLabel) as? UILabelVC else {
-            return            
+            return
         }
         navigate(to: uiLabelVC)
     }
@@ -127,7 +127,7 @@ extension ViewController {
         }
         navigate(to: tableViewVC)
     }
-
+    
     @IBAction private func btnCollectionViewAction(_ sender: Any) {
         guard let collectionViewVC = CollectionViewVC
             .create(storyboardName: .collectionView) as? CollectionViewVC else {
@@ -135,7 +135,7 @@ extension ViewController {
         }
         navigate(to: collectionViewVC)
     }
-
+    
     @IBAction private func btnOTTAction(_ sender: Any) {
         guard let ottScreenVC = OTTViewController
             .create(storyboardName: .ottScreen) as? OTTViewController else {
@@ -143,7 +143,7 @@ extension ViewController {
         }
         navigate(to: ottScreenVC)
     }
-
+    
     @IBAction private func btnStackViewAction(_ sender: Any) {
         guard let stackViewVC = StackViewVC
             .create(storyboardName: .stackView) as? StackViewVC else {
@@ -151,12 +151,44 @@ extension ViewController {
         }
         navigate(to: stackViewVC)
     }
-
+    
     @IBAction private func btnActivityIndicatorAction(_ sender: Any) {
         guard let activityIndicatorVC = ActivityIndicatorVC
             .create(storyboardName: .activityIndicator) as? ActivityIndicatorVC else {
             return
         }
         navigate(to: activityIndicatorVC)
+    }
+    
+    @IBAction private func btnSearchBarAction(_ sender: Any) {
+        guard let searchBarVC = SearchBarVC
+            .create(storyboardName: .searchBar) as? SearchBarVC else {
+            return
+        }
+        navigate(to: searchBarVC)
+    }
+    
+    @IBAction private func btnSUITabBarAction(_ sender: Any) {
+        guard let uiTabBarVC = UITabBarVC
+            .create(storyboardName: .uiTabBar) as? UITabBarVC else {
+            return
+        }
+        navigate(to: uiTabBarVC)
+    }
+    
+    @IBAction private func btnWKWebViewAction(_ sender: Any) {
+        guard let wkWebVC = WKWebViewTabBarVC
+            .create(storyboardName: .wkWebView) as? WKWebViewTabBarVC else {
+            return
+        }
+        navigate(to: wkWebVC)
+    }
+    
+    @IBAction private func btnUIToolBarAction(_ sender: Any) {
+        guard let uiToolBarVC = UIToolBarVC
+            .create(storyboardName: .uiToolBar) as? UIToolBarVC else {
+            return
+        }
+        navigate(to: uiToolBarVC)
     }
 }

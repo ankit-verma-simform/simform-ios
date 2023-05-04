@@ -56,6 +56,15 @@
 		BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */; };
 		BC7C1ECD29F7B4AF009A8228 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */; };
 		BC7F3C7F29F2A56A001ABCE7 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = BC7F3C7E29F2A56A001ABCE7 /* SPIndicator */; };
+		BC8D98BF2A03A5450097F2EE /* UITabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8D98BE2A03A5450097F2EE /* UITabBar.storyboard */; };
+		BC8D98C12A03A5850097F2EE /* UITabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D98C02A03A5850097F2EE /* UITabBarVC.swift */; };
+		BC8D98C52A03B33C0097F2EE /* WKWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8D98C42A03B33C0097F2EE /* WKWebView.storyboard */; };
+		BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D98C62A03B3980097F2EE /* WKWebVC.swift */; };
+		BC8D98C92A03C1D10097F2EE /* PdfViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D98C82A03C1D10097F2EE /* PdfViewerVC.swift */; };
+		BC8D98CB2A03C6950097F2EE /* WKWebViewTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D98CA2A03C6950097F2EE /* WKWebViewTabBarVC.swift */; };
+		BC8D98CD2A03C7620097F2EE /* wkwebview.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */; };
+		BC8D98D02A03DB370097F2EE /* UIToolBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8D98CF2A03DB370097F2EE /* UIToolBar.storyboard */; };
+		BC8D98D22A03DB610097F2EE /* UIToolBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D98D12A03DB610097F2EE /* UIToolBarVC.swift */; };
 		BC94E42029EFAC670057CB70 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E41F29EFAC670057CB70 /* ContainerViewController.swift */; };
 		BC94E42329EFE4830057CB70 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E42229EFE4830057CB70 /* ScrollViewVC.swift */; };
 		BC94E42529EFE4920057CB70 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC94E42429EFE4920057CB70 /* ScrollView.storyboard */; };
@@ -157,6 +166,15 @@
 		BC7C1EC829F78481009A8228 /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
 		BC7C1ECA29F784E1009A8228 /* FriendsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListVC.swift; sourceTree = "<group>"; };
 		BC7C1ECC29F7B4AE009A8228 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		BC8D98BE2A03A5450097F2EE /* UITabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITabBar.storyboard; sourceTree = "<group>"; };
+		BC8D98C02A03A5850097F2EE /* UITabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarVC.swift; sourceTree = "<group>"; };
+		BC8D98C42A03B33C0097F2EE /* WKWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WKWebView.storyboard; sourceTree = "<group>"; };
+		BC8D98C62A03B3980097F2EE /* WKWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebVC.swift; sourceTree = "<group>"; };
+		BC8D98C82A03C1D10097F2EE /* PdfViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfViewerVC.swift; sourceTree = "<group>"; };
+		BC8D98CA2A03C6950097F2EE /* WKWebViewTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewTabBarVC.swift; sourceTree = "<group>"; };
+		BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = wkwebview.pdf; path = DemoApp/wkwebview.pdf; sourceTree = SOURCE_ROOT; };
+		BC8D98CF2A03DB370097F2EE /* UIToolBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIToolBar.storyboard; sourceTree = "<group>"; };
+		BC8D98D12A03DB610097F2EE /* UIToolBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIToolBarVC.swift; sourceTree = "<group>"; };
 		BC94E41F29EFAC670057CB70 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		BC94E42229EFE4830057CB70 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		BC94E42429EFE4920057CB70 /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
@@ -255,6 +273,7 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */,
 				BCD3410C29FFCF9E00AFA19A /* Data */,
 				BC70743029F7FE6B00F443FB /* Models */,
 				BC6B43B529F25B43007607C4 /* DemoApp.entitlements */,
@@ -409,6 +428,35 @@
 			path = FriendsList;
 			sourceTree = "<group>";
 		};
+		BC8D98BD2A03A5020097F2EE /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D98BE2A03A5450097F2EE /* UITabBar.storyboard */,
+				BC8D98C02A03A5850097F2EE /* UITabBarVC.swift */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		BC8D98C22A03B3240097F2EE /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D98C42A03B33C0097F2EE /* WKWebView.storyboard */,
+				BC8D98C62A03B3980097F2EE /* WKWebVC.swift */,
+				BC8D98C82A03C1D10097F2EE /* PdfViewerVC.swift */,
+				BC8D98CA2A03C6950097F2EE /* WKWebViewTabBarVC.swift */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		BC8D98CE2A03DB1E0097F2EE /* UIToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				BC8D98CF2A03DB370097F2EE /* UIToolBar.storyboard */,
+				BC8D98D12A03DB610097F2EE /* UIToolBarVC.swift */,
+			);
+			path = UIToolbar;
+			sourceTree = "<group>";
+		};
 		BC94E42129EFE4670057CB70 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +505,9 @@
 		BCA52C9E29E68054003437E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BC8D98CE2A03DB1E0097F2EE /* UIToolbar */,
+				BC8D98C22A03B3240097F2EE /* WKWebView */,
+				BC8D98BD2A03A5020097F2EE /* UITabBar */,
 				BCAC39402A02847B0095A377 /* SearchBar */,
 				BCAC393B2A02692C0095A377 /* Activityindicator */,
 				BC75CAB62A023E61005FF13B /* StackView */,
@@ -671,12 +722,15 @@
 				BC78C3BA29FB8E3E00EBAA40 /* SectionHeaderView.xib in Resources */,
 				BC6D98E12A0121D9008FB9A0 /* MovieHeaderCVCell.xib in Resources */,
 				BC6D98DD2A011CDE008FB9A0 /* MovieHeaderView.xib in Resources */,
+				BC8D98BF2A03A5450097F2EE /* UITabBar.storyboard in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
 				BC59942729EEB1CA00EFF4D2 /* UIStepper.storyboard in Resources */,
 				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
+				BC8D98C52A03B33C0097F2EE /* WKWebView.storyboard in Resources */,
 				BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */,
 				BC78C3BD29FBD2CB00EBAA40 /* CollectionView.storyboard in Resources */,
 				BCD3410929FFC5DD00AFA19A /* MovieCVCell.xib in Resources */,
+				BC8D98CD2A03C7620097F2EE /* wkwebview.pdf in Resources */,
 				BCD3410129FFBD9500AFA19A /* MovieCatalogTVCell.xib in Resources */,
 				BC965EEB29F65CEE00945631 /* IndexTableViewCell.xib in Resources */,
 				BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */,
@@ -692,6 +746,7 @@
 				BC59941529EE714100EFF4D2 /* UISegmentedControl.storyboard in Resources */,
 				BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
+				BC8D98D02A03DB370097F2EE /* UIToolBar.storyboard in Resources */,
 				BCD340F729FFAC2E00AFA19A /* OTTScreen.storyboard in Resources */,
 				BC965EEF29F67F7700945631 /* Multiple5TableViewCell.xib in Resources */,
 			);
@@ -726,6 +781,8 @@
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
 				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
+				BC8D98D22A03DB610097F2EE /* UIToolBarVC.swift in Sources */,
+				BC8D98CB2A03C6950097F2EE /* WKWebViewTabBarVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
 				BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
@@ -747,6 +804,7 @@
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
 				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
+				BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */,
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BCAC393F2A0269700095A377 /* ActivityIndicatorVC.swift in Sources */,
 				BC75CAB22A02254B005FF13B /* UIImage+Extension.swift in Sources */,
@@ -756,12 +814,14 @@
 				BC94E42029EFAC670057CB70 /* ContainerViewController.swift in Sources */,
 				BCD3410E29FFD07D00AFA19A /* MoviesData.swift in Sources */,
 				BC6D98D52A00EA71008FB9A0 /* MovieHeaderView.swift in Sources */,
+				BC8D98C92A03C1D10097F2EE /* PdfViewerVC.swift in Sources */,
 				BC7C1EC929F78481009A8228 /* AddFriendVC.swift in Sources */,
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
 				BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */,
 				BCD340F229FF7BB100AFA19A /* MovieCollectionViewCell.swift in Sources */,
 				BC94E43029F004170057CB70 /* LoginViewController.swift in Sources */,
+				BC8D98C12A03A5850097F2EE /* UITabBarVC.swift in Sources */,
 				BCD732C129E824650045032D /* UITextViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -215,21 +215,6 @@
             </objects>
             <point key="canvasLocation" x="202" y="-42"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="g9o-Bb-AIe">
-            <objects>
-                <viewController id="mVC-0h-Gag" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KYX-wV-COX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="HBu-Ay-M1D"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lra-Iv-wKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="898" y="-42"/>
-        </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">

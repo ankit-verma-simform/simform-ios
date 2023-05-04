@@ -24,4 +24,8 @@ enum Storyboard: String {
     case ottScreen = "OTTScreen"
     case stackView = "StackView"
     case activityIndicator = "ActivityIndicator"
+    case searchBar = "SearchBar"
+    case uiTabBar = "UITabBar"
+    case wkWebView = "WKWebView"
+    case uiToolBar = "UIToolBar"
 }
