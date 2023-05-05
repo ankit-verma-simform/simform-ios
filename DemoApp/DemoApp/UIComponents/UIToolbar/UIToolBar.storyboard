@@ -20,15 +20,19 @@
                                 <rect key="frame" x="0.0" y="769" width="393" height="49"/>
                                 <items>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="M3I-HY-xk9"/>
-                                    <barButtonItem title="Item" image="chevron.left" catalog="system" id="kKu-UB-UJh">
+                                    <barButtonItem title="Decrease Value" image="chevron.left" catalog="system" id="kKu-UB-UJh">
                                         <connections>
                                             <action selector="decrementCount:" destination="Y6W-OH-hqX" id="grS-dv-Kuy"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9MS-QH-Zkc"/>
-                                    <barButtonItem title="Item" image="play.fill" catalog="system" id="tlD-PH-4fo"/>
+                                    <barButtonItem title="Item" image="play.fill" catalog="system" id="tlD-PH-4fo">
+                                        <connections>
+                                            <action selector="toggleIncrementAutoAction:" destination="Y6W-OH-hqX" id="VbP-4A-SlZ"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Qgf-i2-E64"/>
-                                    <barButtonItem title="Item" image="chevron.right" catalog="system" id="uYD-FH-6Ot">
+                                    <barButtonItem title="Increase Value" image="chevron.right" catalog="system" id="uYD-FH-6Ot">
                                         <connections>
                                             <action selector="incrementCount:" destination="Y6W-OH-hqX" id="kJE-vi-3kF"/>
                                         </connections>
@@ -36,26 +40,38 @@
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="aWH-YO-tlu"/>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-tO-8SD">
-                                <rect key="frame" x="178.33333333333334" y="389" width="36.666666666666657" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="vM5-PI-N6P">
+                                <rect key="frame" x="73.333333333333329" y="343" width="246.33333333333337" height="166"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Watch Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eB-Wh-Kb2">
+                                        <rect key="frame" x="40.333333333333343" y="0.0" width="166" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-tO-8SD">
+                                        <rect key="frame" x="0.0" y="94.333333333333314" width="246.33333333333334" height="71.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Pw3-zc-Bbx" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0WW-Vl-pcZ"/>
-                            <constraint firstItem="CW0-tO-8SD" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="3BW-nD-O5B"/>
                             <constraint firstItem="Pw3-zc-Bbx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7Wd-aS-QfG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Pw3-zc-Bbx" secondAttribute="bottom" id="82I-53-5Bd"/>
+                            <constraint firstItem="vM5-PI-N6P" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OiJ-pC-uJO"/>
+                            <constraint firstItem="vM5-PI-N6P" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="WsR-Hr-Jyu"/>
                             <constraint firstItem="Pw3-zc-Bbx" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="c0Q-pG-Lym"/>
                             <constraint firstItem="Pw3-zc-Bbx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dJ7-XS-nby"/>
-                            <constraint firstItem="CW0-tO-8SD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lim-mT-746"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnToggleIncrementAuto" destination="tlD-PH-4fo" id="Hkl-uS-4HE"/>
                         <outlet property="lblCounter" destination="CW0-tO-8SD" id="ikE-GK-myU"/>
                         <outlet property="toolbar" destination="Pw3-zc-Bbx" id="myI-9j-ile"/>
                     </connections>

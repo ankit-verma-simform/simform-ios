@@ -191,4 +191,29 @@ extension ViewController {
         }
         navigate(to: uiToolBarVC)
     }
+
+    @IBAction private func btnUIPickerViewAction(_ sender: Any) {
+        guard let uiPickerViewVC = UIPickerViewVC
+            .create(storyboardName: .uiPickerView) as? UIPickerViewVC else {
+            return
+        }
+        navigate(to: uiPickerViewVC)
+    }
+    
+    @IBAction private func btnUIDatePickerAction(_ sender: Any) {
+        guard let uiDatePickerVC = UIDatePickerVC
+            .create(storyboardName: .uiDatePicker) as? UIDatePickerVC else {
+            return
+        }
+        navigate(to: uiDatePickerVC)
+    }
+
+    @IBAction private func btnMKMapViewAction(_ sender: Any) {
+        guard let mkMapViewVC = MKMapViewVC
+            .create(storyboardName: .mkMapView) as? MKMapViewVC else {
+            return
+        }
+        navigate(to: mkMapViewVC)
+    }
 }
+

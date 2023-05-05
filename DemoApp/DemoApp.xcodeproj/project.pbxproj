@@ -93,6 +93,13 @@
 		BCAC39442A0284A80095A377 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAC39432A0284A80095A377 /* SearchBar.storyboard */; };
 		BCAC39462A0286DF0095A377 /* MovieListingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC39452A0286DF0095A377 /* MovieListingTVCell.swift */; };
 		BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */; };
+		BCCABFDA2A04D55E000BDEB5 /* UIPickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCABFD92A04D55E000BDEB5 /* UIPickerView.storyboard */; };
+		BCCABFDC2A04D571000BDEB5 /* UIPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCABFDB2A04D571000BDEB5 /* UIPickerViewVC.swift */; };
+		BCCABFDF2A04FE23000BDEB5 /* UIDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCABFDE2A04FE23000BDEB5 /* UIDatePicker.storyboard */; };
+		BCCABFE12A04FE41000BDEB5 /* UIDatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCABFE02A04FE41000BDEB5 /* UIDatePickerVC.swift */; };
+		BCCABFE42A05192C000BDEB5 /* MKMapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCABFE32A05192C000BDEB5 /* MKMapView.storyboard */; };
+		BCCABFE62A05193D000BDEB5 /* MKMapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCABFE52A05193D000BDEB5 /* MKMapViewVC.swift */; };
+		BCCABFE82A052AA0000BDEB5 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCABFE72A052AA0000BDEB5 /* UITextField+Extension.swift */; };
 		BCD340F229FF7BB100AFA19A /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD340F129FF7BB100AFA19A /* MovieCollectionViewCell.swift */; };
 		BCD340F429FF8E9000AFA19A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD340F329FF8E9000AFA19A /* String+Extension.swift */; };
 		BCD340F729FFAC2E00AFA19A /* OTTScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD340F629FFAC2E00AFA19A /* OTTScreen.storyboard */; };
@@ -203,6 +210,13 @@
 		BCAC39432A0284A80095A377 /* SearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
 		BCAC39452A0286DF0095A377 /* MovieListingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingTVCell.swift; sourceTree = "<group>"; };
 		BCC57CDE29FA72D8003EFE6D /* Character+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extension.swift"; sourceTree = "<group>"; };
+		BCCABFD92A04D55E000BDEB5 /* UIPickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPickerView.storyboard; sourceTree = "<group>"; };
+		BCCABFDB2A04D571000BDEB5 /* UIPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerViewVC.swift; sourceTree = "<group>"; };
+		BCCABFDE2A04FE23000BDEB5 /* UIDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIDatePicker.storyboard; sourceTree = "<group>"; };
+		BCCABFE02A04FE41000BDEB5 /* UIDatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerVC.swift; sourceTree = "<group>"; };
+		BCCABFE32A05192C000BDEB5 /* MKMapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MKMapView.storyboard; sourceTree = "<group>"; };
+		BCCABFE52A05193D000BDEB5 /* MKMapViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewVC.swift; sourceTree = "<group>"; };
+		BCCABFE72A052AA0000BDEB5 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		BCD340F129FF7BB100AFA19A /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		BCD340F329FF8E9000AFA19A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BCD340F629FFAC2E00AFA19A /* OTTScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTTScreen.storyboard; sourceTree = "<group>"; };
@@ -505,13 +519,15 @@
 		BCA52C9E29E68054003437E6 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				BCD340F529FFABE000AFA19A /* OTTScreen */,
+				BCCABFE22A05190C000BDEB5 /* MKMapView */,
+				BCCABFDD2A04FE04000BDEB5 /* UIDatePicker */,
+				BCCABFD82A04D545000BDEB5 /* UIPickerView */,
 				BC8D98CE2A03DB1E0097F2EE /* UIToolbar */,
 				BC8D98C22A03B3240097F2EE /* WKWebView */,
 				BC8D98BD2A03A5020097F2EE /* UITabBar */,
 				BCAC39402A02847B0095A377 /* SearchBar */,
-				BCAC393B2A02692C0095A377 /* Activityindicator */,
 				BC75CAB62A023E61005FF13B /* StackView */,
-				BCD340F529FFABE000AFA19A /* OTTScreen */,
 				BC78C3BB29FBD2B700EBAA40 /* CollectionView */,
 				BC965EE129F646C400945631 /* TableView */,
 				BC94E42629EFF6130057CB70 /* Task1 */,
@@ -521,6 +537,7 @@
 				BC59941A29EE87AB00EFF4D2 /* UIPageControl */,
 				BC59941329EE6CAB00EFF4D2 /* UISegmentedControl */,
 				BC59940E29EE69DD00EFF4D2 /* UIProgressView */,
+				BCAC393B2A02692C0095A377 /* Activityindicator */,
 				BC4E506B29ED764F00C0AC9D /* UISlider */,
 				BC4E506629ED6DEC00C0AC9D /* UISwitch */,
 				BCD732BF29E8244C0045032D /* UITextView */,
@@ -561,6 +578,7 @@
 				BCD340F329FF8E9000AFA19A /* String+Extension.swift */,
 				BC6D98E22A013131008FB9A0 /* UICollectionView+Extension.swift */,
 				BC75CAB12A02254B005FF13B /* UIImage+Extension.swift */,
+				BCCABFE72A052AA0000BDEB5 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -591,6 +609,33 @@
 				BCAC39452A0286DF0095A377 /* MovieListingTVCell.swift */,
 			);
 			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		BCCABFD82A04D545000BDEB5 /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				BCCABFD92A04D55E000BDEB5 /* UIPickerView.storyboard */,
+				BCCABFDB2A04D571000BDEB5 /* UIPickerViewVC.swift */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
+		BCCABFDD2A04FE04000BDEB5 /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				BCCABFDE2A04FE23000BDEB5 /* UIDatePicker.storyboard */,
+				BCCABFE02A04FE41000BDEB5 /* UIDatePickerVC.swift */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		BCCABFE22A05190C000BDEB5 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				BCCABFE32A05192C000BDEB5 /* MKMapView.storyboard */,
+				BCCABFE52A05193D000BDEB5 /* MKMapViewVC.swift */,
+			);
+			path = MKMapView;
 			sourceTree = "<group>";
 		};
 		BCD340F529FFABE000AFA19A /* OTTScreen */ = {
@@ -720,9 +765,12 @@
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
 				BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */,
 				BC78C3BA29FB8E3E00EBAA40 /* SectionHeaderView.xib in Resources */,
+				BCCABFE42A05192C000BDEB5 /* MKMapView.storyboard in Resources */,
 				BC6D98E12A0121D9008FB9A0 /* MovieHeaderCVCell.xib in Resources */,
 				BC6D98DD2A011CDE008FB9A0 /* MovieHeaderView.xib in Resources */,
+				BCCABFDF2A04FE23000BDEB5 /* UIDatePicker.storyboard in Resources */,
 				BC8D98BF2A03A5450097F2EE /* UITabBar.storyboard in Resources */,
+				BCCABFDA2A04D55E000BDEB5 /* UIPickerView.storyboard in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
 				BC59942729EEB1CA00EFF4D2 /* UIStepper.storyboard in Resources */,
 				BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */,
@@ -779,17 +827,21 @@
 				BC965EEE29F67F7700945631 /* Multiple5TableViewCell.swift in Sources */,
 				BC6D98E32A013131008FB9A0 /* UICollectionView+Extension.swift in Sources */,
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
+				BCCABFE12A04FE41000BDEB5 /* UIDatePickerVC.swift in Sources */,
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
 				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
 				BC8D98D22A03DB610097F2EE /* UIToolBarVC.swift in Sources */,
 				BC8D98CB2A03C6950097F2EE /* WKWebViewTabBarVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
 				BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */,
+				BCCABFDC2A04D571000BDEB5 /* UIPickerViewVC.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
+				BCCABFE82A052AA0000BDEB5 /* UITextField+Extension.swift in Sources */,
+				BCCABFE62A05193D000BDEB5 /* MKMapViewVC.swift in Sources */,
 				BC78C3BF29FBD31D00EBAA40 /* CollectionViewVC.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC78C3B829FB8E2500EBAA40 /* SectionHeaderView.swift in Sources */,
