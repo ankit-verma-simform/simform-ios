@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC387C6B2A0908ED002276F2 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C6A2A0908ED002276F2 /* MyAnnotation.swift */; };
+		BC387C6D2A0924DB002276F2 /* MapTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C6C2A0924DB002276F2 /* MapTabBarVC.swift */; };
+		BC387C6F2A093202002276F2 /* SevenWondersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C6E2A093202002276F2 /* SevenWondersVC.swift */; };
+		BC387C712A093664002276F2 /* Wonder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C702A093664002276F2 /* Wonder.swift */; };
 		BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */; };
 		BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */; };
 		BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364829DBE5BA00CB1DC0 /* ViewController.swift */; };
@@ -122,6 +126,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC387C6A2A0908ED002276F2 /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
+		BC387C6C2A0924DB002276F2 /* MapTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabBarVC.swift; sourceTree = "<group>"; };
+		BC387C6E2A093202002276F2 /* SevenWondersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenWondersVC.swift; sourceTree = "<group>"; };
+		BC387C702A093664002276F2 /* Wonder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wonder.swift; sourceTree = "<group>"; };
 		BC42364129DBE5BA00CB1DC0 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -409,6 +417,7 @@
 				BC70743129F7FE8A00F443FB /* Friend.swift */,
 				BC78C3C429FBF43C00EBAA40 /* Movie.swift */,
 				BCD3410A29FFC85600AFA19A /* MovieCatalog.swift */,
+				BC387C702A093664002276F2 /* Wonder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -634,6 +643,9 @@
 			children = (
 				BCCABFE32A05192C000BDEB5 /* MKMapView.storyboard */,
 				BCCABFE52A05193D000BDEB5 /* MKMapViewVC.swift */,
+				BC387C6A2A0908ED002276F2 /* MyAnnotation.swift */,
+				BC387C6C2A0924DB002276F2 /* MapTabBarVC.swift */,
+				BC387C6E2A093202002276F2 /* SevenWondersVC.swift */,
 			);
 			path = MKMapView;
 			sourceTree = "<group>";
@@ -829,12 +841,14 @@
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
 				BCCABFE12A04FE41000BDEB5 /* UIDatePickerVC.swift in Sources */,
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
+				BC387C712A093664002276F2 /* Wonder.swift in Sources */,
 				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
 				BC8D98D22A03DB610097F2EE /* UIToolBarVC.swift in Sources */,
 				BC8D98CB2A03C6950097F2EE /* WKWebViewTabBarVC.swift in Sources */,
 				BCA52CAD29E6B976003437E6 /* UIButtonVC.swift in Sources */,
 				BCC57CDF29FA72D8003EFE6D /* Character+Extension.swift in Sources */,
 				BCCABFDC2A04D571000BDEB5 /* UIPickerViewVC.swift in Sources */,
+				BC387C6F2A093202002276F2 /* SevenWondersVC.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
@@ -859,6 +873,7 @@
 				BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */,
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BCAC393F2A0269700095A377 /* ActivityIndicatorVC.swift in Sources */,
+				BC387C6B2A0908ED002276F2 /* MyAnnotation.swift in Sources */,
 				BC75CAB22A02254B005FF13B /* UIImage+Extension.swift in Sources */,
 				BCD3410B29FFC85600AFA19A /* MovieCatalog.swift in Sources */,
 				BC965EE529F6471A00945631 /* TableViewVC.swift in Sources */,
@@ -871,6 +886,7 @@
 				BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */,
 				BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */,
 				BC59942429EE93D200EFF4D2 /* YellowViewController.swift in Sources */,
+				BC387C6D2A0924DB002276F2 /* MapTabBarVC.swift in Sources */,
 				BCD340F229FF7BB100AFA19A /* MovieCollectionViewCell.swift in Sources */,
 				BC94E43029F004170057CB70 /* LoginViewController.swift in Sources */,
 				BC8D98C12A03A5850097F2EE /* UITabBarVC.swift in Sources */,

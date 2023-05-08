@@ -209,11 +209,11 @@ extension ViewController {
     }
 
     @IBAction private func btnMKMapViewAction(_ sender: Any) {
-        guard let mkMapViewVC = MKMapViewVC
-            .create(storyboardName: .mkMapView) as? MKMapViewVC else {
+        guard let mapTabBarVC = MapTabBarVC
+            .create(storyboardName: .mkMapView) as? MapTabBarVC else {
             return
         }
-        navigate(to: mkMapViewVC)
+        navigate(to: mapTabBarVC)
     }
 }
 
