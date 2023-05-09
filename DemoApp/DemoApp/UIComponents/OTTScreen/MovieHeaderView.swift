@@ -9,7 +9,7 @@ import UIKit
 
 class MovieHeaderView: UIView {
     // MARK: - Variables
-    private let topTrendings = movies
+    private let topTrendings = Movie.getMovies()
     private var currentMovieShowingPage = 0
     
     // MARK: - IB Outlets

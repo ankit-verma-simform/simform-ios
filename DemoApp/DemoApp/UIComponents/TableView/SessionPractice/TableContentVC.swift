@@ -94,7 +94,7 @@ extension TableContentVC: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
         viewForFooterInSection section: Int) -> UIView? {
-            var footerView = UIView(frame: .init(x: 0, y: 0, width: tableView.frame.size.width, height: 128))
+            let footerView = UIView(frame: .init(x: 0, y: 0, width: tableView.frame.size.width, height: 128))
             footerView.backgroundColor = .cyan
             return footerView
     }

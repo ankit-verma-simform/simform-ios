@@ -31,8 +31,11 @@ extension UIToolBarVC {
         if autoIncrementCount {
             btnToggleIncrementAuto.image = UIImage(systemName: "pause.fill")
             timer?.invalidate() // just in case this button is tapped multiple times
-            
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(incrementCount), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 1,
+                                         target: self,
+                                         selector: #selector(incrementCount),
+                                         userInfo: nil,
+                                         repeats: true)
         }
         else {
             btnToggleIncrementAuto.image = UIImage(systemName: "play.fill")

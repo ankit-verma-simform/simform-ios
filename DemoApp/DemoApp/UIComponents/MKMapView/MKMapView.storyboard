@@ -61,6 +61,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map Practice" id="wg2-rL-Odc"/>
                     <connections>
+                        <outlet property="mapView" destination="KYe-Dq-Znk" id="qWt-vd-slb"/>
                         <outlet property="picker" destination="Zfy-ej-KuC" id="p8V-K6-Wua"/>
                     </connections>
                 </viewController>

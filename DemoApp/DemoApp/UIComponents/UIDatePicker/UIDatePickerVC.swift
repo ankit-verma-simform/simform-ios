@@ -9,7 +9,7 @@ import UIKit
 
 class UIDatePickerVC: UIViewController {
     // MARK: - Variables
-    private lazy var datePicker: UIDatePicker = UIDatePicker(frame: .zero)
+    private var datePicker: UIDatePicker = UIDatePicker(frame: .zero)
     
     // MARK: - IB Outlets
     @IBOutlet private weak var tfPickDate: UITextField!
@@ -38,6 +38,7 @@ extension UIDatePickerVC {
                              for: .valueChanged)
         tfPickDate.inputView = datePicker
     }
+    
     @objc private func handleDatePicker(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
               dateFormatter.dateFormat = "dd MMM yyyy"

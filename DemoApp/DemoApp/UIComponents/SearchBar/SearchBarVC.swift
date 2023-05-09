@@ -9,7 +9,7 @@ import UIKit
 
 class SearchBarVC: UIViewController {
     // MARK: - Variables
-    private var movieListing = movies
+    private var movieListing = Movie.getMovies()
     private var searchMovieListing: [Movie] = []
     private var searchIsActive: Bool {
         searchBar.searchTextField.hasText

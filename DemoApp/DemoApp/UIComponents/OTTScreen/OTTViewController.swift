@@ -10,9 +10,9 @@ import UIKit
 class OTTViewController: UIViewController {
     // MARK: - Variables
     private var movieCatalogs: [MovieCatalog] = [
-        MovieCatalog(title: "Newly Added", movies: moviesData),
-        MovieCatalog(title: "Upcoming Movies", movies: moviesData),
-        MovieCatalog(title: "Users Favourite", movies: moviesData),
+        MovieCatalog(title: "Newly Added", movies: MovieCatalog.getMoviesData()),
+        MovieCatalog(title: "Upcoming Movies", movies: MovieCatalog.getMoviesData()),
+        MovieCatalog(title: "Users Favourite", movies: MovieCatalog.getMoviesData()),
     ]
     private var pullToRefreshControl: UIRefreshControl?
     
@@ -48,12 +48,13 @@ extension OTTViewController {
     }
     
     @objc func loadMovieData() {
-        print("data loading ...")
         DispatchQueue.main.asyncAfter(
             deadline: .now() + .seconds(4), execute: { [weak self] in
-                self?.pullToRefreshControl?.endRefreshing()
-                self?.addMovies()
-                print("done")
+                guard let self else {
+                    return
+                }
+                self.pullToRefreshControl?.endRefreshing()
+                self.addMovies()
             })
     }
     

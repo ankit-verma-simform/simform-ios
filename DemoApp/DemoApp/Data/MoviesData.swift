@@ -5,7 +5,8 @@
 //  Created by Ankit Verma on 01/05/23.
 //
 
-let jsonString = """
+func getMoviesDataJson() -> String {
+    return """
 [
   {
     "Title": "The Lion King",
@@ -33,3 +34,4 @@ let jsonString = """
   }
 ]
 """
+}

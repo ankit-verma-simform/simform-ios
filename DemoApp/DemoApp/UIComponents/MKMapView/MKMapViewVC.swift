@@ -10,7 +10,7 @@ import MapKit
 
 class MKMapViewVC: UIViewController {
     // MARK: - Variables
-    private lazy var locationManager = CLLocationManager()
+    private var locationManager = CLLocationManager()
     private var initialLocation = CLLocation(latitude: 48.86289113006975,
                                              longitude: 2.2955338939825167)
     private var pinAnnotation: MyAnnotation?
@@ -145,6 +145,5 @@ extension MKMapViewVC: MKMapViewDelegate {
 
 // MARK: - CLLocationManager Delegate Methods
 extension MKMapViewVC: CLLocationManagerDelegate {
-
+    
 }
-

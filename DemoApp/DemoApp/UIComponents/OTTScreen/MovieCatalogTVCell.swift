@@ -68,7 +68,6 @@ extension MovieCatalogTVCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print("Tapped on movie \(indexPath)")
         print(movies[indexPath.row])
     }
     

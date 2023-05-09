@@ -8,6 +8,9 @@
 import UIKit
 
 class CollectionViewVC: UIViewController {
+    // MARK: - Variables
+    private let movies = Movie.getMovies()
+
     // MARK: - IB Outlets
     @IBOutlet private weak var movieCollectionView: UICollectionView!
     

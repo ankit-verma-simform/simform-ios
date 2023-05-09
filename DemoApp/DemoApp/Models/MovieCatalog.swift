@@ -10,6 +10,12 @@ import Foundation
 struct MovieCatalog {
     let title: String?
     let movies: Movies?
+    
+    static func getMoviesData() -> Movies {
+        let jsonData = Data(getMoviesDataJson().utf8)
+        let decoder = JSONDecoder()
+        return (try? decoder.decode(Movies.self, from: jsonData)) ?? []
+    }
 }
 
 struct MovieItem: Codable {
@@ -27,7 +33,3 @@ struct MovieItem: Codable {
 }
 
 typealias Movies = [MovieItem]
-
-let jsonData = Data(jsonString.utf8)
-let decoder = JSONDecoder()
-let moviesData = (try? decoder.decode(Movies.self, from: jsonData)) ?? []
