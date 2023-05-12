@@ -31,4 +31,5 @@ enum Storyboard: String {
     case uiPickerView = "UIPickerView"
     case uiDatePicker = "UIDatePicker"
     case mkMapView = "MKMapView"
+    case uiNavigation = "UINavigation"
 }

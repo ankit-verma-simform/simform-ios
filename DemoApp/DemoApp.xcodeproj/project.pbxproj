@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC06B4ED2A0E31F400DCE719 /* UINavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC06B4EC2A0E31F400DCE719 /* UINavigation.storyboard */; };
+		BC06B4EF2A0E329800DCE719 /* UINavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06B4EE2A0E329800DCE719 /* UINavigationVC.swift */; };
+		BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */; };
+		BC06B4F32A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06B4F22A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift */; };
 		BC387C6B2A0908ED002276F2 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C6A2A0908ED002276F2 /* MyAnnotation.swift */; };
 		BC387C6D2A0924DB002276F2 /* MapTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C6C2A0924DB002276F2 /* MapTabBarVC.swift */; };
 		BC387C6F2A093202002276F2 /* SevenWondersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C6E2A093202002276F2 /* SevenWondersVC.swift */; };
@@ -124,6 +128,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC06B4EC2A0E31F400DCE719 /* UINavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UINavigation.storyboard; sourceTree = "<group>"; };
+		BC06B4EE2A0E329800DCE719 /* UINavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationVC.swift; sourceTree = "<group>"; };
+		BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeNavigationController.swift; sourceTree = "<group>"; };
+		BC06B4F22A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeNavigationRootVC.swift; sourceTree = "<group>"; };
 		BC387C6A2A0908ED002276F2 /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		BC387C6C2A0924DB002276F2 /* MapTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabBarVC.swift; sourceTree = "<group>"; };
 		BC387C6E2A093202002276F2 /* SevenWondersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenWondersVC.swift; sourceTree = "<group>"; };
@@ -254,6 +262,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC06B4EB2A0E31DA00DCE719 /* UINavigation */ = {
+			isa = PBXGroup;
+			children = (
+				BC06B4EC2A0E31F400DCE719 /* UINavigation.storyboard */,
+				BC06B4EE2A0E329800DCE719 /* UINavigationVC.swift */,
+				BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */,
+				BC06B4F22A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift */,
+			);
+			path = UINavigation;
+			sourceTree = "<group>";
+		};
 		BC177A3A29F0200600F1C638 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +311,7 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC06B4EB2A0E31DA00DCE719 /* UINavigation */,
 				BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */,
 				BCD3410C29FFCF9E00AFA19A /* Data */,
 				BC70743029F7FE6B00F443FB /* Models */,
@@ -772,6 +792,7 @@
 				BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */,
 				BC78C3BA29FB8E3E00EBAA40 /* SectionHeaderView.xib in Resources */,
 				BCCABFE42A05192C000BDEB5 /* MKMapView.storyboard in Resources */,
+				BC06B4ED2A0E31F400DCE719 /* UINavigation.storyboard in Resources */,
 				BC6D98E12A0121D9008FB9A0 /* MovieHeaderCVCell.xib in Resources */,
 				BC6D98DD2A011CDE008FB9A0 /* MovieHeaderView.xib in Resources */,
 				BCCABFDF2A04FE23000BDEB5 /* UIDatePicker.storyboard in Resources */,
@@ -841,6 +862,7 @@
 				BCCABFDC2A04D571000BDEB5 /* UIPickerViewVC.swift in Sources */,
 				BC387C6F2A093202002276F2 /* SevenWondersVC.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
+				BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */,
 				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
@@ -861,6 +883,7 @@
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
 				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
+				BC06B4F32A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift in Sources */,
 				BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */,
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BCAC393F2A0269700095A377 /* ActivityIndicatorVC.swift in Sources */,
@@ -870,6 +893,7 @@
 				BCD3410B29FFC85600AFA19A /* MovieCatalog.swift in Sources */,
 				BC965EE529F6471A00945631 /* TableViewVC.swift in Sources */,
 				BCAC39462A0286DF0095A377 /* MovieListingTVCell.swift in Sources */,
+				BC06B4EF2A0E329800DCE719 /* UINavigationVC.swift in Sources */,
 				BC94E42029EFAC670057CB70 /* ContainerViewController.swift in Sources */,
 				BCD3410E29FFD07D00AFA19A /* MoviesData.swift in Sources */,
 				BC6D98D52A00EA71008FB9A0 /* MovieHeaderView.swift in Sources */,

@@ -215,5 +215,13 @@ extension ViewController {
         }
         navigate(to: mapTabBarVC)
     }
+
+    @IBAction private func btnUINavigationAction(_ sender: Any) {
+        guard let uiNavigationVC = UINavigationVC
+            .create(storyboardName: .uiNavigation) as? UINavigationVC else {
+            return
+        }
+        navigate(to: uiNavigationVC)
+    }
 }
 

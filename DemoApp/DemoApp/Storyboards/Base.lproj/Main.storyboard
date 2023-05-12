@@ -36,10 +36,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="1966"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qu-hX-shR">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1338.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1392.6666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-dy-qgS">
-                                                <rect key="frame" x="20" y="0.0" width="353" height="1338.3333333333333"/>
+                                                <rect key="frame" x="20" y="0.0" width="353" height="1392.6666666666667"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un4-CY-wXJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
@@ -239,6 +239,14 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="MKMapView"/>
                                                         <connections>
                                                             <action selector="btnMKMapViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUs-qU-g8Y"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAb-IT-qrS" userLabel="UI Navigation">
+                                                        <rect key="frame" x="0.0" y="1358.3333333333333" width="353" height="34.333333333333258"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="UINavigation"/>
+                                                        <connections>
+                                                            <action selector="btnUINavigationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24F-Ih-6V3"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
