@@ -1,13 +1,13 @@
 //
-//  UINavigationVC.swift
+//  SecondVC.swift
 //  DemoApp
 //
-//  Created by Ankit Verma on 12/05/23.
+//  Created by Ankit Verma on 15/05/23.
 //
 
 import UIKit
 
-class UINavigationVC: UIViewController {
+class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

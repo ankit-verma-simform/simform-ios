@@ -8,12 +8,14 @@
 import UIKit
 
 class PracticeNavigationRootVC: UIViewController {
-
+    // MARK: - View Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+}
+
+// MARK: - IB Actions
+extension PracticeNavigationRootVC {
     @IBAction func gotoRootVC(_ sender: UIStoryboardSegue) {
-        
     }
 }

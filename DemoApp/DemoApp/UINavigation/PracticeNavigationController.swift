@@ -8,7 +8,6 @@
 import UIKit
 
 class PracticeNavigationController: UINavigationController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -125,6 +125,11 @@
 		BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */; };
 		BCEF05B929F10D0800B8DA0C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */; };
 		BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */; };
+		BCF4CDF32A11F16C00B22704 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4CDF22A11F16C00B22704 /* FourthVC.swift */; };
+		BCF4CDF92A12037B00B22704 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4CDF82A12037B00B22704 /* SecondVC.swift */; };
+		BCF4CDFD2A124F7E00B22704 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4CDFC2A124F7E00B22704 /* VC3.swift */; };
+		BCF4CDFF2A12568800B22704 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4CDFE2A12568800B22704 /* VC1.swift */; };
+		BCF4CE012A1256B400B22704 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF4CE002A1256B400B22704 /* VC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +252,11 @@
 		BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		BCEF05BA29F12E9800B8DA0C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		BCF4CDF22A11F16C00B22704 /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
+		BCF4CDF82A12037B00B22704 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		BCF4CDFC2A124F7E00B22704 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
+		BCF4CDFE2A12568800B22704 /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		BCF4CE002A1256B400B22704 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,9 +276,14 @@
 			isa = PBXGroup;
 			children = (
 				BC06B4EC2A0E31F400DCE719 /* UINavigation.storyboard */,
+				BCF4CDFC2A124F7E00B22704 /* VC3.swift */,
+				BCF4CDFE2A12568800B22704 /* VC1.swift */,
+				BCF4CDF82A12037B00B22704 /* SecondVC.swift */,
+				BCF4CDF22A11F16C00B22704 /* FourthVC.swift */,
 				BC06B4EE2A0E329800DCE719 /* UINavigationVC.swift */,
 				BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */,
 				BC06B4F22A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift */,
+				BCF4CE002A1256B400B22704 /* VC2.swift */,
 			);
 			path = UINavigation;
 			sourceTree = "<group>";
@@ -835,6 +850,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEF05B929F10D0800B8DA0C /* CircularImageView.swift in Sources */,
+				BCF4CE012A1256B400B22704 /* VC2.swift in Sources */,
 				BC94E42329EFE4830057CB70 /* ScrollViewVC.swift in Sources */,
 				BC965EEA29F65CEE00945631 /* IndexTableViewCell.swift in Sources */,
 				BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */,
@@ -850,6 +866,8 @@
 				BC6D98E02A0121D9008FB9A0 /* MovieHeaderCVCell.swift in Sources */,
 				BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */,
 				BC965EEE29F67F7700945631 /* Multiple5TableViewCell.swift in Sources */,
+				BCF4CDF92A12037B00B22704 /* SecondVC.swift in Sources */,
+				BCF4CDF32A11F16C00B22704 /* FourthVC.swift in Sources */,
 				BC6D98E32A013131008FB9A0 /* UICollectionView+Extension.swift in Sources */,
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
 				BCCABFE12A04FE41000BDEB5 /* UIDatePickerVC.swift in Sources */,
@@ -878,6 +896,7 @@
 				BC70743229F7FE8A00F443FB /* Friend.swift in Sources */,
 				BCD340F929FFAC5200AFA19A /* OTTViewController.swift in Sources */,
 				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
+				BCF4CDFD2A124F7E00B22704 /* VC3.swift in Sources */,
 				BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */,
 				BC75CAB82A023EA2005FF13B /* StackViewVC.swift in Sources */,
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
@@ -890,6 +909,7 @@
 				BC7781F82A0A2A3900631C41 /* WonderAnnotation.swift in Sources */,
 				BC387C6B2A0908ED002276F2 /* MyAnnotation.swift in Sources */,
 				BC75CAB22A02254B005FF13B /* UIImage+Extension.swift in Sources */,
+				BCF4CDFF2A12568800B22704 /* VC1.swift in Sources */,
 				BCD3410B29FFC85600AFA19A /* MovieCatalog.swift in Sources */,
 				BC965EE529F6471A00945631 /* TableViewVC.swift in Sources */,
 				BCAC39462A0286DF0095A377 /* MovieListingTVCell.swift in Sources */,
