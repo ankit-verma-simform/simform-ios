@@ -5,7 +5,7 @@
 //  Created by Ankit Verma on 12/04/23.
 //
 
-enum Storyboard: String {
+enum Storyboard: String, CaseIterable {
     case uiLabel = "UILabel"
     case uiButton = "UIButton"
     case uiTextField = "UITextField"
@@ -32,4 +32,23 @@ enum Storyboard: String {
     case uiDatePicker = "UIDatePicker"
     case mkMapView = "MKMapView"
     case uiNavigation = "UINavigation"
+    
+    var storyboardName: String {
+        return rawValue
+    }
+    
+    var initialViewControllerName: String {
+        switch self {
+        case .uiPageViewController:
+            return "ContainerViewController"
+        case .ottScreen:
+            return "OTTViewController"
+        case .wkWebView:
+            return "WKWebViewTabBarVC"
+        case .mkMapView:
+            return "MapTabBarVC"
+        default:
+            return "\(rawValue)VC"
+        }
+    }
 }

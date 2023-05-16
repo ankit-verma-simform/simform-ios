@@ -20,3 +20,14 @@ class VC2: UIViewController {
         lblMessage.text = message
     }
 }
+
+// MARK: - IB Actions
+extension VC2 {
+    @IBAction func pushVC4(_ sender: UIButton) {
+        guard let vc4 = VC4.create(storyboardName: .uiNavigation) as? VC4 else {
+            return
+        }
+        navigationController?.pushViewController(vc4, animated: true)
+    }
+}
+

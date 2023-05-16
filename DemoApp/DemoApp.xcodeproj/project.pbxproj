@@ -17,7 +17,6 @@
 		BC387C712A093664002276F2 /* Wonder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387C702A093664002276F2 /* Wonder.swift */; };
 		BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */; };
 		BC42364729DBE5BA00CB1DC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */; };
-		BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42364829DBE5BA00CB1DC0 /* ViewController.swift */; };
 		BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */; };
 		BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */; };
 		BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */; };
@@ -121,6 +120,9 @@
 		BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732BD29E81B090045032D /* UITextFieldVC.swift */; };
 		BCD732C129E824650045032D /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732C029E824650045032D /* UITextViewVC.swift */; };
 		BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732C229E8248F0045032D /* UITextView.storyboard */; };
+		BCE756EB2A133C3500E13B38 /* VC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EA2A133C3500E13B38 /* VC4.swift */; };
+		BCE756ED2A13579D00E13B38 /* UIComponentsNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */; };
+		BCE756F52A13706300E13B38 /* NavigationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756F42A13706300E13B38 /* NavigationTVCell.swift */; };
 		BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */; };
 		BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */; };
 		BCEF05B929F10D0800B8DA0C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */; };
@@ -144,7 +146,6 @@
 		BC42364129DBE5BA00CB1DC0 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC42364829DBE5BA00CB1DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC42364B29DBE5BA00CB1DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC42365029DBE5BB00CB1DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -248,6 +249,9 @@
 		BCD732BD29E81B090045032D /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
 		BCD732C029E824650045032D /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
 		BCD732C229E8248F0045032D /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
+		BCE756EA2A133C3500E13B38 /* VC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
+		BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentsNavigationVC.swift; path = DemoApp/UIComponentsNavigationVC.swift; sourceTree = SOURCE_ROOT; };
+		BCE756F42A13706300E13B38 /* NavigationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTVCell.swift; sourceTree = "<group>"; };
 		BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextField.xib; sourceTree = "<group>"; };
 		BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		BCEF05B829F10D0800B8DA0C /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 				BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */,
 				BC06B4F22A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift */,
 				BCF4CE002A1256B400B22704 /* VC2.swift */,
+				BCE756EA2A133C3500E13B38 /* VC4.swift */,
 			);
 			path = UINavigation;
 			sourceTree = "<group>";
@@ -337,8 +342,10 @@
 				BCA52C9E29E68054003437E6 /* UIComponents */,
 				BCA52CA029E68397003437E6 /* Storyboards */,
 				BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */,
+				BCA52CA529E68F96003437E6 /* Storyboard.swift */,
+				BCE756F42A13706300E13B38 /* NavigationTVCell.swift */,
 				BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */,
-				BC42364829DBE5BA00CB1DC0 /* ViewController.swift */,
+				BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */,
 				BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */,
 				BC42365229DBE5BB00CB1DC0 /* Info.plist */,
 			);
@@ -592,7 +599,6 @@
 			children = (
 				BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */,
 				BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */,
-				BCA52CA529E68F96003437E6 /* Storyboard.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -881,7 +887,6 @@
 				BC387C6F2A093202002276F2 /* SevenWondersVC.swift in Sources */,
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */,
-				BC42364929DBE5BA00CB1DC0 /* ViewController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
@@ -890,18 +895,21 @@
 				BC78C3BF29FBD31D00EBAA40 /* CollectionViewVC.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
 				BC78C3B829FB8E2500EBAA40 /* SectionHeaderView.swift in Sources */,
+				BCE756F52A13706300E13B38 /* NavigationTVCell.swift in Sources */,
 				BCAC39422A02849E0095A377 /* SearchBarVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
 				BC78C3C529FBF43C00EBAA40 /* Movie.swift in Sources */,
 				BC70743229F7FE8A00F443FB /* Friend.swift in Sources */,
 				BCD340F929FFAC5200AFA19A /* OTTViewController.swift in Sources */,
 				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
+				BCE756EB2A133C3500E13B38 /* VC4.swift in Sources */,
 				BCF4CDFD2A124F7E00B22704 /* VC3.swift in Sources */,
 				BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */,
 				BC75CAB82A023EA2005FF13B /* StackViewVC.swift in Sources */,
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
 				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
+				BCE756ED2A13579D00E13B38 /* UIComponentsNavigationVC.swift in Sources */,
 				BC06B4F32A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift in Sources */,
 				BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */,
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
