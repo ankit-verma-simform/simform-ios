@@ -38,8 +38,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QYH-ve-gb2">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QYH-ve-gb2">
+                                <rect key="frame" x="15" y="118" width="363" height="636"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -48,21 +48,22 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ila-pY-0i2" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="2Op-BF-cmz"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QYH-ve-gb2" secondAttribute="bottom" id="4NL-q2-eFf"/>
-                            <constraint firstItem="QYH-ve-gb2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="99S-QQ-yrt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QYH-ve-gb2" secondAttribute="bottom" constant="15" id="4NL-q2-eFf"/>
+                            <constraint firstItem="QYH-ve-gb2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="99S-QQ-yrt"/>
                             <constraint firstAttribute="trailing" secondItem="Ila-pY-0i2" secondAttribute="trailing" id="Dka-qV-Fx7"/>
                             <constraint firstItem="R3a-2n-TQh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="EAQ-hZ-mNa"/>
-                            <constraint firstItem="QYH-ve-gb2" firstAttribute="top" secondItem="R3a-2n-TQh" secondAttribute="bottom" id="G4E-Yf-pjp"/>
+                            <constraint firstItem="QYH-ve-gb2" firstAttribute="top" secondItem="R3a-2n-TQh" secondAttribute="bottom" constant="15" id="G4E-Yf-pjp"/>
                             <constraint firstAttribute="bottom" secondItem="Ila-pY-0i2" secondAttribute="bottom" id="Rt7-ik-b3C"/>
                             <constraint firstItem="Ila-pY-0i2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="cmu-kz-A6y"/>
                             <constraint firstItem="R3a-2n-TQh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dhb-oa-cSq"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QYH-ve-gb2" secondAttribute="trailing" id="lPw-Th-LHr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QYH-ve-gb2" secondAttribute="trailing" constant="15" id="lPw-Th-LHr"/>
                             <constraint firstItem="R3a-2n-TQh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vxp-Fe-lLa"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="customNavbar" destination="R3a-2n-TQh" id="yx3-3R-5Fm"/>
                         <outlet property="golfHomeTable" destination="QYH-ve-gb2" id="YQy-Kq-cMz"/>
                     </connections>
                 </viewController>

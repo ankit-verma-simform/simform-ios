@@ -47,6 +47,14 @@
 		BC59942E29EEC1AB00EFF4D2 /* ImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59942D29EEC1AB00EFF4D2 /* ImageViewVC.swift */; };
 		BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */; };
 		BC6B43B429F244C6007607C4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B43B329F244C6007607C4 /* Validator.swift */; };
+		BC6CA9E22A15E2BC001F8B97 /* GolfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA9E12A15E2BC001F8B97 /* GolfGame.swift */; };
+		BC6CA9E52A15E306001F8B97 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA9E42A15E306001F8B97 /* Constants.swift */; };
+		BC6CA9EB2A1617C5001F8B97 /* GameStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA9EA2A1617C5001F8B97 /* GameStatusView.swift */; };
+		BC6CA9ED2A16186D001F8B97 /* GameStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6CA9EC2A16186D001F8B97 /* GameStatusView.xib */; };
+		BC6CA9F02A1632C4001F8B97 /* PlayerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA9EE2A1632C4001F8B97 /* PlayerTVCell.swift */; };
+		BC6CA9F12A1632C4001F8B97 /* PlayerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6CA9EF2A1632C4001F8B97 /* PlayerTVCell.xib */; };
+		BC6CA9F32A163CDD001F8B97 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6CA9F22A163CDD001F8B97 /* GroupHeaderView.swift */; };
+		BC6CA9F52A163DB7001F8B97 /* GroupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6CA9F42A163DB7001F8B97 /* GroupHeaderView.xib */; };
 		BC6D98D52A00EA71008FB9A0 /* MovieHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D98D42A00EA71008FB9A0 /* MovieHeaderView.swift */; };
 		BC6D98DD2A011CDE008FB9A0 /* MovieHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6D98DC2A011CDE008FB9A0 /* MovieHeaderView.xib */; };
 		BC6D98E02A0121D9008FB9A0 /* MovieHeaderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D98DE2A0121D9008FB9A0 /* MovieHeaderCVCell.swift */; };
@@ -184,6 +192,14 @@
 		BC59942F29EEC1B900EFF4D2 /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
 		BC6B43B329F244C6007607C4 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		BC6B43B529F25B43007607C4 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
+		BC6CA9E12A15E2BC001F8B97 /* GolfGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfGame.swift; sourceTree = "<group>"; };
+		BC6CA9E42A15E306001F8B97 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC6CA9EA2A1617C5001F8B97 /* GameStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatusView.swift; sourceTree = "<group>"; };
+		BC6CA9EC2A16186D001F8B97 /* GameStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameStatusView.xib; sourceTree = "<group>"; };
+		BC6CA9EE2A1632C4001F8B97 /* PlayerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTVCell.swift; sourceTree = "<group>"; };
+		BC6CA9EF2A1632C4001F8B97 /* PlayerTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTVCell.xib; sourceTree = "<group>"; };
+		BC6CA9F22A163CDD001F8B97 /* GroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
+		BC6CA9F42A163DB7001F8B97 /* GroupHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupHeaderView.xib; sourceTree = "<group>"; };
 		BC6D98D42A00EA71008FB9A0 /* MovieHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHeaderView.swift; sourceTree = "<group>"; };
 		BC6D98DC2A011CDE008FB9A0 /* MovieHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieHeaderView.xib; sourceTree = "<group>"; };
 		BC6D98DE2A0121D9008FB9A0 /* MovieHeaderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHeaderCVCell.swift; sourceTree = "<group>"; };
@@ -448,6 +464,38 @@
 				BC6B43B329F244C6007607C4 /* Validator.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC6CA9E02A15E2A5001F8B97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CA9E12A15E2BC001F8B97 /* GolfGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC6CA9E32A15E2EE001F8B97 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BC6CA9E42A15E306001F8B97 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BC6CA9F62A166C43001F8B97 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCE1A9B32A14E2220055219A /* GolfHomeScreenVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC6CA9F72A166C50001F8B97 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BCE1A9B12A14E18A0055219A /* GolfScreens.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		BC70742F29F7FB6E00F443FB /* Cell */ = {
@@ -744,12 +792,20 @@
 		BCE1A9B02A14E16C0055219A /* GolfScreens */ = {
 			isa = PBXGroup;
 			children = (
-				BCE1A9B12A14E18A0055219A /* GolfScreens.storyboard */,
-				BCE1A9B32A14E2220055219A /* GolfHomeScreenVC.swift */,
-				BC1763522A15049800C26545 /* GolfHomeHeaderView.swift */,
+				BC6CA9E32A15E2EE001F8B97 /* Constants */,
+				BC6CA9E02A15E2A5001F8B97 /* Model */,
+				BC6CA9F72A166C50001F8B97 /* Storyboards */,
+				BC6CA9F62A166C43001F8B97 /* ViewControllers */,
 				BC1763542A15054800C26545 /* GolfHomeHeaderView.xib */,
+				BC1763522A15049800C26545 /* GolfHomeHeaderView.swift */,
 				BC1763562A150AF100C26545 /* GolfGameTypeView.xib */,
 				BC1763582A150E7300C26545 /* GolfGameTypeView.swift */,
+				BC6CA9EC2A16186D001F8B97 /* GameStatusView.xib */,
+				BC6CA9EA2A1617C5001F8B97 /* GameStatusView.swift */,
+				BC6CA9EF2A1632C4001F8B97 /* PlayerTVCell.xib */,
+				BC6CA9EE2A1632C4001F8B97 /* PlayerTVCell.swift */,
+				BC6CA9F42A163DB7001F8B97 /* GroupHeaderView.xib */,
+				BC6CA9F22A163CDD001F8B97 /* GroupHeaderView.swift */,
 			);
 			path = GolfScreens;
 			sourceTree = "<group>";
@@ -844,6 +900,7 @@
 				BC6D98DD2A011CDE008FB9A0 /* MovieHeaderView.xib in Resources */,
 				BCCABFDF2A04FE23000BDEB5 /* UIDatePicker.storyboard in Resources */,
 				BC8D98BF2A03A5450097F2EE /* UITabBar.storyboard in Resources */,
+				BC6CA9F52A163DB7001F8B97 /* GroupHeaderView.xib in Resources */,
 				BCE1A9B22A14E18A0055219A /* GolfScreens.storyboard in Resources */,
 				BCCABFDA2A04D55E000BDEB5 /* UIPickerView.storyboard in Resources */,
 				BCA52CAF29E6B99F003437E6 /* UIButton.storyboard in Resources */,
@@ -852,6 +909,7 @@
 				BC8D98C52A03B33C0097F2EE /* WKWebView.storyboard in Resources */,
 				BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */,
 				BC78C3BD29FBD2CB00EBAA40 /* CollectionView.storyboard in Resources */,
+				BC6CA9F12A1632C4001F8B97 /* PlayerTVCell.xib in Resources */,
 				BC1763572A150AF100C26545 /* GolfGameTypeView.xib in Resources */,
 				BCD3410929FFC5DD00AFA19A /* MovieCVCell.xib in Resources */,
 				BC8D98CD2A03C7620097F2EE /* wkwebview.pdf in Resources */,
@@ -871,6 +929,7 @@
 				BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
 				BC8D98D02A03DB370097F2EE /* UIToolBar.storyboard in Resources */,
+				BC6CA9ED2A16186D001F8B97 /* GameStatusView.xib in Resources */,
 				BCD340F729FFAC2E00AFA19A /* OTTScreen.storyboard in Resources */,
 				BC965EEF29F67F7700945631 /* Multiple5TableViewCell.xib in Resources */,
 				BC1763552A15054800C26545 /* GolfHomeHeaderView.xib in Resources */,
@@ -898,6 +957,7 @@
 				BC94E42E29EFFF120057CB70 /* SignUpViewController.swift in Sources */,
 				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
 				BC94E42C29EFFEB50057CB70 /* AuthPageViewController.swift in Sources */,
+				BC6CA9F02A1632C4001F8B97 /* PlayerTVCell.swift in Sources */,
 				BC6D98E02A0121D9008FB9A0 /* MovieHeaderCVCell.swift in Sources */,
 				BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */,
 				BC965EEE29F67F7700945631 /* Multiple5TableViewCell.swift in Sources */,
@@ -907,6 +967,7 @@
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
 				BCCABFE12A04FE41000BDEB5 /* UIDatePickerVC.swift in Sources */,
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
+				BC6CA9E22A15E2BC001F8B97 /* GolfGame.swift in Sources */,
 				BC387C712A093664002276F2 /* Wonder.swift in Sources */,
 				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
 				BC8D98D22A03DB610097F2EE /* UIToolBarVC.swift in Sources */,
@@ -918,9 +979,12 @@
 				BC59942029EE929C00EFF4D2 /* MainPageViewController.swift in Sources */,
 				BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
+				BC6CA9E52A15E306001F8B97 /* Constants.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
+				BC6CA9EB2A1617C5001F8B97 /* GameStatusView.swift in Sources */,
 				BCCABFE82A052AA0000BDEB5 /* UITextField+Extension.swift in Sources */,
+				BC6CA9F32A163CDD001F8B97 /* GroupHeaderView.swift in Sources */,
 				BCCABFE62A05193D000BDEB5 /* MKMapViewVC.swift in Sources */,
 				BC78C3BF29FBD31D00EBAA40 /* CollectionViewVC.swift in Sources */,
 				BCA52CAA29E69041003437E6 /* UILabelVC.swift in Sources */,
