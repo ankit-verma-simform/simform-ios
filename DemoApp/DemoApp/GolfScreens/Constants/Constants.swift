@@ -19,11 +19,16 @@ struct Constants {
         static let iconsIllustrationSkins = UIImage(named: "iconsIllustrationSkins")
         static let iconsMessage = UIImage(named: "iconsMessage")
         static let playingCards = UIImage(named: "playingCards")
+        static let iconCheckMark = UIImage(systemName: "checkmark")
     }
     
     struct String {
         static let golfPoker = "Golf Poker"
         static let closestToPin = "Closest to Pin"
         static let skins = "Skins"
+    }
+    
+    struct Color {
+        static let lightWhite = CGColor(red: 255, green: 255, blue: 255, alpha: 0.2)
     }
 }

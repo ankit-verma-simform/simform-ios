@@ -13,25 +13,31 @@ protocol MessageAllDelegate: AnyObject {
 
 class GroupHeaderView: UITableViewHeaderFooterView {
     // MARK: - Variables
+    static let identifier = "GroupHeaderView"
     weak var delegate: MessageAllDelegate?
     private var group: Group?
     private var groupIndex = Int()
-
+    
     // MARK: - IB Outlets
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var lblGroupName: UILabel!
-    @IBOutlet weak var scoreStackView: UIStackView!
-    @IBOutlet weak var imgMessage: UIButton!
+    @IBOutlet private weak var containerView: UIView!
+    @IBOutlet private weak var lblGroupName: UILabel!
+    @IBOutlet private weak var scoreStackView: UIStackView!
+    @IBOutlet private weak var imgMessage: UIButton!
     
     // MARK: - Properties
     override var reuseIdentifier: String? {
         return "GroupHeaderView"
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        addBordersAndCornersToGroupHeader()
+    }
 }
 
 // MARK: - IB Actions
 extension GroupHeaderView {
-    @IBAction func btnMessageAllAction(_ sender: UIButton) {
+    @IBAction private func btnMessageAllAction(_ sender: UIButton) {
         delegate?.message(to: group?.players ?? [], section: groupIndex)
     }
 }
@@ -47,9 +53,31 @@ extension GroupHeaderView {
         self.group = group
         self.groupIndex = groupIndex
         if messageAllSent {
-            imgMessage.setImage(UIImage(systemName: "checkmark"), for: .normal)
+            imgMessage.setImage(Constants.Image.iconCheckMark, for: .normal)
         } else {
             imgMessage.setImage(Constants.Image.iconsMessage, for: .normal)
         }
+    }
+    
+    private func addBordersAndCornersToGroupHeader() {
+        containerView.layer.sublayers?.removeAll(where: { caLayer in
+            return caLayer.name == "borderLayer" || caLayer.name == "cornerShapeLayer"
+        })
+        containerView.roundCorners(cornerRadius: 20, top: true)
+        containerView.layer.addBorder(side: .top,
+                                      thickness: 1,
+                                      color: Constants.Color.lightWhite,
+                                      maskedCorners: CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMaxXMinYCorner))
+        containerView.layer.addBorder(side: .left,
+                                      thickness: 1,
+                                      color: Constants.Color.lightWhite)
+        containerView.layer.addBorder(side: .right,
+                                      thickness: 1,
+                                      color: Constants.Color.lightWhite)
+        containerView.clipsToBounds = true
+    }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: identifier, bundle: nil)
     }
 }

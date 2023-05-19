@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImage",
       "state" : {
-        "revision" : "20df851f2ae27efbaeeff73e9babdf4fd839a144",
-        "version" : "5.15.6"
+        "revision" : "7f9fb5d43ecd4aa714c00746f54873f354403438",
+        "version" : "5.15.8"
       }
     },
     {
@@ -14,8 +14,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ivanvorobei/SPIndicator",
       "state" : {
-        "revision" : "43600857729d9efff046dc6673e6f94e095882c7",
-        "version" : "1.6.4"
+        "revision" : "e8a045f91757b32bb29c6feff1644ef79c8daedf",
+        "version" : "1.6.5"
+      }
+    },
+    {
+      "identity" : "uiview-borders-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/aaronn/UIView-Borders-Swift",
+      "state" : {
+        "revision" : "f7496f79c92134952cb692ad1faa147805f6048d",
+        "version" : "1.2.0"
       }
     }
   ],

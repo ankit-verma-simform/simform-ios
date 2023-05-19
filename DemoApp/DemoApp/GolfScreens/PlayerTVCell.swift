@@ -7,21 +7,23 @@
 
 import UIKit
 
+// MARK: - Protocols
 protocol MessageDelegate: AnyObject {
     func message(to player: Player, playerIndexPath: IndexPath)
 }
 
 class PlayerTVCell: UITableViewCell {
     // MARK: - Variables
+    static let identifier = "PlayerTVCell"
     private var player: Player?
     private var playerIndexPath = IndexPath()
     weak var delegate: MessageDelegate?
-
     // MARK: - IB Outlets
-    @IBOutlet weak var lblPlayerName: UILabel!
-    @IBOutlet weak var lblCardsEarned: UILabel!
-    @IBOutlet weak var lblPenalties: UILabel!
-    @IBOutlet weak var imgMessage: UIButton!
+    @IBOutlet private weak var lblPlayerName: UILabel!
+    @IBOutlet private weak var lblCardsEarned: UILabel!
+    @IBOutlet private weak var lblPenalties: UILabel!
+    @IBOutlet private weak var imgMessage: UIButton!
+    @IBOutlet private weak var containerView: UIView!
     
     // MARK: - View Lifecycle Methods
     override func awakeFromNib() {
@@ -31,7 +33,7 @@ class PlayerTVCell: UITableViewCell {
 
 // MARK: - IB Outlets
 extension PlayerTVCell {
-    @IBAction func btnMessageAction(_ sender: UIButton) {
+    @IBAction private func btnMessageAction(_ sender: UIButton) {
         guard let player else {
             return
         }
@@ -51,9 +53,13 @@ extension PlayerTVCell {
         self.player = player
         self.playerIndexPath = playerIndexPath
         if messageSent {
-            imgMessage.setImage(UIImage(systemName: "checkmark"), for: .normal)
+            imgMessage.setImage(Constants.Image.iconCheckMark, for: .normal)
         } else {
             imgMessage.setImage(Constants.Image.iconsMessage, for: .normal)
         }
+    }
+    
+    static func nib() -> UINib {
+        return UINib(nibName: identifier, bundle: nil)
     }
 }

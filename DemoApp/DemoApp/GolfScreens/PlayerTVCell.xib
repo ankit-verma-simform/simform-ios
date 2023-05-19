@@ -16,28 +16,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fu2-ci-p36">
-                        <rect key="frame" x="10" y="0.0" width="300" height="44"/>
+                        <rect key="frame" x="20" y="0.0" width="295" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mario Spewagon " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6K-7d-NxE">
-                                <rect key="frame" x="0.0" y="11.999999999999998" width="144" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="11.999999999999998" width="128" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.84155851599999998" green="0.85553449390000003" blue="0.86318838600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUz-xF-jfZ">
-                                <rect key="frame" x="144" y="11.999999999999998" width="64" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="128" y="11.999999999999998" width="64" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.84155851599999998" green="0.85553449390000003" blue="0.86318838600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjY-9n-MYQ">
-                                <rect key="frame" x="208" y="11.999999999999998" width="52" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="192" y="11.999999999999998" width="55" height="20.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="Gf2-Aw-tlU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.84155851599999998" green="0.85553449390000003" blue="0.86318838600000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.25" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7m-qQ-nuI">
-                                <rect key="frame" x="260" y="3" width="40" height="38"/>
+                                <rect key="frame" x="247" y="3" width="48" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="XZM-IN-kXo"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="iconsMessage"/>
@@ -50,16 +56,16 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="Fu2-ci-p36" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4zD-Vl-di3"/>
-                    <constraint firstAttribute="bottom" secondItem="Fu2-ci-p36" secondAttribute="bottom" id="EdK-4c-R43"/>
-                    <constraint firstAttribute="trailing" secondItem="Fu2-ci-p36" secondAttribute="trailing" constant="10" id="Ouv-l5-5no"/>
-                    <constraint firstItem="KUz-xF-jfZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.2" id="ZI1-ci-SBC"/>
-                    <constraint firstItem="Fu2-ci-p36" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iD2-Rp-2oF"/>
-                    <constraint firstItem="b6K-7d-NxE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45" id="q8D-bN-QJs"/>
+                    <constraint firstAttribute="bottom" secondItem="Fu2-ci-p36" secondAttribute="bottom" id="0nZ-j9-G1V"/>
+                    <constraint firstItem="Fu2-ci-p36" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HEe-6g-zS7"/>
+                    <constraint firstAttribute="trailing" secondItem="Fu2-ci-p36" secondAttribute="trailing" constant="5" id="b8M-tt-2sK"/>
+                    <constraint firstItem="b6K-7d-NxE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="rMT-wB-NUz"/>
+                    <constraint firstItem="Fu2-ci-p36" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="yWM-sN-a0j"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.18823529411764706" green="0.23137254901960785" blue="0.29019607843137252" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.18823529411764706" green="0.23137254901960785" blue="0.29019607843137252" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
+                <outlet property="containerView" destination="H2p-sc-9uM" id="dGM-AI-meJ"/>
                 <outlet property="imgMessage" destination="Y7m-qQ-nuI" id="rH9-Fh-wk4"/>
                 <outlet property="lblCardsEarned" destination="KUz-xF-jfZ" id="vGh-en-i1M"/>
                 <outlet property="lblPenalties" destination="VjY-9n-MYQ" id="4yx-yj-nZy"/>

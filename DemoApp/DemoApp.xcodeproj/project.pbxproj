@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC02020D2A1738760027B170 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC02020C2A1738760027B170 /* UIViewExtensions.swift */; };
+		BC0202142A17A2070027B170 /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0202132A17A2070027B170 /* CALayerExtensions.swift */; };
 		BC06B4ED2A0E31F400DCE719 /* UINavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC06B4EC2A0E31F400DCE719 /* UINavigation.storyboard */; };
 		BC06B4EF2A0E329800DCE719 /* UINavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06B4EE2A0E329800DCE719 /* UINavigationVC.swift */; };
 		BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */; };
@@ -149,6 +151,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC02020C2A1738760027B170 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BC0202132A17A2070027B170 /* CALayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
 		BC06B4EC2A0E31F400DCE719 /* UINavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UINavigation.storyboard; sourceTree = "<group>"; };
 		BC06B4EE2A0E329800DCE719 /* UINavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationVC.swift; sourceTree = "<group>"; };
 		BC06B4F02A0E592900DCE719 /* PracticeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeNavigationController.swift; sourceTree = "<group>"; };
@@ -304,6 +308,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC0202092A17369D0027B170 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC02020C2A1738760027B170 /* UIViewExtensions.swift */,
+				BC0202132A17A2070027B170 /* CALayerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BC06B4EB2A0E31DA00DCE719 /* UINavigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -792,6 +805,7 @@
 		BCE1A9B02A14E16C0055219A /* GolfScreens */ = {
 			isa = PBXGroup;
 			children = (
+				BC0202092A17369D0027B170 /* Extensions */,
 				BC6CA9E32A15E2EE001F8B97 /* Constants */,
 				BC6CA9E02A15E2A5001F8B97 /* Model */,
 				BC6CA9F72A166C50001F8B97 /* Storyboards */,
@@ -869,6 +883,7 @@
 			packageReferences = (
 				BC7F3C7D29F2A56A001ABCE7 /* XCRemoteSwiftPackageReference "SPIndicator" */,
 				BCD3410F29FFDF7300AFA19A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BC02020E2A176ADC0027B170 /* XCRemoteSwiftPackageReference "UIView-Borders-Swift" */,
 			);
 			productRefGroup = BC42364229DBE5BA00CB1DC0 /* Products */;
 			projectDirPath = "";
@@ -980,6 +995,7 @@
 				BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
 				BC6CA9E52A15E306001F8B97 /* Constants.swift in Sources */,
+				BC0202142A17A2070027B170 /* CALayerExtensions.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
 				BC6CA9EB2A1617C5001F8B97 /* GameStatusView.swift in Sources */,
@@ -1009,6 +1025,7 @@
 				BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */,
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BCAC393F2A0269700095A377 /* ActivityIndicatorVC.swift in Sources */,
+				BC02020D2A1738760027B170 /* UIViewExtensions.swift in Sources */,
 				BC7781F82A0A2A3900631C41 /* WonderAnnotation.swift in Sources */,
 				BC387C6B2A0908ED002276F2 /* MyAnnotation.swift in Sources */,
 				BC75CAB22A02254B005FF13B /* UIImage+Extension.swift in Sources */,
@@ -1250,6 +1267,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BC02020E2A176ADC0027B170 /* XCRemoteSwiftPackageReference "UIView-Borders-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aaronn/UIView-Borders-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		BC7F3C7D29F2A56A001ABCE7 /* XCRemoteSwiftPackageReference "SPIndicator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ivanvorobei/SPIndicator";

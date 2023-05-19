@@ -48,9 +48,9 @@ extension GolfGame {
                 GolfGameType(image: Constants.Image.iconsIllustrationSkins,
                              name: Constants.String.skins),
             ],
-            selectedGolfGameIndex: 0,
+            selectedGolfGameIndex: 2,
             numberOfHoles: 2,
-            amount: 272,
+            amount: 0,
             cards: [
                 Card(image: Constants.Image.iconsCard),
                 Card(image: Constants.Image.iconsCard),
@@ -61,7 +61,7 @@ extension GolfGame {
                 Card(image: Constants.Image.iconsCard),
                 Card(image: Constants.Image.iconsCard),
             ],
-            numberOfCardsToShow: 5,
+            numberOfCardsToShow: 3,
             groups: [
                 Group(
                     name: "Group A",
@@ -77,6 +77,14 @@ extension GolfGame {
                         Player(name: "Holly Goodhead", cardsEarned: 5, penalties: 12),
                         Player(name: "Simon Cyrene", cardsEarned: 6, penalties: 12),
                         Player(name: "Lupe Lamora", cardsEarned: 5, penalties: 12),
+                        Player(name: "Dustin Spewagon", cardsEarned: 4, penalties: 12),
+                    ]),
+                Group(
+                    name: "Group C",
+                    players: [
+                        Player(name: "Gail Goodhead", cardsEarned: 5, penalties: 12),
+                        Player(name: "Simon Cyrene", cardsEarned: 3, penalties: 12),
+                        Player(name: "Anna Lamora", cardsEarned: 4, penalties: 12),
                         Player(name: "Dustin Trailblazer", cardsEarned: 4, penalties: 12),
                     ]),
             ])

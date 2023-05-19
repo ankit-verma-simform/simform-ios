@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Protocols
 protocol GolfTypeDelegate: AnyObject {
     func didTouchAtGolfType(_ golfType: GolfGameType, view: GolfGameTypeView)
 }

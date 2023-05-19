@@ -12,9 +12,9 @@ class GameStatusView: UIView {
     private var showGameSummary = true
 
     // MARK: - IB Outlets
-    @IBOutlet var containerView: UIView!
-    @IBOutlet weak var lblSummary: UILabel!
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet private var containerView: UIView!
+    @IBOutlet private weak var lblSummary: UILabel!
+    @IBOutlet private weak var img: UIImageView!
     
     // MARK: - View Lifecycle Methods
     override init(frame: CGRect) {
@@ -48,9 +48,8 @@ extension GameStatusView {
     }
     
     private func configure() {
+        containerView.roundCorners(cornerRadius: 20)
         containerView.layer.borderWidth = 2
-        containerView.layer.cornerRadius = 20
-        containerView.layer.masksToBounds = true
         containerView.layer.borderColor = UIColor.white.cgColor
     }
     

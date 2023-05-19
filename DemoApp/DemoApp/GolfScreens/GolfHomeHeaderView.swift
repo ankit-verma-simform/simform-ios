@@ -12,6 +12,7 @@ class GolfHomeHeaderView: UIView {
     private var golfGameTypes = [GolfGameType]()
     private var cards = [Card]()
     private var numberOfCardsToShow = 0
+    private var selectedGolfTypeIndex = 0
 
     // MARK: - IB Outlets
     @IBOutlet private var containerView: UIView!
@@ -19,11 +20,11 @@ class GolfHomeHeaderView: UIView {
     @IBOutlet private weak var gameStatusStackView: UIStackView!
     @IBOutlet private weak var btnUpdateScore: UIButton!
     @IBOutlet private weak var cardItemsStackView: UIStackView!
-    @IBOutlet weak var lblExtraCards: UILabel!
-    @IBOutlet weak var lblNumberOfHoles: UILabel!
-    @IBOutlet weak var lblAmount: UILabel!
-    @IBOutlet weak var imgAmountPot: UIImageView!
-    @IBOutlet weak var cardsStackView: UIStackView!
+    @IBOutlet private weak var lblExtraCards: UILabel!
+    @IBOutlet private weak var lblNumberOfHoles: UILabel!
+    @IBOutlet private weak var lblAmount: UILabel!
+    @IBOutlet private weak var imgAmountPot: UIImageView!
+    @IBOutlet private weak var cardsStackView: UIStackView!
     
     // MARK: - Lifecycle Methods
     override init(frame: CGRect) {
@@ -47,6 +48,7 @@ extension GolfHomeHeaderView {
         golfGameTypes = golfGame.gameTypes
         cards = golfGame.cards
         numberOfCardsToShow = golfGame.numberOfCardsToShow
+        selectedGolfTypeIndex = golfGame.selectedGolfGameIndex
         setupGolfTypes()
         setupGameStatus()
         setupUpdateScore()
@@ -70,21 +72,22 @@ extension GolfHomeHeaderView {
             golfGameTypeView.configure(with: golfGameType)
             golfGameTypesStackView.addArrangedSubview(golfGameTypeView)
         }
-        if let golfTypeView = golfGameTypesStackView.arrangedSubviews.first as? GolfGameTypeView {
+        if let golfTypeView = golfGameTypesStackView.arrangedSubviews[selectedGolfTypeIndex] as? GolfGameTypeView {
             golfTypeView.highlight()
         }
-        golfGameTypesStackView.layer.cornerRadius = 20
-        golfGameTypesStackView.layer.masksToBounds = true
+        golfGameTypesStackView.roundCorners(cornerRadius: 20)
     }
     
     private func setupGameStatus() {
-        gameStatusStackView.layer.cornerRadius = 20
-        gameStatusStackView.layer.masksToBounds = true
+        gameStatusStackView.roundCorners(cornerRadius: 20)
     }
     
     private func setupUpdateScore() {
         btnUpdateScore.layer.shadowColor = UIColor.black.cgColor
-        btnUpdateScore.layer.shadowOffset = CGSize(width: 1, height: 5)
+        btnUpdateScore.layer.shadowOpacity = 0.15
+        btnUpdateScore.layer.shadowOffset = CGSize(width: 2, height: 2)
+        btnUpdateScore.layer.shadowRadius = 0
+        btnUpdateScore.layer.masksToBounds = false
     }
     
     private func setupCardItems() {
@@ -95,10 +98,10 @@ extension GolfHomeHeaderView {
             let cardImageView = UIImageView(image: card.image)
             cardItemsStackView.addArrangedSubview(cardImageView)
         }
-        if numberOfCardsToShow == 0 {
+        if cards.count == 0 {
             cardsStackView.isHidden = true
         }
-        if numberOfCardsToShow == cards.count {
+        if numberOfCardsToShow >= cards.count {
             lblExtraCards.text = ""
         } else {
             lblExtraCards.text = String("+\(cards.count - numberOfCardsToShow)")
@@ -126,10 +129,12 @@ extension GolfHomeHeaderView: GolfTypeDelegate {
         guard let golfTypeViews = golfGameTypesStackView.arrangedSubviews as? [GolfGameTypeView] else {
             return
         }
-        for golfTypeView in golfTypeViews {
+        for (index, golfTypeView) in golfTypeViews.enumerated() {
             if let golfType = golfTypeView.golfType,
                golfType.name == view.golfType?.name {
                 golfTypeView.highlight()
+                selectedGolfTypeIndex = index
+                print(selectedGolfTypeIndex)
             } else {
                 golfTypeView.dehighlight()
             }
