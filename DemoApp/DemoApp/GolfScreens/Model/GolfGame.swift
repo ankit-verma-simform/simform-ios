@@ -48,18 +48,11 @@ extension GolfGame {
                 GolfGameType(image: Constants.Image.iconsIllustrationSkins,
                              name: Constants.String.skins),
             ],
-            selectedGolfGameIndex: 2,
+            selectedGolfGameIndex: 0,
             numberOfHoles: 2,
             amount: 0,
             cards: [
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
-                Card(image: Constants.Image.iconsCard),
+                
             ],
             numberOfCardsToShow: 3,
             groups: [

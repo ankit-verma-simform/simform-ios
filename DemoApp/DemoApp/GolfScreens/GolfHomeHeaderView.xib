@@ -26,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gvB-9T-TbU">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="490.33333333333331"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="529.66666666666663"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tfF-oJ-WVI" userLabel="GolfType Stack View">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="134"/>
@@ -85,8 +85,22 @@
                             </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2W-8t-c1c">
+                            <rect key="frame" x="0.0" y="258.33333333333331" width="393" height="23.333333333333314"/>
+                            <attributedString key="attributedText">
+                                <fragment content="View Game Parameters">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="20" name="SFProText-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        <integer key="NSUnderline" value="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-Fv-qDT" userLabel="GameStatus Stack View">
-                            <rect key="frame" x="0.0" y="258.33333333333331" width="393" height="166"/>
+                            <rect key="frame" x="0.0" y="297.66666666666669" width="393" height="166"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-d5-JKL">
                                     <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="166"/>
@@ -105,7 +119,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9z-AU-drw">
-                                            <rect key="frame" x="140" y="131.66666666666669" width="32.666666666666657" height="19.333333333333343"/>
+                                            <rect key="frame" x="140" y="131.66666666666663" width="32.666666666666657" height="19.333333333333343"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -142,7 +156,7 @@
                             <color key="backgroundColor" white="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-0i-YNQ" userLabel="Cards Stack View">
-                            <rect key="frame" x="0.0" y="440.33333333333331" width="393" height="50"/>
+                            <rect key="frame" x="0.0" y="479.66666666666669" width="393" height="50.000000000000057"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Cards Earned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wax-Wb-HGO">
                                     <rect key="frame" x="0.0" y="0.0" width="82" height="50"/>

@@ -4,8 +4,6 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses wk web view that asks for location</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app uses images</string>
 	<key>NSCameraUsageDescription</key>
 	<string>This app wants to take pictures</string>
 	<key>UIAppFonts</key>

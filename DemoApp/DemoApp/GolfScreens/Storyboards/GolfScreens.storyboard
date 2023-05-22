@@ -30,11 +30,13 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Home" id="6Ri-hO-kfy">
+                                    <navigationItem title="Home" largeTitleDisplayMode="always" id="6Ri-hO-kfy">
                                         <centerItemGroups>
                                             <barButtonItemGroup customizationDisposition="fixed" id="GWp-OJ-nQe"/>
                                         </centerItemGroups>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="chevron.right" catalog="system" id="CzZ-an-EMw" userLabel="More"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="threeDots" id="CzZ-an-EMw" userLabel="More">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -73,8 +75,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="golfScreenBg" width="375" height="812"/>
+        <image name="threeDots" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
