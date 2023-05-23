@@ -20,6 +20,7 @@ struct Constants {
         static let iconsMessage = UIImage(named: "iconsMessage")
         static let playingCards = UIImage(named: "playingCards")
         static let iconCheckMark = UIImage(systemName: "checkmark")
+        static let threeDots = UIImage(named: "threeDots")
     }
     
     struct String {

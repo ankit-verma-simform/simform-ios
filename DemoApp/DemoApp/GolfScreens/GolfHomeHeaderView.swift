@@ -36,6 +36,11 @@ class GolfHomeHeaderView: UIView {
         super.init(coder: coder)
         commonInit()
     }
+    
+    init() {
+        super.init(frame: .zero)
+        commonInit()
+    }
 }
 
 // MARK: - Functions

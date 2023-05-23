@@ -41,7 +41,7 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QYH-ve-gb2">
-                                <rect key="frame" x="15" y="118" width="363" height="636"/>
+                                <rect key="frame" x="15" y="74" width="363" height="680"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -54,13 +54,18 @@
                             <constraint firstItem="QYH-ve-gb2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="99S-QQ-yrt"/>
                             <constraint firstAttribute="trailing" secondItem="Ila-pY-0i2" secondAttribute="trailing" id="Dka-qV-Fx7"/>
                             <constraint firstItem="R3a-2n-TQh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="EAQ-hZ-mNa"/>
-                            <constraint firstItem="QYH-ve-gb2" firstAttribute="top" secondItem="R3a-2n-TQh" secondAttribute="bottom" constant="15" id="G4E-Yf-pjp"/>
+                            <constraint firstItem="QYH-ve-gb2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="G4E-Yf-pjp"/>
                             <constraint firstAttribute="bottom" secondItem="Ila-pY-0i2" secondAttribute="bottom" id="Rt7-ik-b3C"/>
                             <constraint firstItem="Ila-pY-0i2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="cmu-kz-A6y"/>
                             <constraint firstItem="R3a-2n-TQh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dhb-oa-cSq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QYH-ve-gb2" secondAttribute="trailing" constant="15" id="lPw-Th-LHr"/>
                             <constraint firstItem="R3a-2n-TQh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vxp-Fe-lLa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="R3a-2n-TQh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -73,10 +78,59 @@
             </objects>
             <point key="canvasLocation" x="2791.6030534351144" y="-55.633802816901408"/>
         </scene>
+        <!--Adjustable Text View DemoVC-->
+        <scene sceneID="YrC-oP-VZf">
+            <objects>
+                <viewController storyboardIdentifier="AdjustableTextViewDemoVC" id="Rnt-WW-MAI" customClass="AdjustableTextViewDemoVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T7U-04-zLr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some random text goes here to test adjustable text view " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-GA-Eds">
+                                <rect key="frame" x="50" y="413.66666666666669" width="293" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RDh-Kk-jrf"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjustable Text View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFk-nS-Sgd">
+                                <rect key="frame" x="117.66666666666669" y="89" width="158" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I5Q-m9-flg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gtw-GA-Eds" firstAttribute="leading" secondItem="I5Q-m9-flg" secondAttribute="leading" constant="50" id="8IJ-54-VuN"/>
+                            <constraint firstItem="I5Q-m9-flg" firstAttribute="trailing" secondItem="gtw-GA-Eds" secondAttribute="trailing" constant="50" id="C7P-Cx-otx"/>
+                            <constraint firstItem="aFk-nS-Sgd" firstAttribute="top" secondItem="I5Q-m9-flg" secondAttribute="top" constant="30" id="Peb-1k-L8o"/>
+                            <constraint firstItem="gtw-GA-Eds" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aFk-nS-Sgd" secondAttribute="bottom" constant="50" id="qgZ-VH-xxT"/>
+                            <constraint firstItem="aFk-nS-Sgd" firstAttribute="centerX" secondItem="T7U-04-zLr" secondAttribute="centerX" id="rPJ-0O-ADh"/>
+                            <constraint firstItem="gtw-GA-Eds" firstAttribute="centerY" secondItem="I5Q-m9-flg" secondAttribute="centerY" id="vPI-nE-pKE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MIH-d5-VuY"/>
+                    <connections>
+                        <outlet property="adjustableTextView" destination="gtw-GA-Eds" id="fTt-Ea-AmK"/>
+                        <outlet property="constAdjustableTextViewHeight" destination="RDh-Kk-jrf" id="VCz-Sp-eZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="139-P7-ddd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3672.5190839694656" y="-56.338028169014088"/>
+        </scene>
     </scenes>
     <resources>
         <image name="golfScreenBg" width="375" height="812"/>
         <image name="threeDots" width="16" height="16"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

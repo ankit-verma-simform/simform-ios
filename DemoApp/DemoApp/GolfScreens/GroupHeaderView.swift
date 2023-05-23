@@ -24,8 +24,6 @@ class GroupHeaderView: UITableViewHeaderFooterView {
     @IBOutlet private weak var scoreStackView: UIStackView!
     @IBOutlet private weak var imgMessage: UIButton!
     
-    var testLayoutSubviews = 1
-    
     // MARK: - Properties
     override var reuseIdentifier: String? {
         return "GroupHeaderView"
@@ -33,8 +31,6 @@ class GroupHeaderView: UITableViewHeaderFooterView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        testLayoutSubviews += 1
-        print("### \(testLayoutSubviews)")
         addBordersAndCornersToGroupHeader()
     }
 }

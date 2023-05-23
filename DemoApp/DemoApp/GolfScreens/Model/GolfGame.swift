@@ -14,7 +14,7 @@ struct GolfGame {
     let amount: Int
     let cards: [Card]
     let numberOfCardsToShow: Int
-    let groups: [Group]
+    var groups: [Group]
 }
 
 struct GolfGameType {
@@ -25,12 +25,16 @@ struct GolfGameType {
 struct Group {
     let name: String
     var players: [Player]
+    var isMessageSentToAllPlayers: Bool {
+        players.allSatisfy { $0.isMessageSent }
+    }
 }
 
 struct Player {
     let name: String
     var cardsEarned: Int
     var penalties: Double
+    var isMessageSent: Bool = false
 }
 
 struct Card {
@@ -52,7 +56,11 @@ extension GolfGame {
             numberOfHoles: 2,
             amount: 0,
             cards: [
-                
+                Card(image: Constants.Image.iconsCard),
+                Card(image: Constants.Image.iconsCard),
+                Card(image: Constants.Image.iconsCard),
+                Card(image: Constants.Image.iconsCard),
+                Card(image: Constants.Image.iconsCard),
             ],
             numberOfCardsToShow: 3,
             groups: [

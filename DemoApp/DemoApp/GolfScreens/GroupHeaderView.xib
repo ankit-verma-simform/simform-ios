@@ -10,11 +10,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupHeaderView" customModule="DemoApp" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="GroupHeaderView" customModule="DemoApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wr-8e-ukn" userLabel="ContainerView">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G7-KH-1xZ">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -91,7 +91,7 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yF-UW-qlP">
-                            <rect key="frame" x="20" y="50" width="295" height="50"/>
+                            <rect key="frame" x="20" y="60" width="295" height="50"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwv-qn-wr7">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="50"/>
@@ -129,9 +129,9 @@ Penalties</string>
                         <constraint firstItem="Dwv-qn-wr7" firstAttribute="width" secondItem="6wr-8e-ukn" secondAttribute="width" multiplier="0.4" id="ZPn-fe-33N"/>
                         <constraint firstItem="9G7-KH-1xZ" firstAttribute="leading" secondItem="6wr-8e-ukn" secondAttribute="leading" id="an5-Bg-nMo"/>
                         <constraint firstItem="9yF-UW-qlP" firstAttribute="leading" secondItem="6wr-8e-ukn" secondAttribute="leading" constant="20" id="boR-Ky-R1y"/>
-                        <constraint firstItem="9yF-UW-qlP" firstAttribute="top" secondItem="9G7-KH-1xZ" secondAttribute="bottom" id="cQq-bD-kDQ"/>
+                        <constraint firstItem="9yF-UW-qlP" firstAttribute="top" secondItem="9G7-KH-1xZ" secondAttribute="bottom" constant="10" id="cQq-bD-kDQ"/>
                         <constraint firstAttribute="trailing" secondItem="9G7-KH-1xZ" secondAttribute="trailing" id="exE-oC-gje"/>
-                        <constraint firstAttribute="bottom" secondItem="9yF-UW-qlP" secondAttribute="bottom" id="qZn-X4-Czx"/>
+                        <constraint firstAttribute="bottom" secondItem="9yF-UW-qlP" secondAttribute="bottom" constant="10" id="qZn-X4-Czx"/>
                         <constraint firstItem="9G7-KH-1xZ" firstAttribute="top" secondItem="6wr-8e-ukn" secondAttribute="top" id="xQa-mb-Zlt"/>
                     </constraints>
                 </view>
@@ -150,7 +150,7 @@ Penalties</string>
                 <outlet property="lblGroupName" destination="S9G-2N-bPb" id="i6p-kU-tzv"/>
                 <outlet property="scoreStackView" destination="AKr-J9-PdI" id="J8I-fv-V6t"/>
             </connections>
-            <point key="canvasLocation" x="212.21374045801525" y="-66.197183098591552"/>
+            <point key="canvasLocation" x="212.21374045801525" y="-59.154929577464792"/>
         </view>
     </objects>
     <resources>

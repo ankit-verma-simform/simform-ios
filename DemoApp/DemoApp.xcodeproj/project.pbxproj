@@ -26,6 +26,7 @@
 		BC42364C29DBE5BA00CB1DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364A29DBE5BA00CB1DC0 /* Main.storyboard */; };
 		BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */; };
 		BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42364F29DBE5BB00CB1DC0 /* LaunchScreen.storyboard */; };
+		BC4928482A1CCD4500C5CDC7 /* AdjustableTextViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4928472A1CCD4500C5CDC7 /* AdjustableTextViewDemoVC.swift */; };
 		BC4E505E29ED26D900C0AC9D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505229ED26D800C0AC9D /* Roboto-Light.ttf */; };
 		BC4E506329ED26D900C0AC9D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505729ED26D900C0AC9D /* Roboto-Regular.ttf */; };
 		BC4E506429ED26D900C0AC9D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E505829ED26D900C0AC9D /* Roboto-Italic.ttf */; };
@@ -172,6 +173,7 @@
 		BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC42365029DBE5BB00CB1DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC42365229DBE5BB00CB1DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4928472A1CCD4500C5CDC7 /* AdjustableTextViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustableTextViewDemoVC.swift; sourceTree = "<group>"; };
 		BC4E505229ED26D800C0AC9D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		BC4E505729ED26D900C0AC9D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		BC4E505829ED26D900C0AC9D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				BCE1A9B32A14E2220055219A /* GolfHomeScreenVC.swift */,
+				BC4928472A1CCD4500C5CDC7 /* AdjustableTextViewDemoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1007,6 +1010,7 @@
 				BC78C3B829FB8E2500EBAA40 /* SectionHeaderView.swift in Sources */,
 				BCE756F52A13706300E13B38 /* NavigationTVCell.swift in Sources */,
 				BCAC39422A02849E0095A377 /* SearchBarVC.swift in Sources */,
+				BC4928482A1CCD4500C5CDC7 /* AdjustableTextViewDemoVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
 				BC78C3C529FBF43C00EBAA40 /* Movie.swift in Sources */,
 				BC70743229F7FE8A00F443FB /* Friend.swift in Sources */,

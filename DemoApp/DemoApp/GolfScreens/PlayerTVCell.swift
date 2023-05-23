@@ -18,6 +18,7 @@ class PlayerTVCell: UITableViewCell {
     private var player: Player?
     private var playerIndexPath = IndexPath()
     weak var delegate: MessageDelegate?
+    
     // MARK: - IB Outlets
     @IBOutlet private weak var lblPlayerName: UILabel!
     @IBOutlet private weak var lblCardsEarned: UILabel!
