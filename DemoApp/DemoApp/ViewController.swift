@@ -216,4 +216,3 @@ extension ViewController {
         navigate(to: mapTabBarVC)
     }
 }
-
