@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SwitchVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UISwitchVC" id="Y6W-OH-hqX" customClass="UISwitchVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" title="Dark Mode" translatesAutoresizingMaskIntoConstraints="NO" id="L3w-gD-p1T">
+                                <rect key="frame" x="41" y="175" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchToggleDarkMode:" destination="Y6W-OH-hqX" eventType="valueChanged" id="EYv-SN-uBp"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRj-LE-FjQ">
+                                <rect key="frame" x="110" y="180" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wRj-LE-FjQ" firstAttribute="centerY" secondItem="L3w-gD-p1T" secondAttribute="centerY" id="76Q-rk-gwx"/>
+                            <constraint firstItem="L3w-gD-p1T" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="116" id="Qn6-Sd-Wyf"/>
+                            <constraint firstItem="wRj-LE-FjQ" firstAttribute="leading" secondItem="L3w-gD-p1T" secondAttribute="trailing" constant="20" id="Uky-Go-2ZD"/>
+                            <constraint firstItem="L3w-gD-p1T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="41" id="YQj-tL-nmm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblDarkMode" destination="wRj-LE-FjQ" id="fe4-vb-Ybp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

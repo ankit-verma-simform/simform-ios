@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Google Search-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WKWebVC" id="Y6W-OH-hqX" customClass="WKWebVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGC-cX-8DN">
+                                <rect key="frame" x="0.0" y="149" width="393" height="620"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <searchBar contentMode="redraw" prompt="Google Search" placeholder="Search something here" translatesAutoresizingMaskIntoConstraints="NO" id="ODN-ct-60A">
+                                <rect key="frame" x="0.0" y="59" width="393" height="90"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="wFI-oR-a0g"/>
+                                </connections>
+                            </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OM5-yG-6dQ">
+                                <rect key="frame" x="178" y="395.66666666666669" width="37" height="37"/>
+                                <color key="tintColor" red="0.99607843139999996" green="0.4039215686" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="0.99607843139999996" green="0.4039215686" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CGC-cX-8DN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6nR-Ic-T2j"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CGC-cX-8DN" secondAttribute="trailing" id="ELN-NX-dZx"/>
+                            <constraint firstItem="ODN-ct-60A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Fpq-B4-Ym6"/>
+                            <constraint firstItem="OM5-yG-6dQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ckU-PP-kYy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CGC-cX-8DN" secondAttribute="bottom" id="eWT-i5-ChS"/>
+                            <constraint firstItem="OM5-yG-6dQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="gYD-iD-lvf"/>
+                            <constraint firstAttribute="trailing" secondItem="ODN-ct-60A" secondAttribute="trailing" id="oRs-RA-eXi"/>
+                            <constraint firstItem="CGC-cX-8DN" firstAttribute="top" secondItem="ODN-ct-60A" secondAttribute="bottom" id="qKX-0P-T3A"/>
+                            <constraint firstItem="ODN-ct-60A" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tLY-xK-CZL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google Search" id="ffF-cg-AHh">
+                        <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="OM5-yG-6dQ" id="Tlb-ht-ZUg"/>
+                        <outlet property="searchBar" destination="ODN-ct-60A" id="DNJ-rA-xPM"/>
+                        <outlet property="webView" destination="CGC-cX-8DN" id="IhS-ER-sig"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938.16793893129773" y="-55.633802816901408"/>
+        </scene>
+        <!--Pdf View-->
+        <scene sceneID="zug-9S-taF">
+            <objects>
+                <viewController storyboardIdentifier="PdfViewerVC" id="KiY-QR-I9Z" customClass="PdfViewerVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FDO-09-Iyf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-pl-ySw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Bw-AU-Wb4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QpE-pl-ySw" firstAttribute="top" secondItem="3Bw-AU-Wb4" secondAttribute="top" id="DS9-aa-glT"/>
+                            <constraint firstItem="QpE-pl-ySw" firstAttribute="leading" secondItem="3Bw-AU-Wb4" secondAttribute="leading" id="crW-b9-Wg5"/>
+                            <constraint firstItem="3Bw-AU-Wb4" firstAttribute="bottom" secondItem="QpE-pl-ySw" secondAttribute="bottom" id="hoA-n3-vUA"/>
+                            <constraint firstItem="3Bw-AU-Wb4" firstAttribute="trailing" secondItem="QpE-pl-ySw" secondAttribute="trailing" id="mV4-BA-mAm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pdf View" image="book.fill" catalog="system" id="076-Af-nR6"/>
+                    <connections>
+                        <outlet property="webView" destination="QpE-pl-ySw" id="2fB-Me-TtE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cT2-H6-yFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="675"/>
+        </scene>
+        <!--Web View Tab BarVC-->
+        <scene sceneID="VIi-zb-7hA">
+            <objects>
+                <tabBarController storyboardIdentifier="WKWebViewTabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="4gU-Bs-Lb3" customClass="WKWebViewTabBarVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S4T-j0-4pj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="jHA-Ry-ya4"/>
+                        <segue destination="KiY-QR-I9Z" kind="relationship" relationship="viewControllers" id="d0N-FT-Vnm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF0-UK-0Ft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-55.633802816901408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

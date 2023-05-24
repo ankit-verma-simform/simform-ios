@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker ViewVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UIPickerViewVC" id="Y6W-OH-hqX" customClass="UIPickerViewVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="adE-nu-2ln">
+                                <rect key="frame" x="10" y="59" width="373" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Break the lock!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2X-tV-4Ku">
+                                        <rect key="frame" x="50.333333333333343" y="0.0" width="272.33333333333326" height="52"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locker" translatesAutoresizingMaskIntoConstraints="NO" id="JVW-u7-LqG">
+                                        <rect key="frame" x="0.0" y="60" width="373" height="475"/>
+                                    </imageView>
+                                    <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="KrD-XW-RAC">
+                                        <rect key="frame" x="27" y="543" width="320" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="adE-nu-2ln" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="K4h-is-J2Z"/>
+                            <constraint firstItem="adE-nu-2ln" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bCD-BL-fiS"/>
+                            <constraint firstAttribute="trailing" secondItem="adE-nu-2ln" secondAttribute="trailing" constant="10" id="k2K-yk-rQd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="adE-nu-2ln" secondAttribute="bottom" id="oq9-vy-cXc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgLocker" destination="JVW-u7-LqG" id="hhp-a9-weh"/>
+                        <outlet property="picker" destination="KrD-XW-RAC" id="AZV-Af-YtU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-55.633802816901408"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locker" width="4500" height="4500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

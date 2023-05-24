@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage",
+      "state" : {
+        "revision" : "20df851f2ae27efbaeeff73e9babdf4fd839a144",
+        "version" : "5.15.6"
+      }
+    },
+    {
+      "identity" : "spindicator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivanvorobei/SPIndicator",
+      "state" : {
+        "revision" : "43600857729d9efff046dc6673e6f94e095882c7",
+        "version" : "1.6.4"
+      }
+    }
+  ],
+  "version" : 2
+}
