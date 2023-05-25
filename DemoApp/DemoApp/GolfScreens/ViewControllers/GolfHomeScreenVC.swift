@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIViewBordersSwift
+//import UIViewBordersSwift
 
 class GolfHomeScreenVC: UIViewController {
     // MARK: - Variables

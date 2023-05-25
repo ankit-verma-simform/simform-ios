@@ -28,9 +28,9 @@ extension AdjustableTextViewDemoVC: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         let size = CGSize(width: adjustableTextView.bounds.size.width, height: .infinity)
         let estimatedSize = textView.sizeThatFits(size)
-        if estimatedSize.height > 500 {
+        if estimatedSize.height > (0.6 * view.bounds.height) {
             adjustableTextView.isScrollEnabled = true
-            constAdjustableTextViewHeight.constant = 500
+            constAdjustableTextViewHeight.constant = 0.6 * view.bounds.height
         } else {
             constAdjustableTextViewHeight.constant  = estimatedSize.height
         }
