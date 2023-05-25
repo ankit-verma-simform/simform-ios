@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavigationVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UINavigationVC" id="Y6W-OH-hqX" customClass="UINavigationVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jFX-Pq-hg2">
+                                <rect key="frame" x="159" y="376" width="75" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pY-Nj-j9x">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="28"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Types of Segue"/>
+                                        <connections>
+                                            <segue destination="n5a-2U-eaE" kind="show" id="1Gy-Ck-YIm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="e3S-HA-E1O">
+                                        <rect key="frame" x="0.0" y="36" width="75" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Navigation Multiple VCs"/>
+                                        <connections>
+                                            <segue destination="vcm-BS-LHw" kind="showDetail" id="Ht3-UG-Rpy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="47M-L4-wYu">
+                                        <rect key="frame" x="0.0" y="72" width="75" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Exercise Task"/>
+                                        <connections>
+                                            <segue destination="sY8-of-Tgl" kind="presentation" modalPresentationStyle="currentContext" id="nSn-6v-gvn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jFX-Pq-hg2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="7Hk-rQ-KHY"/>
+                            <constraint firstItem="jFX-Pq-hg2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Wja-Nm-RaI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fve-8c-oZ2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="685"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v3A-9z-RDW">
+            <objects>
+                <navigationController id="vcm-BS-LHw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mfJ-gp-9PW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DAH-Jd-2uD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7Dh-gy-kLy" kind="relationship" relationship="rootViewController" id="7eW-CQ-CfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PO2-Ss-ZkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="685"/>
+        </scene>
+        <!--First VC-->
+        <scene sceneID="j5B-KG-eTQ">
+            <objects>
+                <viewController storyboardIdentifier="PracticeNavigationRootVC" id="7Dh-gy-kLy" customClass="PracticeNavigationRootVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ec3-1a-DOX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-Dk-84H">
+                                <rect key="frame" x="134" y="408.66666666666669" width="125" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Goto next VC"/>
+                                <connections>
+                                    <segue destination="XC3-sp-wRz" kind="show" id="Ncl-vn-2AS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Vr-uA-fXb"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="owJ-Dk-84H" firstAttribute="centerY" secondItem="ec3-1a-DOX" secondAttribute="centerY" id="k70-Zt-3sk"/>
+                            <constraint firstItem="owJ-Dk-84H" firstAttribute="centerX" secondItem="ec3-1a-DOX" secondAttribute="centerX" id="vN7-Ea-8hw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First VC" id="ixc-Xy-J5h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYl-H0-okD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4459" y="685"/>
+        </scene>
+        <!--VC 1-->
+        <scene sceneID="1oU-AE-PiG">
+            <objects>
+                <viewController storyboardIdentifier="VC1" id="QLa-do-laX" customClass="VC1" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="apA-Qr-aEt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-Mx-Qr4">
+                                <rect key="frame" x="98.333333333333329" y="375" width="196.33333333333337" height="102.33333333333331"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewf-mO-q1N">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.33333333333334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-8v-oOi">
+                                        <rect key="frame" x="46.666666666666671" y="68" width="103.00000000000001" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push VC 2"/>
+                                        <connections>
+                                            <action selector="pushVC:" destination="QLa-do-laX" eventType="touchUpInside" id="0P0-uu-ytO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pLB-WT-rbP"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="ewf-mO-q1N" firstAttribute="width" secondItem="apA-Qr-aEt" secondAttribute="width" multiplier="0.5" id="SkN-Ev-BVE"/>
+                            <constraint firstItem="jSg-Mx-Qr4" firstAttribute="centerY" secondItem="apA-Qr-aEt" secondAttribute="centerY" id="pY9-sw-GuB"/>
+                            <constraint firstItem="jSg-Mx-Qr4" firstAttribute="centerX" secondItem="apA-Qr-aEt" secondAttribute="centerX" id="uC7-wU-jGv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VC 1" id="RBs-Gq-y32">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="chevron.right" catalog="system" id="P9M-Qw-Xxx">
+                            <connections>
+                                <action selector="presentModallyVC:" destination="QLa-do-laX" id="byP-Bt-zbT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tfMessage" destination="ewf-mO-q1N" id="vyE-0r-Cxw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vbs-ep-OEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3629.770992366412" y="1386.6197183098593"/>
+        </scene>
+        <!--VC 2-->
+        <scene sceneID="zKA-BZ-7xm">
+            <objects>
+                <viewController storyboardIdentifier="VC2" id="9VD-Vt-VeJ" customClass="VC2" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dRm-Mc-5LN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="0Et-NB-09W">
+                                <rect key="frame" x="144.66666666666666" y="325.66666666666669" width="103.66666666666666" height="201.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8v-Oc-SDT">
+                                        <rect key="frame" x="17.666666666666686" y="0.0" width="68.666666666666671" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-0w-XsE">
+                                        <rect key="frame" x="0.33333333333334281" y="76.333333333333314" width="103.33333333333333" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push VC 3"/>
+                                        <connections>
+                                            <segue destination="UgH-0b-eGU" kind="show" id="UyX-CZ-vWL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-0k-ivH">
+                                        <rect key="frame" x="0.0" y="166.66666666666663" width="103.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push VC 4"/>
+                                        <connections>
+                                            <action selector="pushVC4:" destination="9VD-Vt-VeJ" eventType="touchUpInside" id="oYn-pW-QQD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LMj-ja-mI3"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="0Et-NB-09W" firstAttribute="centerY" secondItem="dRm-Mc-5LN" secondAttribute="centerY" id="DYt-Sj-2L2"/>
+                            <constraint firstItem="0Et-NB-09W" firstAttribute="centerX" secondItem="dRm-Mc-5LN" secondAttribute="centerX" id="gXq-Tg-83M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VC 2" id="RCX-OS-RIJ">
+                        <barButtonItem key="rightBarButtonItem" title="Present Modally" image="chevron.right" catalog="system" id="U9g-ND-pLV">
+                            <connections>
+                                <segue destination="UgH-0b-eGU" kind="presentation" id="pTQ-44-Qgl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblMessage" destination="S8v-Oc-SDT" id="wmA-hx-V7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCv-Hk-Urj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4459" y="1387"/>
+        </scene>
+        <!--VC4-->
+        <scene sceneID="fxA-2Z-kT0">
+            <objects>
+                <viewController storyboardIdentifier="VC4" id="mwd-Dp-A5i" customClass="VC4" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oSS-PY-Fu4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCz-ny-vci">
+                                <rect key="frame" x="116.66666666666669" y="408.66666666666669" width="160" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pop upto Root VC"/>
+                                <connections>
+                                    <action selector="popUptoRootVC:" destination="mwd-Dp-A5i" eventType="touchUpInside" id="yVM-GT-Rjw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEZ-D9-ZDb">
+                                <rect key="frame" x="107.66666666666669" y="331" width="178" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show VC5 as Popup"/>
+                                <connections>
+                                    <segue destination="MRZ-cx-Ibt" kind="popoverPresentation" popoverAnchorView="OEZ-D9-ZDb" id="Avk-fd-hWp">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bVW-Uo-xdJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kCz-ny-vci" firstAttribute="centerX" secondItem="oSS-PY-Fu4" secondAttribute="centerX" id="I3D-UC-0NC"/>
+                            <constraint firstItem="kCz-ny-vci" firstAttribute="top" secondItem="OEZ-D9-ZDb" secondAttribute="bottom" constant="42.666666666666686" id="IqB-2g-KQz"/>
+                            <constraint firstItem="OEZ-D9-ZDb" firstAttribute="centerX" secondItem="kCz-ny-vci" secondAttribute="centerX" id="NGy-BY-qhD"/>
+                            <constraint firstItem="kCz-ny-vci" firstAttribute="centerY" secondItem="oSS-PY-Fu4" secondAttribute="centerY" id="tQG-jS-eol"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJF-oM-tMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4465" y="2101"/>
+        </scene>
+        <!--VC5-->
+        <scene sceneID="zJt-Ap-lDz">
+            <objects>
+                <viewController storyboardIdentifier="VC5" id="MRZ-cx-Ibt" customClass="VC5" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJg-es-OMU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presented as Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg2-Mu-7LA">
+                                <rect key="frame" x="120" y="381" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yU0-aq-gfj"/>
+                        <color key="backgroundColor" red="1" green="0.40392156862745099" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gg2-Mu-7LA" firstAttribute="centerX" secondItem="aJg-es-OMU" secondAttribute="centerX" id="6ZA-rc-uy5"/>
+                            <constraint firstItem="Gg2-Mu-7LA" firstAttribute="centerY" secondItem="aJg-es-OMU" secondAttribute="centerY" id="M1X-dm-wZm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebh-I6-e82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5282" y="2101"/>
+        </scene>
+        <!--Second VC-->
+        <scene sceneID="JO0-b8-r0I">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="XC3-sp-wRz" customClass="SecondVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z9F-fM-42B">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3g-on-iL1">
+                                <rect key="frame" x="134" y="408.66666666666669" width="125" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Goto next VC"/>
+                                <connections>
+                                    <segue destination="5GR-4V-8AU" kind="show" id="tRh-C0-aLF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D3P-fT-4yR"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="m3g-on-iL1" firstAttribute="centerX" secondItem="Z9F-fM-42B" secondAttribute="centerX" id="2xB-rR-NQf"/>
+                            <constraint firstItem="m3g-on-iL1" firstAttribute="centerY" secondItem="Z9F-fM-42B" secondAttribute="centerY" id="gng-gI-I6u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second VC" id="Pwi-6a-Z81"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IId-lh-6Zk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5211" y="680"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Eip-ig-A0Y">
+            <objects>
+                <viewController id="n5a-2U-eaE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQ8-PQ-34o">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Py9-Xu-Wre">
+                                <rect key="frame" x="140.66666666666666" y="178" width="112" height="496"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1t-gK-ebm">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="74.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Push (Depricated) VC 2"/>
+                                        <connections>
+                                            <segue destination="2Zs-Zj-RIv" kind="push" id="GIa-2t-zyU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Far-ch-SDI">
+                                        <rect key="frame" x="0.0" y="84.333333333333329" width="112" height="134.33333333333337"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Modal (Depricated) VC 2"/>
+                                        <connections>
+                                            <segue destination="2Zs-Zj-RIv" kind="modal" id="xlp-1N-DxT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="NYp-6L-AnS">
+                                        <rect key="frame" x="0.0" y="228.66666666666666" width="112" height="34.333333333333343"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show VC 2"/>
+                                        <connections>
+                                            <segue destination="2Zs-Zj-RIv" kind="show" id="CGM-ge-jFH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wV8-yv-Ajc">
+                                        <rect key="frame" x="0.0" y="273" width="112" height="54.333333333333314"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Detail VC 2"/>
+                                        <connections>
+                                            <segue destination="2Zs-Zj-RIv" kind="showDetail" id="TNr-Yk-7Pc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="OE9-eu-16e">
+                                        <rect key="frame" x="0.0" y="337.33333333333331" width="112" height="74.333333333333314"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Present Modally VC 2"/>
+                                        <connections>
+                                            <segue destination="2Zs-Zj-RIv" kind="presentation" id="P5O-TK-p3Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="cWW-8r-x0Z">
+                                        <rect key="frame" x="0.0" y="421.66666666666669" width="112" height="74.333333333333314"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Present Popover VC 2"/>
+                                        <connections>
+                                            <segue destination="2Zs-Zj-RIv" kind="popoverPresentation" popoverAnchorView="cWW-8r-x0Z" id="R9E-lE-Uyf">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OMg-LC-588"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Py9-Xu-Wre" firstAttribute="centerX" secondItem="xQ8-PQ-34o" secondAttribute="centerX" id="QXa-Uj-2TA"/>
+                            <constraint firstItem="Py9-Xu-Wre" firstAttribute="centerY" secondItem="xQ8-PQ-34o" secondAttribute="centerY" id="Vst-f5-Xvo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="neq-II-VJo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zom-9n-jt2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="-56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ksg-ex-Pzq">
+            <objects>
+                <viewController id="2Zs-Zj-RIv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ELb-zL-Lyw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is VC 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAg-WY-kEr">
+                                <rect key="frame" x="151.66666666666666" y="381" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KbD-1b-0pA"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="vAg-WY-kEr" firstAttribute="centerX" secondItem="ELb-zL-Lyw" secondAttribute="centerX" id="91F-1G-VUr"/>
+                            <constraint firstItem="vAg-WY-kEr" firstAttribute="centerY" secondItem="ELb-zL-Lyw" secondAttribute="centerY" id="YLq-u5-rVt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="umB-jw-zjK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ie2-2C-2VX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4459" y="-56"/>
+        </scene>
+        <!--Fourth VC-->
+        <scene sceneID="ymv-0d-sQe">
+            <objects>
+                <viewController storyboardIdentifier="ThirdVC" id="MDc-x8-oLx" customClass="FourthVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBW-a7-MY3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="tTx-Rg-dt9">
+                                <rect key="frame" x="106.66666666666669" y="346.66666666666669" width="180" height="159"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukp-Dr-JVM">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Unwind to root VC"/>
+                                        <connections>
+                                            <segue destination="7OP-gO-uWh" kind="unwind" unwindAction="gotoRootVC:" id="OYs-Kn-Mua"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-ak-8cG">
+                                        <rect key="frame" x="0.0" y="62.333333333333314" width="180" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pop upto root VC"/>
+                                        <connections>
+                                            <action selector="popUptoRootVC:" destination="MDc-x8-oLx" eventType="touchUpInside" id="rJF-hi-QkW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7Q-5v-npi">
+                                        <rect key="frame" x="0.0" y="124.66666666666661" width="180" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pop upto second VC"/>
+                                        <connections>
+                                            <action selector="popUptoSecondVC:" destination="MDc-x8-oLx" eventType="touchUpInside" id="9MQ-fC-HAi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jih-uh-QWk"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="tTx-Rg-dt9" firstAttribute="centerX" secondItem="WBW-a7-MY3" secondAttribute="centerX" id="7kV-XS-D6j"/>
+                            <constraint firstItem="tTx-Rg-dt9" firstAttribute="centerY" secondItem="WBW-a7-MY3" secondAttribute="centerY" id="nR6-Eq-wsU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fourth VC" id="xaC-G8-vRf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksW-sf-Qzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7OP-gO-uWh" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="6837" y="680"/>
+        </scene>
+        <!--Third VC-->
+        <scene sceneID="tOi-jI-20Z">
+            <objects>
+                <viewController id="5GR-4V-8AU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXA-1S-qBu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfC-k3-YjM">
+                                <rect key="frame" x="134" y="408.66666666666669" width="125" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Goto next VC"/>
+                                <connections>
+                                    <segue destination="MDc-x8-oLx" kind="show" id="N3a-Bn-aZ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wI8-EP-hZ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jfC-k3-YjM" firstAttribute="centerY" secondItem="uXA-1S-qBu" secondAttribute="centerY" id="93L-Qg-A9C"/>
+                            <constraint firstItem="jfC-k3-YjM" firstAttribute="centerX" secondItem="uXA-1S-qBu" secondAttribute="centerX" id="OWt-7d-0Tl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third VC" id="JkD-Ho-IpC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZ5-78-4zK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6034" y="680"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Al3-XK-xyU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vk2-Z6-AlU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E0G-PD-27r">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="eiP-Bd-XWC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wf-nQ-cgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992" y="680"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nve-0a-UWf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sY8-of-Tgl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="oFn-F0-S9t"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JjB-py-Tzy">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QLa-do-laX" kind="relationship" relationship="rootViewController" id="Fer-mE-NzV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RP-IH-QJ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="1387"/>
+        </scene>
+        <!--VC 3-->
+        <scene sceneID="nOc-9l-9ZF">
+            <objects>
+                <viewController storyboardIdentifier="VC3" id="UgH-0b-eGU" customClass="VC3" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xW-tX-sRX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="vh0-73-SIH">
+                                <rect key="frame" x="141.66666666666666" y="347.66666666666669" width="110" height="87.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oN-H0-CRV">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dismiss VC"/>
+                                        <connections>
+                                            <action selector="dismissVC:" destination="UgH-0b-eGU" eventType="touchUpInside" id="5zB-Ij-PAx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2T-fP-WSD">
+                                        <rect key="frame" x="0.0" y="53.333333333333314" width="110" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pop VC"/>
+                                        <connections>
+                                            <action selector="popUpVC:" destination="UgH-0b-eGU" eventType="touchUpInside" id="CNW-DN-aY7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eee-ah-TMS"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="vh0-73-SIH" firstAttribute="centerX" secondItem="8xW-tX-sRX" secondAttribute="centerX" id="Se5-fm-1QL"/>
+                            <constraint firstItem="vh0-73-SIH" firstAttribute="centerY" secondItem="8xW-tX-sRX" secondAttribute="centerY" id="wlQ-vA-M3x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VC 3" id="fSi-7B-T4g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvn-Ge-WUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5210" y="1387"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pTQ-44-Qgl"/>
+        <segue reference="xlp-1N-DxT"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
