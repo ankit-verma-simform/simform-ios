@@ -17,266 +17,72 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sXT-bx-1a4"/>
+                        <segue destination="MF2-1u-Ss6" kind="relationship" relationship="rootViewController" id="28V-sJ-1ig"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfd-tN-LCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-758" y="-35"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Components NavigationVC-->
+        <scene sceneID="Zyo-hv-jrG">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="2000"/>
+                <viewController storyboardIdentifier="UIComponentsNavigationVC" id="MF2-1u-Ss6" customClass="UIComponentsNavigationVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kj2-tO-IIu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbd-Yd-LhV">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="1966"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qu-hX-shR">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1338.3333333333333"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-dy-qgS">
-                                                <rect key="frame" x="20" y="0.0" width="353" height="1338.3333333333333"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un4-CY-wXJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UILabel" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUILabelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bj9-Qj-da2"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq4-mi-gQ9">
-                                                        <rect key="frame" x="0.0" y="54.333333333333329" width="353" height="34.333333333333329"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIButton" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUIButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXO-Nl-VWW"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yig-G6-bpm">
-                                                        <rect key="frame" x="0.0" y="108.66666666666667" width="353" height="34.333333333333329"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UITextField" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUITextFieldAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JvC-fb-aHH"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOe-aZ-WwZ">
-                                                        <rect key="frame" x="0.0" y="163" width="353" height="34.333333333333343"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UITextView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUITextViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUG-am-QKS"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElZ-bh-7v2">
-                                                        <rect key="frame" x="0.0" y="217.33333333333334" width="353" height="34.333333333333343"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UISwitch" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUISwitchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHA-Ak-BXV"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hde-wU-olr">
-                                                        <rect key="frame" x="0.0" y="271.66666666666669" width="353" height="34.333333333333314"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UISlider" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUISliderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7R6-I5-l2t"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJC-4Q-mYk">
-                                                        <rect key="frame" x="0.0" y="326" width="353" height="34.333333333333314"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIProgressView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUIProgressViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rs-jb-sPh"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-Hg-BlC">
-                                                        <rect key="frame" x="0.0" y="380.33333333333331" width="353" height="34.333333333333314"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UISegmentedControl" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUISegmentedControlAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naA-gs-xdZ"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0z-5g-OZQ">
-                                                        <rect key="frame" x="0.0" y="434.66666666666669" width="353" height="34.333333333333314"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIPageViewController" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUIPageControlAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sko-Ze-Hfo"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-Ik-WTs">
-                                                        <rect key="frame" x="0.0" y="489" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIStepper" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUIStepperAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsW-FK-KZ1"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atY-nJ-rb2">
-                                                        <rect key="frame" x="0.0" y="543.33333333333337" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ImageView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnImageViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSa-7Z-EuZ"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsV-JM-4Pw">
-                                                        <rect key="frame" x="0.0" y="597.66666666666663" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ScrollView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnScrollViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjS-Ij-vLR"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-Lj-OyT">
-                                                        <rect key="frame" x="0.0" y="652" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Task1" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnTask1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kds-Nr-Pni"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKt-JI-BQw">
-                                                        <rect key="frame" x="0.0" y="706.33333333333337" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="TableView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnTableViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wh-m8-ZIg"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-Af-P50">
-                                                        <rect key="frame" x="0.0" y="760.66666666666663" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="CollectionView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnCollectionViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wP-pk-Udj"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-ma-qHv">
-                                                        <rect key="frame" x="0.0" y="815" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="OTTScreen" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnOTTAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ec-41-EYK"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3Y-2j-28L">
-                                                        <rect key="frame" x="0.0" y="869.33333333333337" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="StackView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnStackViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZ2-JO-M5i"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTv-qC-hqA">
-                                                        <rect key="frame" x="0.0" y="923.66666666666663" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="ActivityIndicator" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnActivityIndicatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gIs-d0-Z6z"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ka-au-RQ9">
-                                                        <rect key="frame" x="0.0" y="978" width="353" height="34.333333333333371"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="SearchBar" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnSearchBarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iyO-Zd-k19"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bd-eY-aFW">
-                                                        <rect key="frame" x="0.0" y="1032.3333333333333" width="353" height="34.333333333333258"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UITabBar" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnSUITabBarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJd-qp-BLM"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2g-M0-qNo">
-                                                        <rect key="frame" x="0.0" y="1086.6666666666667" width="353" height="34.333333333333258"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="WKWebView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnWKWebViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBE-2Z-xNK"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-uZ-sFZ">
-                                                        <rect key="frame" x="0.0" y="1141" width="353" height="34.333333333333258"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIToolBar" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUIToolBarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JL2-Dz-Seo"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpe-Q4-j8M">
-                                                        <rect key="frame" x="0.0" y="1195.3333333333333" width="353" height="34.333333333333258"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIPickerView" buttonSize="medium"/>
-                                                        <connections>
-                                                            <action selector="btnUIPickerViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQx-oU-lQP"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdJ-qa-6oK">
-                                                        <rect key="frame" x="0.0" y="1249.6666666666667" width="353" height="34.333333333333258"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="UIDatePicker"/>
-                                                        <connections>
-                                                            <action selector="btnUIDatePickerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rw6-1W-SqA"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-04-eDi">
-                                                        <rect key="frame" x="0.0" y="1304" width="353" height="34.333333333333258"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="MKMapView"/>
-                                                        <connections>
-                                                            <action selector="btnMKMapViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUs-qU-g8Y"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="6rm-dy-qgS" firstAttribute="top" secondItem="6qu-hX-shR" secondAttribute="top" id="Atx-aK-OPA"/>
-                                            <constraint firstAttribute="bottom" secondItem="6rm-dy-qgS" secondAttribute="bottom" id="V1S-4O-P7S"/>
-                                            <constraint firstItem="6rm-dy-qgS" firstAttribute="leading" secondItem="6qu-hX-shR" secondAttribute="leading" constant="20" id="Yj6-5p-hhG"/>
-                                            <constraint firstAttribute="trailing" secondItem="6rm-dy-qgS" secondAttribute="trailing" constant="20" id="fZc-Ik-j56"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="6qu-hX-shR" secondAttribute="trailing" id="V2t-Uj-O7b"/>
-                                    <constraint firstItem="6qu-hX-shR" firstAttribute="top" secondItem="Gbd-Yd-LhV" secondAttribute="top" id="dxl-Gk-LyR"/>
-                                    <constraint firstAttribute="bottom" secondItem="6qu-hX-shR" secondAttribute="bottom" id="iCY-eM-0t1"/>
-                                    <constraint firstItem="6qu-hX-shR" firstAttribute="centerX" secondItem="Gbd-Yd-LhV" secondAttribute="centerX" id="rWg-a1-lhD"/>
-                                    <constraint firstItem="6qu-hX-shR" firstAttribute="leading" secondItem="Gbd-Yd-LhV" secondAttribute="leading" id="t9y-A0-zbD"/>
-                                </constraints>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uJ3-jO-lJy">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NavigationTVCell" id="2ZD-c9-BqV" customClass="NavigationTVCell" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="54.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ZD-c9-BqV" id="3kI-TZ-tGB">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="54.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-Wo-tan">
+                                                    <rect key="frame" x="20" y="10" width="353" height="34.333333333333336"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                    <connections>
+                                                        <action selector="btnNavigateAction:" destination="2ZD-c9-BqV" eventType="touchUpInside" id="0cd-R1-SOP"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hTo-Wo-tan" secondAttribute="bottom" constant="10" id="38I-LT-WUI"/>
+                                                <constraint firstAttribute="trailing" secondItem="hTo-Wo-tan" secondAttribute="trailing" constant="20" id="6DN-VG-0jq"/>
+                                                <constraint firstItem="hTo-Wo-tan" firstAttribute="top" secondItem="3kI-TZ-tGB" secondAttribute="top" constant="10" id="DX9-CS-iQ8"/>
+                                                <constraint firstItem="hTo-Wo-tan" firstAttribute="leading" secondItem="3kI-TZ-tGB" secondAttribute="leading" constant="20" id="mSH-eA-IPd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnNavigate" destination="hTo-Wo-tan" id="EzU-Ya-kCr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iob-Yg-db8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Gbd-Yd-LhV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Wo-Uw-Lei"/>
-                            <constraint firstItem="Gbd-Yd-LhV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d6a-KB-dOC"/>
-                            <constraint firstItem="Gbd-Yd-LhV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jG8-Xn-PaA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gbd-Yd-LhV" secondAttribute="bottom" id="sT2-e9-xE5"/>
+                            <constraint firstItem="iob-Yg-db8" firstAttribute="bottom" secondItem="uJ3-jO-lJy" secondAttribute="bottom" id="5Da-8b-W6l"/>
+                            <constraint firstItem="uJ3-jO-lJy" firstAttribute="top" secondItem="iob-Yg-db8" secondAttribute="top" id="bE3-n9-Olh"/>
+                            <constraint firstItem="iob-Yg-db8" firstAttribute="trailing" secondItem="uJ3-jO-lJy" secondAttribute="trailing" id="sUT-yG-Hab"/>
+                            <constraint firstItem="uJ3-jO-lJy" firstAttribute="leading" secondItem="iob-Yg-db8" secondAttribute="leading" id="w7O-n7-dod"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="X2o-9Z-SIv"/>
-                    <size key="freeformSize" width="393" height="2000"/>
+                    <navigationItem key="navigationItem" id="KfS-56-VFx"/>
+                    <connections>
+                        <outlet property="navigationTable" destination="uJ3-jO-lJy" id="m0W-P2-PbE"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TL-Xa-RTA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174.80916030534351" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="171.75572519083968" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <resources>

@@ -76,13 +76,15 @@ extension MKMapViewVC {
     
     private func centerLocation() {
         let region = MKCoordinateRegion(center: initialLocation.coordinate,
-                                        latitudinalMeters: 300, longitudinalMeters: 300)
+                                        latitudinalMeters: 300,
+                                        longitudinalMeters: 300)
         mapView.setRegion(region, animated: true)
     }
     
     private func cameraBoundary() {
         let region = MKCoordinateRegion(center: initialLocation.coordinate,
-                                        latitudinalMeters: 3000, longitudinalMeters: 3000)
+                                        latitudinalMeters: 3000,
+                                        longitudinalMeters: 3000)
         mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: region), animated: true)
         mapView.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 3000), animated: true)
     }
