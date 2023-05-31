@@ -102,7 +102,7 @@
 		BCAC39462A0286DF0095A377 /* MovieListingTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC39452A0286DF0095A377 /* MovieListingTVCell.swift */; };
 		BCB0CE382A1F2CE000F53A8B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB0CE352A1F2CE000F53A8B /* LoginVC.swift */; };
 		BCB0CE392A1F2CE000F53A8B /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB0CE362A1F2CE000F53A8B /* SignupVC.swift */; };
-		BCB0CE3A2A1F2CE000F53A8B /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0CE372A1F2CE000F53A8B /* Exercise.storyboard */; };
+		BCB0CE3A2A1F2CE000F53A8B /* AutolayoutExercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0CE372A1F2CE000F53A8B /* AutolayoutExercise.storyboard */; };
 		BCCABFDA2A04D55E000BDEB5 /* UIPickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCABFD92A04D55E000BDEB5 /* UIPickerView.storyboard */; };
 		BCCABFDC2A04D571000BDEB5 /* UIPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCABFDB2A04D571000BDEB5 /* UIPickerViewVC.swift */; };
 		BCCABFDF2A04FE23000BDEB5 /* UIDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCABFDE2A04FE23000BDEB5 /* UIDatePicker.storyboard */; };
@@ -124,6 +124,23 @@
 		BCD732BE29E81B090045032D /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732BD29E81B090045032D /* UITextFieldVC.swift */; };
 		BCD732C129E824650045032D /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD732C029E824650045032D /* UITextViewVC.swift */; };
 		BCD732C329E8248F0045032D /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD732C229E8248F0045032D /* UITextView.storyboard */; };
+		BCE084522A27040E00E01406 /* GolfScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE0843D2A27040E00E01406 /* GolfScreens.storyboard */; };
+		BCE084532A27040E00E01406 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0843F2A27040E00E01406 /* Constants.swift */; };
+		BCE084542A27040E00E01406 /* PlayerTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE084402A27040E00E01406 /* PlayerTVCell.xib */; };
+		BCE084552A27040E00E01406 /* GameStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE084412A27040E00E01406 /* GameStatusView.xib */; };
+		BCE084562A27040E00E01406 /* GroupHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE084422A27040E00E01406 /* GroupHeaderView.xib */; };
+		BCE084572A27040E00E01406 /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084442A27040E00E01406 /* CALayerExtensions.swift */; };
+		BCE084582A27040E00E01406 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084452A27040E00E01406 /* UIViewExtensions.swift */; };
+		BCE084592A27040E00E01406 /* GolfHomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084472A27040E00E01406 /* GolfHomeScreenVC.swift */; };
+		BCE0845A2A27040E00E01406 /* AdjustableTextViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084482A27040E00E01406 /* AdjustableTextViewDemoVC.swift */; };
+		BCE0845B2A27040E00E01406 /* GolfGameTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084492A27040E00E01406 /* GolfGameTypeView.swift */; };
+		BCE0845C2A27040E00E01406 /* GolfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0844B2A27040E00E01406 /* GolfGame.swift */; };
+		BCE0845D2A27040E00E01406 /* GolfHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE0844C2A27040E00E01406 /* GolfHomeHeaderView.xib */; };
+		BCE0845E2A27040E00E01406 /* GolfHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0844D2A27040E00E01406 /* GolfHomeHeaderView.swift */; };
+		BCE0845F2A27040E00E01406 /* GameStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0844E2A27040E00E01406 /* GameStatusView.swift */; };
+		BCE084602A27040E00E01406 /* GroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0844F2A27040E00E01406 /* GroupHeaderView.swift */; };
+		BCE084612A27040E00E01406 /* PlayerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084502A27040E00E01406 /* PlayerTVCell.swift */; };
+		BCE084622A27040E00E01406 /* GolfGameTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE084512A27040E00E01406 /* GolfGameTypeView.xib */; };
 		BCE756EB2A133C3500E13B38 /* VC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EA2A133C3500E13B38 /* VC4.swift */; };
 		BCE756ED2A13579D00E13B38 /* UIComponentsNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */; };
 		BCE756F52A13706300E13B38 /* NavigationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756F42A13706300E13B38 /* NavigationTVCell.swift */; };
@@ -236,7 +253,7 @@
 		BCAC39452A0286DF0095A377 /* MovieListingTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingTVCell.swift; sourceTree = "<group>"; };
 		BCB0CE352A1F2CE000F53A8B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BCB0CE362A1F2CE000F53A8B /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
-		BCB0CE372A1F2CE000F53A8B /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		BCB0CE372A1F2CE000F53A8B /* AutolayoutExercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutolayoutExercise.storyboard; sourceTree = "<group>"; };
 		BCCABFD92A04D55E000BDEB5 /* UIPickerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPickerView.storyboard; sourceTree = "<group>"; };
 		BCCABFDB2A04D571000BDEB5 /* UIPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerViewVC.swift; sourceTree = "<group>"; };
 		BCCABFDE2A04FE23000BDEB5 /* UIDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIDatePicker.storyboard; sourceTree = "<group>"; };
@@ -257,6 +274,23 @@
 		BCD732BD29E81B090045032D /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
 		BCD732C029E824650045032D /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
 		BCD732C229E8248F0045032D /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
+		BCE0843D2A27040E00E01406 /* GolfScreens.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GolfScreens.storyboard; sourceTree = "<group>"; };
+		BCE0843F2A27040E00E01406 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCE084402A27040E00E01406 /* PlayerTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerTVCell.xib; sourceTree = "<group>"; };
+		BCE084412A27040E00E01406 /* GameStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameStatusView.xib; sourceTree = "<group>"; };
+		BCE084422A27040E00E01406 /* GroupHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupHeaderView.xib; sourceTree = "<group>"; };
+		BCE084442A27040E00E01406 /* CALayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
+		BCE084452A27040E00E01406 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		BCE084472A27040E00E01406 /* GolfHomeScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfHomeScreenVC.swift; sourceTree = "<group>"; };
+		BCE084482A27040E00E01406 /* AdjustableTextViewDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustableTextViewDemoVC.swift; sourceTree = "<group>"; };
+		BCE084492A27040E00E01406 /* GolfGameTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfGameTypeView.swift; sourceTree = "<group>"; };
+		BCE0844B2A27040E00E01406 /* GolfGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfGame.swift; sourceTree = "<group>"; };
+		BCE0844C2A27040E00E01406 /* GolfHomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GolfHomeHeaderView.xib; sourceTree = "<group>"; };
+		BCE0844D2A27040E00E01406 /* GolfHomeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfHomeHeaderView.swift; sourceTree = "<group>"; };
+		BCE0844E2A27040E00E01406 /* GameStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatusView.swift; sourceTree = "<group>"; };
+		BCE0844F2A27040E00E01406 /* GroupHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
+		BCE084502A27040E00E01406 /* PlayerTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTVCell.swift; sourceTree = "<group>"; };
+		BCE084512A27040E00E01406 /* GolfGameTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GolfGameTypeView.xib; sourceTree = "<group>"; };
 		BCE756EA2A133C3500E13B38 /* VC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
 		BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentsNavigationVC.swift; path = DemoApp/UIComponentsNavigationVC.swift; sourceTree = SOURCE_ROOT; };
 		BCE756F42A13706300E13B38 /* NavigationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTVCell.swift; sourceTree = "<group>"; };
@@ -340,6 +374,7 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCE0843B2A27040E00E01406 /* GolfScreens */,
 				BCB0CE342A1F2CE000F53A8B /* AutoLayout */,
 				BC06B4EB2A0E31DA00DCE719 /* UINavigation */,
 				BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */,
@@ -669,7 +704,7 @@
 			children = (
 				BCB0CE352A1F2CE000F53A8B /* LoginVC.swift */,
 				BCB0CE362A1F2CE000F53A8B /* SignupVC.swift */,
-				BCB0CE372A1F2CE000F53A8B /* Exercise.storyboard */,
+				BCB0CE372A1F2CE000F53A8B /* AutolayoutExercise.storyboard */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -746,6 +781,70 @@
 				BCD732C229E8248F0045032D /* UITextView.storyboard */,
 			);
 			path = UITextView;
+			sourceTree = "<group>";
+		};
+		BCE0843B2A27040E00E01406 /* GolfScreens */ = {
+			isa = PBXGroup;
+			children = (
+				BCE0843C2A27040E00E01406 /* Storyboards */,
+				BCE0843E2A27040E00E01406 /* Constants */,
+				BCE084402A27040E00E01406 /* PlayerTVCell.xib */,
+				BCE084412A27040E00E01406 /* GameStatusView.xib */,
+				BCE084422A27040E00E01406 /* GroupHeaderView.xib */,
+				BCE084432A27040E00E01406 /* Extensions */,
+				BCE084462A27040E00E01406 /* ViewControllers */,
+				BCE084492A27040E00E01406 /* GolfGameTypeView.swift */,
+				BCE0844A2A27040E00E01406 /* Model */,
+				BCE0844C2A27040E00E01406 /* GolfHomeHeaderView.xib */,
+				BCE0844D2A27040E00E01406 /* GolfHomeHeaderView.swift */,
+				BCE0844E2A27040E00E01406 /* GameStatusView.swift */,
+				BCE0844F2A27040E00E01406 /* GroupHeaderView.swift */,
+				BCE084502A27040E00E01406 /* PlayerTVCell.swift */,
+				BCE084512A27040E00E01406 /* GolfGameTypeView.xib */,
+			);
+			path = GolfScreens;
+			sourceTree = "<group>";
+		};
+		BCE0843C2A27040E00E01406 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BCE0843D2A27040E00E01406 /* GolfScreens.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BCE0843E2A27040E00E01406 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BCE0843F2A27040E00E01406 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BCE084432A27040E00E01406 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BCE084442A27040E00E01406 /* CALayerExtensions.swift */,
+				BCE084452A27040E00E01406 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCE084462A27040E00E01406 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCE084472A27040E00E01406 /* GolfHomeScreenVC.swift */,
+				BCE084482A27040E00E01406 /* AdjustableTextViewDemoVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BCE0844A2A27040E00E01406 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCE0844B2A27040E00E01406 /* GolfGame.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BCEF05B729F108ED00B8DA0C /* CircularImage */ = {
@@ -827,6 +926,7 @@
 				BCAC393D2A0269540095A377 /* ActivityIndicator.storyboard in Resources */,
 				BC94E42529EFE4920057CB70 /* ScrollView.storyboard in Resources */,
 				BC4E506429ED26D900C0AC9D /* Roboto-Italic.ttf in Resources */,
+				BCE084562A27040E00E01406 /* GroupHeaderView.xib in Resources */,
 				BC42365129DBE5BB00CB1DC0 /* LaunchScreen.storyboard in Resources */,
 				BC965EE329F646ED00945631 /* TableView.storyboard in Resources */,
 				BC42364E29DBE5BB00CB1DC0 /* Assets.xcassets in Resources */,
@@ -848,6 +948,7 @@
 				BCD3410929FFC5DD00AFA19A /* MovieCVCell.xib in Resources */,
 				BC8D98CD2A03C7620097F2EE /* wkwebview.pdf in Resources */,
 				BCD3410129FFBD9500AFA19A /* MovieCatalogTVCell.xib in Resources */,
+				BCE084542A27040E00E01406 /* PlayerTVCell.xib in Resources */,
 				BC965EEB29F65CEE00945631 /* IndexTableViewCell.xib in Resources */,
 				BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */,
 				BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */,
@@ -857,14 +958,18 @@
 				BC4E506329ED26D900C0AC9D /* Roboto-Regular.ttf in Resources */,
 				BC59941C29EE87B900EFF4D2 /* UIPageViewController.storyboard in Resources */,
 				BC59941229EE6A1400EFF4D2 /* UIProgressView.storyboard in Resources */,
+				BCE0845D2A27040E00E01406 /* GolfHomeHeaderView.xib in Resources */,
 				BC70743829F8038D00F443FB /* FriendTableViewCell.xib in Resources */,
 				BC75CABA2A023EBF005FF13B /* StackView.storyboard in Resources */,
+				BCE084522A27040E00E01406 /* GolfScreens.storyboard in Resources */,
 				BC59941529EE714100EFF4D2 /* UISegmentedControl.storyboard in Resources */,
-				BCB0CE3A2A1F2CE000F53A8B /* Exercise.storyboard in Resources */,
+				BCB0CE3A2A1F2CE000F53A8B /* AutolayoutExercise.storyboard in Resources */,
 				BC4E506829ED6E2400C0AC9D /* UISwitch.storyboard in Resources */,
 				BCA52CA829E69001003437E6 /* UILabel.storyboard in Resources */,
+				BCE084552A27040E00E01406 /* GameStatusView.xib in Resources */,
 				BC8D98D02A03DB370097F2EE /* UIToolBar.storyboard in Resources */,
 				BCD340F729FFAC2E00AFA19A /* OTTScreen.storyboard in Resources */,
+				BCE084622A27040E00E01406 /* GolfGameTypeView.xib in Resources */,
 				BC965EEF29F67F7700945631 /* Multiple5TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -884,11 +989,14 @@
 				BC59942B29EEB2CC00EFF4D2 /* UIStepperVC.swift in Sources */,
 				BC59941929EE717100EFF4D2 /* UISegmentedControlVC.swift in Sources */,
 				BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */,
+				BCE0845F2A27040E00E01406 /* GameStatusView.swift in Sources */,
 				BC70743729F8038D00F443FB /* FriendTableViewCell.swift in Sources */,
 				BCD3410829FFC5DD00AFA19A /* MovieCVCell.swift in Sources */,
 				BCD3410029FFBD9500AFA19A /* MovieCatalogTVCell.swift in Sources */,
+				BCE084532A27040E00E01406 /* Constants.swift in Sources */,
 				BCA52CA429E68EAC003437E6 /* UIViewController+Extension.swift in Sources */,
 				BC94E42E29EFFF120057CB70 /* SignUpViewController.swift in Sources */,
+				BCE084592A27040E00E01406 /* GolfHomeScreenVC.swift in Sources */,
 				BCA52CA629E68F96003437E6 /* Storyboard.swift in Sources */,
 				BC94E42C29EFFEB50057CB70 /* AuthPageViewController.swift in Sources */,
 				BC6D98E02A0121D9008FB9A0 /* MovieHeaderCVCell.swift in Sources */,
@@ -896,12 +1004,14 @@
 				BC965EEE29F67F7700945631 /* Multiple5TableViewCell.swift in Sources */,
 				BCF4CDF92A12037B00B22704 /* SecondVC.swift in Sources */,
 				BCF4CDF32A11F16C00B22704 /* FourthVC.swift in Sources */,
+				BCE0845A2A27040E00E01406 /* AdjustableTextViewDemoVC.swift in Sources */,
 				BC6D98E32A013131008FB9A0 /* UICollectionView+Extension.swift in Sources */,
 				BC965EE729F6516C00945631 /* TableContentVC.swift in Sources */,
 				BCB0CE382A1F2CE000F53A8B /* LoginVC.swift in Sources */,
 				BCCABFE12A04FE41000BDEB5 /* UIDatePickerVC.swift in Sources */,
 				BC94E42A29EFF6540057CB70 /* Task1VC.swift in Sources */,
 				BCB0CE392A1F2CE000F53A8B /* SignupVC.swift in Sources */,
+				BCE0845C2A27040E00E01406 /* GolfGame.swift in Sources */,
 				BC387C712A093664002276F2 /* Wonder.swift in Sources */,
 				BC7C1ECB29F784E1009A8228 /* FriendsListVC.swift in Sources */,
 				BC8D98D22A03DB610097F2EE /* UIToolBarVC.swift in Sources */,
@@ -922,8 +1032,10 @@
 				BCE756F52A13706300E13B38 /* NavigationTVCell.swift in Sources */,
 				BCAC39422A02849E0095A377 /* SearchBarVC.swift in Sources */,
 				BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */,
+				BCE084572A27040E00E01406 /* CALayerExtensions.swift in Sources */,
 				BC78C3C529FBF43C00EBAA40 /* Movie.swift in Sources */,
 				BC70743229F7FE8A00F443FB /* Friend.swift in Sources */,
+				BCE084612A27040E00E01406 /* PlayerTVCell.swift in Sources */,
 				BCD340F929FFAC5200AFA19A /* OTTViewController.swift in Sources */,
 				BCEF05BB29F12E9800B8DA0C /* UIView+Extension.swift in Sources */,
 				BCE756EB2A133C3500E13B38 /* VC4.swift in Sources */,
@@ -932,16 +1044,20 @@
 				BC75CAB82A023EA2005FF13B /* StackViewVC.swift in Sources */,
 				BC59942229EE93C400EFF4D2 /* PinkViewController.swift in Sources */,
 				BC42364529DBE5BA00CB1DC0 /* AppDelegate.swift in Sources */,
+				BCE0845B2A27040E00E01406 /* GolfGameTypeView.swift in Sources */,
 				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
 				BCE756ED2A13579D00E13B38 /* UIComponentsNavigationVC.swift in Sources */,
 				BC06B4F32A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift in Sources */,
+				BCE0845E2A27040E00E01406 /* GolfHomeHeaderView.swift in Sources */,
 				BC8D98C72A03B3980097F2EE /* WKWebVC.swift in Sources */,
 				BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */,
 				BCAC393F2A0269700095A377 /* ActivityIndicatorVC.swift in Sources */,
 				BC7781F82A0A2A3900631C41 /* WonderAnnotation.swift in Sources */,
 				BC387C6B2A0908ED002276F2 /* MyAnnotation.swift in Sources */,
+				BCE084582A27040E00E01406 /* UIViewExtensions.swift in Sources */,
 				BC75CAB22A02254B005FF13B /* UIImage+Extension.swift in Sources */,
 				BCF4CDFF2A12568800B22704 /* VC1.swift in Sources */,
+				BCE084602A27040E00E01406 /* GroupHeaderView.swift in Sources */,
 				BCD3410B29FFC85600AFA19A /* MovieCatalog.swift in Sources */,
 				BC965EE529F6471A00945631 /* TableViewVC.swift in Sources */,
 				BCAC39462A0286DF0095A377 /* MovieListingTVCell.swift in Sources */,

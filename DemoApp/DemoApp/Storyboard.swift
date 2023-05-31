@@ -32,6 +32,7 @@ enum Storyboard: String, CaseIterable {
     case uiDatePicker = "UIDatePicker"
     case mkMapView = "MKMapView"
     case uiNavigation = "UINavigation"
+    case golfScreens = "GolfScreens"
     
     var storyboardName: String {
         return rawValue
@@ -47,6 +48,8 @@ enum Storyboard: String, CaseIterable {
             return "WKWebViewTabBarVC"
         case .mkMapView:
             return "MapTabBarVC"
+        case .golfScreens:
+            return "GolfHomeScreenVC"
         default:
             return "\(rawValue)VC"
         }
