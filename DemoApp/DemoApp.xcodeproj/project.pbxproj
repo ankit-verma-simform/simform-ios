@@ -291,6 +291,7 @@
 		BCE0844F2A27040E00E01406 /* GroupHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupHeaderView.swift; sourceTree = "<group>"; };
 		BCE084502A27040E00E01406 /* PlayerTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTVCell.swift; sourceTree = "<group>"; };
 		BCE084512A27040E00E01406 /* GolfGameTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GolfGameTypeView.xib; sourceTree = "<group>"; };
+		BCE084632A27160400E01406 /* SwiftBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BCE756EA2A133C3500E13B38 /* VC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
 		BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentsNavigationVC.swift; path = DemoApp/UIComponentsNavigationVC.swift; sourceTree = SOURCE_ROOT; };
 		BCE756F42A13706300E13B38 /* NavigationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTVCell.swift; sourceTree = "<group>"; };
@@ -393,6 +394,7 @@
 				BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */,
 				BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */,
 				BC42365229DBE5BB00CB1DC0 /* Info.plist */,
+				BCE084632A27160400E01406 /* SwiftBasics.playground */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
