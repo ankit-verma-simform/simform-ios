@@ -1,0 +1,11 @@
+//
+//  DebugConfig.xcconfig
+//  DemoApp
+//
+//  Created by Ankit Verma on 29/06/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ServerURL = https:/$()/dummyjson.com

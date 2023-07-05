@@ -33,6 +33,7 @@ enum Storyboard: String, CaseIterable {
     case mkMapView = "MKMapView"
     case uiNavigation = "UINavigation"
     case golfScreens = "GolfScreens"
+    case webServices = "WebServices"
     
     var storyboardName: String {
         return rawValue
