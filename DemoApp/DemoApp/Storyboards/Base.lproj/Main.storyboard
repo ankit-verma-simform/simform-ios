@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-758" y="-35"/>
         </scene>
-        <!--Components NavigationVC-->
+        <!--Main NavigationVC-->
         <scene sceneID="Zyo-hv-jrG">
             <objects>
-                <viewController storyboardIdentifier="UIComponentsNavigationVC" id="MF2-1u-Ss6" customClass="UIComponentsNavigationVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainNavigationVC" id="MF2-1u-Ss6" customClass="MainNavigationVC" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kj2-tO-IIu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

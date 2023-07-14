@@ -1,5 +1,5 @@
 //
-//  UIComponentsNavigationVC.swift
+//  MainNavigationVC.swift
 //  DemoApp
 //
 //  Created by Ankit Verma on 16/05/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UIComponentsNavigationVC: UIViewController {
+class MainNavigationVC: UIViewController {
     // MARK: - Variables
     private let storyboards = Storyboard.allCases
 
@@ -22,7 +22,7 @@ class UIComponentsNavigationVC: UIViewController {
 }
 
 // MARK: - TableView DataSource & Delegate Methods
-extension UIComponentsNavigationVC: UITableViewDataSource, UITableViewDelegate {
+extension MainNavigationVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storyboards.count
     }
@@ -48,7 +48,7 @@ extension UIComponentsNavigationVC: UITableViewDataSource, UITableViewDelegate {
 }
 
 // MARK: - Functions
-extension UIComponentsNavigationVC {
+extension MainNavigationVC {
     private func initialSetup() {
         navigationTable.delegate = self
         navigationTable.dataSource = self
@@ -56,7 +56,7 @@ extension UIComponentsNavigationVC {
 }
 
 // MARK: - SendIndex Delegate Method
-extension UIComponentsNavigationVC: SendIndexPath {
+extension MainNavigationVC: SendIndexPath {
     func didTapWithIndexPath(indexPath: IndexPath) {
         let storyboardToGo = storyboards[indexPath.row]
         let storyboard = UIStoryboard(name: storyboardToGo.storyboardName, bundle: nil)
