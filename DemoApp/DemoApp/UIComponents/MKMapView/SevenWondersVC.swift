@@ -46,7 +46,6 @@ extension SevenWondersVC {
             print("Need location to use app")
         case .denied:
             print("Need location to use app properly")
-            // TODO: alert user and navigate to settings
         case .authorizedAlways, .authorizedWhenInUse:
             showMapLocationFromPickerValue()
         @unknown default:

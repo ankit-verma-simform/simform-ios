@@ -47,6 +47,11 @@
 		BC4E506D29ED766F00C0AC9D /* UISlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */; };
 		BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E506E29ED768100C0AC9D /* UISliderVC.swift */; };
 		BC4E507129ED7F4300C0AC9D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */; };
+		BC4E523A2A61035A004902CB /* CustomControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4E52392A61035A004902CB /* CustomControls.storyboard */; };
+		BC4E523C2A610372004902CB /* CustomControlsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E523B2A610372004902CB /* CustomControlsVC.swift */; };
+		BC4E523E2A6106A8004902CB /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E523D2A6106A8004902CB /* RangeSlider.swift */; };
+		BC4E52402A6123CC004902CB /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E523F2A6123CC004902CB /* RangeSliderTrackLayer.swift */; };
+		BC4E52422A612D31004902CB /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E52412A612D31004902CB /* DesignableTextField.swift */; };
 		BC59940D29EE522700EFF4D2 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */; };
 		BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59940F29EE6A0500EFF4D2 /* UIProgressVC.swift */; };
 		BC59941229EE6A1400EFF4D2 /* UIProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59941129EE6A1400EFF4D2 /* UIProgressView.storyboard */; };
@@ -172,7 +177,7 @@
 		BCE084612A27040E00E01406 /* PlayerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE084502A27040E00E01406 /* PlayerTVCell.swift */; };
 		BCE084622A27040E00E01406 /* GolfGameTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE084512A27040E00E01406 /* GolfGameTypeView.xib */; };
 		BCE756EB2A133C3500E13B38 /* VC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EA2A133C3500E13B38 /* VC4.swift */; };
-		BCE756ED2A13579D00E13B38 /* UIComponentsNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */; };
+		BCE756ED2A13579D00E13B38 /* MainNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756EC2A13579D00E13B38 /* MainNavigationVC.swift */; };
 		BCE756F52A13706300E13B38 /* NavigationTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE756F42A13706300E13B38 /* NavigationTVCell.swift */; };
 		BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */; };
 		BCEF05B629F0EE6F00B8DA0C /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */; };
@@ -237,6 +242,11 @@
 		BC4E506C29ED766F00C0AC9D /* UISlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISlider.storyboard; sourceTree = "<group>"; };
 		BC4E506E29ED768100C0AC9D /* UISliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderVC.swift; sourceTree = "<group>"; };
 		BC4E507029ED7F4300C0AC9D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		BC4E52392A61035A004902CB /* CustomControls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomControls.storyboard; sourceTree = "<group>"; };
+		BC4E523B2A610372004902CB /* CustomControlsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControlsVC.swift; sourceTree = "<group>"; };
+		BC4E523D2A6106A8004902CB /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		BC4E523F2A6123CC004902CB /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
+		BC4E52412A612D31004902CB /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		BC59940C29EE522700EFF4D2 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		BC59940F29EE6A0500EFF4D2 /* UIProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressVC.swift; sourceTree = "<group>"; };
 		BC59941129EE6A1400EFF4D2 /* UIProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIProgressView.storyboard; sourceTree = "<group>"; };
@@ -365,7 +375,7 @@
 		BCE084632A27160400E01406 /* SwiftBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BCE084642A27216D00E01406 /* SwiftAdvance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftAdvance.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BCE756EA2A133C3500E13B38 /* VC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
-		BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentsNavigationVC.swift; path = DemoApp/UIComponentsNavigationVC.swift; sourceTree = SOURCE_ROOT; };
+		BCE756EC2A13579D00E13B38 /* MainNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainNavigationVC.swift; path = DemoApp/MainNavigationVC.swift; sourceTree = SOURCE_ROOT; };
 		BCE756F42A13706300E13B38 /* NavigationTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTVCell.swift; sourceTree = "<group>"; };
 		BCEF05B329F0EE4000B8DA0C /* FormTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextField.xib; sourceTree = "<group>"; };
 		BCEF05B529F0EE6F00B8DA0C /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
@@ -453,8 +463,8 @@
 		BC177A3A29F0200600F1C638 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
-				BC4E504D29ED268800C0AC9D /* fonts */,
 				BCEF05B729F108ED00B8DA0C /* CircularImage */,
+				BC4E504D29ED268800C0AC9D /* fonts */,
 				BC177A3B29F0203300F1C638 /* FormTextField */,
 			);
 			path = CustomComponents;
@@ -501,33 +511,34 @@
 		BC42364329DBE5BA00CB1DC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				BC75649F2A4D6252001D678E /* XC Configs Files */,
-				BC7564932A4D549E001D678E /* Dynamics */,
-				BC7564902A4D4C9B001D678E /* Helpers */,
-				BC6E14EA2A4C7D2400C42313 /* R.generated.swift */,
-				BC064BA02A4C3AA500BC4424 /* NetworkLayer */,
-				BC1DC1AD2A4B099800A340F0 /* WebServices */,
-				BCE0843B2A27040E00E01406 /* GolfScreens */,
-				BCB0CE342A1F2CE000F53A8B /* AutoLayout */,
-				BC06B4EB2A0E31DA00DCE719 /* UINavigation */,
-				BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */,
-				BCD3410C29FFCF9E00AFA19A /* Data */,
-				BC70743029F7FE6B00F443FB /* Models */,
 				BC6B43B529F25B43007607C4 /* DemoApp.entitlements */,
-				BC6B43B229F2448E007607C4 /* Utils */,
+				BCB0CE342A1F2CE000F53A8B /* AutoLayout */,
+				BC4E52382A610349004902CB /* CustomControls */,
 				BC177A3A29F0200600F1C638 /* CustomComponents */,
+				BCD3410C29FFCF9E00AFA19A /* Data */,
+				BC7564932A4D549E001D678E /* Dynamics */,
 				BCA52CA229E68E81003437E6 /* Extensions */,
-				BCA52C9E29E68054003437E6 /* UIComponents */,
+				BCE0843B2A27040E00E01406 /* GolfScreens */,
+				BC7564902A4D4C9B001D678E /* Helpers */,
+				BC70743029F7FE6B00F443FB /* Models */,
+				BC064BA02A4C3AA500BC4424 /* NetworkLayer */,
 				BCA52CA029E68397003437E6 /* Storyboards */,
+				BCA52C9E29E68054003437E6 /* UIComponents */,
+				BC06B4EB2A0E31DA00DCE719 /* UINavigation */,
+				BC6B43B229F2448E007607C4 /* Utils */,
+				BC1DC1AD2A4B099800A340F0 /* WebServices */,
+				BC75649F2A4D6252001D678E /* XC Configs Files */,
 				BC42364429DBE5BA00CB1DC0 /* AppDelegate.swift */,
-				BCA52CA529E68F96003437E6 /* Storyboard.swift */,
+				BCE756EC2A13579D00E13B38 /* MainNavigationVC.swift */,
 				BCE756F42A13706300E13B38 /* NavigationTVCell.swift */,
+				BC6E14EA2A4C7D2400C42313 /* R.generated.swift */,
 				BC42364629DBE5BA00CB1DC0 /* SceneDelegate.swift */,
-				BCE756EC2A13579D00E13B38 /* UIComponentsNavigationVC.swift */,
+				BCA52CA529E68F96003437E6 /* Storyboard.swift */,
+				BC8D98CC2A03C7610097F2EE /* wkwebview.pdf */,
 				BC42364D29DBE5BB00CB1DC0 /* Assets.xcassets */,
 				BC42365229DBE5BB00CB1DC0 /* Info.plist */,
-				BCE084632A27160400E01406 /* SwiftBasics.playground */,
 				BCE084642A27216D00E01406 /* SwiftAdvance.playground */,
+				BCE084632A27160400E01406 /* SwiftBasics.playground */,
 				BC75649C2A4D5A22001D678E /* Localizable.strings */,
 			);
 			path = DemoApp;
@@ -560,6 +571,18 @@
 				BC4E506E29ED768100C0AC9D /* UISliderVC.swift */,
 			);
 			path = UISlider;
+			sourceTree = "<group>";
+		};
+		BC4E52382A610349004902CB /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				BC4E523B2A610372004902CB /* CustomControlsVC.swift */,
+				BC4E52412A612D31004902CB /* DesignableTextField.swift */,
+				BC4E523D2A6106A8004902CB /* RangeSlider.swift */,
+				BC4E523F2A6123CC004902CB /* RangeSliderTrackLayer.swift */,
+				BC4E52392A61035A004902CB /* CustomControls.storyboard */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		BC59940E29EE69DD00EFF4D2 /* UIProgressView */ = {
@@ -1165,6 +1188,7 @@
 				BCD3410129FFBD9500AFA19A /* MovieCatalogTVCell.xib in Resources */,
 				BCE084542A27040E00E01406 /* PlayerTVCell.xib in Resources */,
 				BC965EEB29F65CEE00945631 /* IndexTableViewCell.xib in Resources */,
+				BC4E523A2A61035A004902CB /* CustomControls.storyboard in Resources */,
 				BC1CE9512A52C8FA004B5699 /* ExploreUsersTVCell.xib in Resources */,
 				BCEF05B429F0EE4000B8DA0C /* FormTextField.xib in Resources */,
 				BC59943029EEC1B900EFF4D2 /* ImageView.storyboard in Resources */,
@@ -1286,6 +1310,7 @@
 				BCF7905D2A4C6A4F0063BD09 /* RefreshTokenViewModel.swift in Sources */,
 				BC1CE9492A52A39F004B5699 /* ExploreUsersVC.swift in Sources */,
 				BC94E42C29EFFEB50057CB70 /* AuthPageViewController.swift in Sources */,
+				BC4E523E2A6106A8004902CB /* RangeSlider.swift in Sources */,
 				BC6D98E02A0121D9008FB9A0 /* MovieHeaderCVCell.swift in Sources */,
 				BC4E506F29ED768100C0AC9D /* UISliderVC.swift in Sources */,
 				BC965EEE29F67F7700945631 /* Multiple5TableViewCell.swift in Sources */,
@@ -1316,6 +1341,7 @@
 				BC6E14EB2A4C7D2400C42313 /* R.generated.swift in Sources */,
 				BC06B4F12A0E592900DCE719 /* PracticeNavigationController.swift in Sources */,
 				BC59941029EE6A0500EFF4D2 /* UIProgressVC.swift in Sources */,
+				BC4E52402A6123CC004902CB /* RangeSliderTrackLayer.swift in Sources */,
 				BC6B43B429F244C6007607C4 /* Validator.swift in Sources */,
 				BC965EF129F68ECD00945631 /* SectionFooterView.swift in Sources */,
 				BCF790642A4C6A4F0063BD09 /* APIManager+Retrier.swift in Sources */,
@@ -1350,7 +1376,8 @@
 				BCF790602A4C6A4F0063BD09 /* SessionModel.swift in Sources */,
 				BC4E506A29ED6E3E00C0AC9D /* UISwitchVC.swift in Sources */,
 				BC1CE9532A52CCE1004B5699 /* ExploreUsersViewModel.swift in Sources */,
-				BCE756ED2A13579D00E13B38 /* UIComponentsNavigationVC.swift in Sources */,
+				BC4E523C2A610372004902CB /* CustomControlsVC.swift in Sources */,
+				BCE756ED2A13579D00E13B38 /* MainNavigationVC.swift in Sources */,
 				BC06B4F32A0E5FAA00DCE719 /* PracticeNavigationRootVC.swift in Sources */,
 				BCF7905F2A4C6A4F0063BD09 /* APIManager+NetworkManger.swift in Sources */,
 				BCF790632A4C6A4F0063BD09 /* APIManager+ErrorHandler.swift in Sources */,
@@ -1367,6 +1394,7 @@
 				BC1CE9472A52A2EA004B5699 /* ExploreLoginVC.swift in Sources */,
 				BC75CAB22A02254B005FF13B /* UIImage+Extension.swift in Sources */,
 				BCF4CDFF2A12568800B22704 /* VC1.swift in Sources */,
+				BC4E52422A612D31004902CB /* DesignableTextField.swift in Sources */,
 				BCE084602A27040E00E01406 /* GroupHeaderView.swift in Sources */,
 				BCD3410B29FFC85600AFA19A /* MovieCatalog.swift in Sources */,
 				BC965EE529F6471A00945631 /* TableViewVC.swift in Sources */,

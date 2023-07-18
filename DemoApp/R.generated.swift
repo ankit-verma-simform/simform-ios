@@ -103,7 +103,7 @@ struct _R {
     var appWhite: RswiftResources.ColorResource { .init(name: "appWhite", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 36 images.
+  /// This `_R.image` struct is generated, and contains static references to 40 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -113,11 +113,23 @@ struct _R {
     /// Image `GoogleIcon`.
     var googleIcon: RswiftResources.ImageResource { .init(name: "GoogleIcon", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `HighlightedOval`.
+    var highlightedOval: RswiftResources.ImageResource { .init(name: "HighlightedOval", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `HighlightedRect`.
+    var highlightedRect: RswiftResources.ImageResource { .init(name: "HighlightedRect", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `LogInWithFacebook`.
     var logInWithFacebook: RswiftResources.ImageResource { .init(name: "LogInWithFacebook", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `LogInWithGoogle`.
     var logInWithGoogle: RswiftResources.ImageResource { .init(name: "LogInWithGoogle", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Oval`.
+    var oval: RswiftResources.ImageResource { .init(name: "Oval", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `RectThumb`.
+    var rectThumb: RswiftResources.ImageResource { .init(name: "RectThumb", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `agentsOfShield`.
     var agentsOfShield: RswiftResources.ImageResource { .init(name: "agentsOfShield", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -442,12 +454,13 @@ struct _R {
     let rssFeedTVCell: RswiftResources.ReuseIdentifier<RSSFeedTVCell> = .init(identifier: "RSSFeedTVCell")
   }
 
-  /// This `_R.storyboard` struct is generated, and contains static references to 31 storyboards.
+  /// This `_R.storyboard` struct is generated, and contains static references to 32 storyboards.
   struct storyboard {
     let bundle: Foundation.Bundle
     var activityIndicator: activityIndicator { .init(bundle: bundle) }
     var autolayoutExercise: autolayoutExercise { .init(bundle: bundle) }
     var collectionView: collectionView { .init(bundle: bundle) }
+    var customControls: customControls { .init(bundle: bundle) }
     var golfScreens: golfScreens { .init(bundle: bundle) }
     var imageView: imageView { .init(bundle: bundle) }
     var launchScreen: launchScreen { .init(bundle: bundle) }
@@ -484,6 +497,9 @@ struct _R {
       .init(bundle: bundle)
     }
     func collectionView(bundle: Foundation.Bundle) -> collectionView {
+      .init(bundle: bundle)
+    }
+    func customControls(bundle: Foundation.Bundle) -> customControls {
       .init(bundle: bundle)
     }
     func golfScreens(bundle: Foundation.Bundle) -> golfScreens {
@@ -574,6 +590,7 @@ struct _R {
       try self.activityIndicator.validate()
       try self.autolayoutExercise.validate()
       try self.collectionView.validate()
+      try self.customControls.validate()
       try self.golfScreens.validate()
       try self.imageView.validate()
       try self.launchScreen.validate()
@@ -654,6 +671,21 @@ struct _R {
       }
     }
 
+    /// Storyboard `CustomControls`.
+    struct customControls: RswiftResources.StoryboardReference {
+      let bundle: Foundation.Bundle
+
+      let name = "CustomControls"
+
+      var customControlsVC: RswiftResources.StoryboardViewControllerIdentifier<CustomControlsVC> { .init(identifier: "CustomControlsVC", storyboard: name, bundle: bundle) }
+
+      func validate() throws {
+        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "eraser.line.dashed.fill") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'eraser.line.dashed.fill' is used in storyboard 'CustomControls', but couldn't be loaded.") } }
+        if UIKit.UIImage(named: "halfFill", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'halfFill' is used in storyboard 'CustomControls', but couldn't be loaded.") }
+        if customControlsVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'customControlsVC' could not be loaded from storyboard 'CustomControls' as 'CustomControlsVC'.") }
+      }
+    }
+
     /// Storyboard `GolfScreens`.
     struct golfScreens: RswiftResources.StoryboardReference, RswiftResources.InitialControllerContainer {
       typealias InitialController = GolfHomeScreenVC
@@ -708,10 +740,10 @@ struct _R {
 
       let name = "Main"
 
-      var uiComponentsNavigationVC: RswiftResources.StoryboardViewControllerIdentifier<UIComponentsNavigationVC> { .init(identifier: "UIComponentsNavigationVC", storyboard: name, bundle: bundle) }
+      var mainNavigationVC: RswiftResources.StoryboardViewControllerIdentifier<MainNavigationVC> { .init(identifier: "MainNavigationVC", storyboard: name, bundle: bundle) }
 
       func validate() throws {
-        if uiComponentsNavigationVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'uiComponentsNavigationVC' could not be loaded from storyboard 'Main' as 'UIComponentsNavigationVC'.") }
+        if mainNavigationVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'mainNavigationVC' could not be loaded from storyboard 'Main' as 'MainNavigationVC'.") }
       }
     }
 
